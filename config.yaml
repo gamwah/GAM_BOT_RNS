@@ -1,0 +1,5 @@
+watchlist: [CTO, RFX, GTLY, IPF, MTRO, HOC]   # always report these regardless of classification
+markets: [AIM, FTSE_SMALL_CAP]                 # informational for now; not yet enforced as a filter
+min_director_buy_value: 20000                  # GBP, ignore token buys
+telegram_chat_id: "1604247309"
+run_time_uk: "07:30"

@@ -1,0 +1,45 @@
+name: RNS Screener
+
+on:
+  # Two schedules 1 hour apart, both Mon-Fri. Only one actually runs the
+  # screener each day - the "Check UK time" step below skips whichever one
+  # doesn't land at 7am UK local time, so this self-adjusts for BST/GMT
+  # without needing to edit the cron lines twice a year.
+  schedule:
+    - cron: "30 6 * * 1-5"  # 06:30 UTC - hits 07:30 local during BST (summer)
+    - cron: "30 7 * * 1-5"  # 07:30 UTC - hits 07:30 local during GMT (winter)
+  workflow_dispatch: {}      # lets you trigger a run manually from the Actions tab
+
+jobs:
+  run-screener:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check UK local time
+        id: guard
+        run: |
+          UK_HOUR=$(TZ='Europe/London' date +%H)
+          echo "UK local hour is $UK_HOUR"
+          if [ "$UK_HOUR" = "07" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "proceed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "proceed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Set up Python
+        if: steps.guard.outputs.proceed == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        if: steps.guard.outputs.proceed == 'true'
+        run: pip install -r requirements.txt
+
+      - name: Run screener
+        if: steps.guard.outputs.proceed == 'true'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: python screener.py
