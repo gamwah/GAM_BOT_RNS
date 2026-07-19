@@ -1,14 +1,18 @@
 name: RNS Screener
 
 on:
-  # Two schedules 1 hour apart, both Mon-Fri. Only one actually runs the
-  # screener each day - the "Check UK time" step below skips whichever one
-  # doesn't land at 7am UK local time, so this self-adjusts for BST/GMT
-  # without needing to edit the cron lines twice a year.
+  # Two schedules 1 hour apart, both Mon-Fri, as a hedge against GitHub
+  # sometimes delaying scheduled runs by hours. The "already run today?"
+  # guard below (not a fixed hour check) makes sure only the first trigger
+  # to actually fire each day runs the pipeline - the second is a no-op if
+  # the first already succeeded, whenever in the day that was.
   schedule:
-    - cron: "30 6 * * 1-5"  # 06:30 UTC - hits 07:30 local during BST (summer)
-    - cron: "30 7 * * 1-5"  # 07:30 UTC - hits 07:30 local during GMT (winter)
-  workflow_dispatch: {}      # lets you trigger a run manually from the Actions tab
+    - cron: "30 6 * * 1-5"
+    - cron: "30 7 * * 1-5"
+  workflow_dispatch: {}  # lets you trigger a run manually from the Actions tab
+
+permissions:
+  contents: write  # needed to commit the "last run" marker back to the repo
 
 jobs:
   run-screener:
@@ -16,16 +20,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Check UK local time
+      - name: Check if already run today
         id: guard
         run: |
-          UK_HOUR=$(TZ='Europe/London' date +%H)
-          echo "UK local hour is $UK_HOUR"
-          if [ "$UK_HOUR" = "07" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+          TODAY=$(TZ='Europe/London' date +%Y-%m-%d)
+          LAST_RUN=$(cat last_run_date.txt 2>/dev/null || echo "")
+          echo "UK date today: $TODAY, last recorded run: $LAST_RUN"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$TODAY" != "$LAST_RUN" ]; then
             echo "proceed=true" >> "$GITHUB_OUTPUT"
           else
             echo "proceed=false" >> "$GITHUB_OUTPUT"
+            echo "Already ran today ($TODAY) - skipping to avoid sending a duplicate digest."
           fi
+          echo "today=$TODAY" >> "$GITHUB_OUTPUT"
 
       - name: Set up Python
         if: steps.guard.outputs.proceed == 'true'
@@ -44,3 +51,12 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         run: python screener.py
 
+      - name: Record run date
+        if: steps.guard.outputs.proceed == 'true'
+        run: |
+          echo "${{ steps.guard.outputs.today }}" > last_run_date.txt
+          git config user.name "rns-screener-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add last_run_date.txt
+          git commit -m "Record run for ${{ steps.guard.outputs.today }}" || echo "Nothing to commit"
+          git push
