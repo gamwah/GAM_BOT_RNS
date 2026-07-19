@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import argparse
 import sys
-from datetime import date
+from datetime import date, datetime
 
 if sys.stdout.encoding != "utf-8":
     sys.stdout.reconfigure(encoding="utf-8")
@@ -33,11 +33,15 @@ def run(date_str: str) -> None:
     print(f"  {len(announcements)} total announcements")
 
     if not announcements:
-        send_telegram_message(
-            "⚠️ RNS screener: fetch returned zero announcements today. "
-            "The source layout may have changed.",
-            chat_id=chat_id,
-        )
+        is_weekend = datetime.strptime(date_str, "%Y-%m-%d").weekday() >= 5
+        if not is_weekend:
+            send_telegram_message(
+                "⚠️ RNS screener: fetch returned zero announcements today. "
+                "The source layout may have changed.",
+                chat_id=chat_id,
+            )
+        else:
+            print("Zero announcements, but it's a weekend - no alert sent (expected).")
         return
 
     buckets = prefilter(announcements)
