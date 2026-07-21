@@ -1,14 +1,17 @@
 name: RNS Screener
 
 on:
-  # Two schedules 1 hour apart, both Mon-Fri, as a hedge against GitHub
-  # sometimes delaying scheduled runs by hours. The "already run today?"
-  # guard below (not a fixed hour check) makes sure only the first trigger
-  # to actually fire each day runs the pipeline - the second is a no-op if
-  # the first already succeeded, whenever in the day that was.
+  # GitHub's own "schedule" trigger has proven unreliable for this repo
+  # (observed 5-9 hour delays) - kept here only as a backup. The real
+  # trigger is an external cron service (cron-job.org) hitting the
+  # repository_dispatch webhook below at 7:30am UK sharp. The "already run
+  # today?" guard makes sure whichever trigger fires first each day runs
+  # the pipeline, and any of the others become no-ops instead of dupes.
   schedule:
     - cron: "30 6 * * 1-5"
     - cron: "30 7 * * 1-5"
+  repository_dispatch:
+    types: [morning-run]
   workflow_dispatch: {}  # lets you trigger a run manually from the Actions tab
 
 permissions:
