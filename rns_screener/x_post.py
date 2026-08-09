@@ -127,5 +127,19 @@ def post_thread(
     auth = _auth()
     previous_id: str | None = None
     for text in posts:
-        previous_id = _post(text, auth, in_reply_to=previous_id)
+        try:
+            previous_id = _post(text, auth, in_reply_to=previous_id)
+        except requests.HTTPError as exc:
+            # A handful of posts have failed transiently in testing and
+            # succeeded seconds later on retry - so retry once before
+            # giving up. If it fails twice, skip it rather than taking
+            # down the rest of the thread, and log the real reason.
+            body = exc.response.text if exc.response is not None else str(exc)
+            print(f"X post failed once, retrying: {body} | {text[:60]!r}")
+            time.sleep(5)
+            try:
+                previous_id = _post(text, auth, in_reply_to=previous_id)
+            except requests.HTTPError as exc2:
+                body2 = exc2.response.text if exc2.response is not None else str(exc2)
+                print(f"Skipping this X post, failed twice: {body2} | {text[:60]!r}")
         time.sleep(POST_DELAY_SECONDS)
