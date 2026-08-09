@@ -4,3 +4,4 @@ pyyaml
 python-dotenv
 truststore
 anthropic
+requests-oauthlib

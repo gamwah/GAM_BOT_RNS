@@ -20,6 +20,7 @@ from rns_screener.director_dealings import extract_many
 from rns_screener.fetcher import fetch_day_announcements
 from rns_screener.filters import prefilter
 from rns_screener.telegram import send_telegram_message
+from rns_screener.x_post import post_thread
 
 
 def run(date_str: str) -> None:
@@ -59,6 +60,12 @@ def run(date_str: str) -> None:
 
     send_telegram_message(digest, chat_id=chat_id)
     print("\nSent to Telegram.")
+
+    try:
+        post_thread(classifications, director_dealings, watchlist, min_director_buy_value, date_str)
+        print("Posted to X.")
+    except Exception as exc:
+        print(f"X posting failed (Telegram digest already sent OK): {exc}")
 
 
 if __name__ == "__main__":
