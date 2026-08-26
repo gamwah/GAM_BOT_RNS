@@ -13,7 +13,7 @@ import re
 
 from .fetcher import Announcement
 
-RESULTS_KEYWORDS = ["trading", "results", "update", "guidance", "upgrade", "ahead", "statement"]
+RESULTS_KEYWORDS = ["trading", "results", "update", "guidance", "upgrade", "ahead", "statement", "profit", "outlook"]
 _RESULTS_PATTERN = re.compile(
     r"\b(" + "|".join(re.escape(k) for k in RESULTS_KEYWORDS) + r")\b",
     re.IGNORECASE,
