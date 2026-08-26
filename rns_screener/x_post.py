@@ -60,6 +60,17 @@ def _truncate(text: str, limit: int) -> str:
     return text[: limit - 1].rsplit(" ", 1)[0] + "…"
 
 
+def _ticker_tags(ticker: str) -> str:
+    """#TICKER for reach, $TICKER.L (the London cashtag convention) for discovery.
+
+    A few LSE tickers already end in a period (e.g. "BA.", "QQ.") to
+    disambiguate them - strip that before appending ".L" so it doesn't
+    become "BA..L".
+    """
+    clean = ticker.rstrip(".")
+    return f"#{clean} ${clean}.L"
+
+
 def _build_posts(
     classifications: list[Classification],
     director_dealings: list[DirectorDealing],
@@ -85,7 +96,7 @@ def _build_posts(
         for c in classifications:
             if c.classification != label:
                 continue
-            body = f"{_EMOJI[label]} {c.company} ({c.ticker}): {c.summary}"
+            body = f"{_EMOJI[label]} {c.company} ({_ticker_tags(c.ticker)}): {c.summary}"
             posts.append(_truncate(body, MAX_POST_CHARS))
 
     watchlist_extra = [
@@ -94,7 +105,7 @@ def _build_posts(
         if c.classification in ("IN_LINE", "NO_GUIDANCE") and c.ticker.upper() in watchlist
     ]
     for c in watchlist_extra:
-        body = f"⭐ {c.company} ({c.ticker}) - {c.classification}: {c.summary}"
+        body = f"⭐ {c.company} ({_ticker_tags(c.ticker)}) - {c.classification}: {c.summary}"
         posts.append(_truncate(body, MAX_POST_CHARS))
 
     buys = [
@@ -105,7 +116,7 @@ def _build_posts(
     for d in buys:
         value_str = f"£{d.total_value_gbp:,.0f}" if d.total_value_gbp else "value n/a"
         body = (
-            f"\U0001F454 {d.announcement.company} ({d.announcement.ticker}): "
+            f"\U0001F454 {d.announcement.company} ({_ticker_tags(d.announcement.ticker)}): "
             f"{d.director_name} ({d.role}) bought {value_str}"
         )
         posts.append(_truncate(body, MAX_POST_CHARS))
