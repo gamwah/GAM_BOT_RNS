@@ -96,7 +96,7 @@ def _build_posts(
         for c in classifications:
             if c.classification != label:
                 continue
-            body = f"{_EMOJI[label]} {c.company} ({_ticker_tags(c.ticker)}): {c.summary}"
+            body = f'{_EMOJI[label]} {c.company} ({_ticker_tags(c.ticker)}): "{c.key_quote}"'
             posts.append(_truncate(body, MAX_POST_CHARS))
 
     watchlist_extra = [
@@ -105,7 +105,7 @@ def _build_posts(
         if c.classification in ("IN_LINE", "NO_GUIDANCE") and c.ticker.upper() in watchlist
     ]
     for c in watchlist_extra:
-        body = f"⭐ {c.company} ({_ticker_tags(c.ticker)}) - {c.classification}: {c.summary}"
+        body = f'⭐ {c.company} ({_ticker_tags(c.ticker)}) - {c.classification}: "{c.key_quote}"'
         posts.append(_truncate(body, MAX_POST_CHARS))
 
     buys = [
