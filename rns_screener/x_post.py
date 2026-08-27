@@ -124,33 +124,52 @@ def _build_posts(
     return posts
 
 
+RETRY_DELAYS_SECONDS = [5, 15]  # backoff schedule for a post that gets rejected
+
+
 def post_thread(
     classifications: list[Classification],
     director_dealings: list[DirectorDealing],
     watchlist: set[str],
     min_director_buy_value: float,
     date_str: str,
-) -> None:
+) -> list[str]:
+    """Posts the thread; returns the text of any posts that had to be skipped.
+
+    A handful of posts have failed transiently in testing (X's spam/bot
+    heuristics seem to occasionally flag one post out of a long,
+    similarly-templated thread) and succeeded seconds later on retry -
+    so each post gets a couple of retries with backoff before giving up.
+    A post that still fails is skipped rather than aborting the rest of
+    the thread; the caller surfaces skipped posts to the user, since
+    they'd otherwise silently go missing from X with no record anywhere
+    the user would see.
+    """
     posts = _build_posts(classifications, director_dealings, watchlist, min_director_buy_value, date_str)
     if not posts:
-        return
+        return []
 
     auth = _auth()
     previous_id: str | None = None
+    skipped: list[str] = []
+
     for text in posts:
-        try:
-            previous_id = _post(text, auth, in_reply_to=previous_id)
-        except requests.HTTPError as exc:
-            # A handful of posts have failed transiently in testing and
-            # succeeded seconds later on retry - so retry once before
-            # giving up. If it fails twice, skip it rather than taking
-            # down the rest of the thread, and log the real reason.
-            body = exc.response.text if exc.response is not None else str(exc)
-            print(f"X post failed once, retrying: {body} | {text[:60]!r}")
-            time.sleep(5)
+        last_error = None
+        for attempt, delay in enumerate([0, *RETRY_DELAYS_SECONDS]):
+            if delay:
+                time.sleep(delay)
             try:
                 previous_id = _post(text, auth, in_reply_to=previous_id)
-            except requests.HTTPError as exc2:
-                body2 = exc2.response.text if exc2.response is not None else str(exc2)
-                print(f"Skipping this X post, failed twice: {body2} | {text[:60]!r}")
+                last_error = None
+                break
+            except requests.HTTPError as exc:
+                last_error = exc.response.text if exc.response is not None else str(exc)
+                print(f"X post attempt {attempt + 1} failed: {last_error} | {text[:60]!r}")
+
+        if last_error:
+            print(f"Skipping this X post after retries: {text[:60]!r}")
+            skipped.append(text)
+
         time.sleep(POST_DELAY_SECONDS)
+
+    return skipped

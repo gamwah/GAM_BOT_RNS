@@ -62,8 +62,16 @@ def run(date_str: str) -> None:
     print("\nSent to Telegram.")
 
     try:
-        post_thread(classifications, director_dealings, watchlist, min_director_buy_value, date_str)
+        skipped = post_thread(classifications, director_dealings, watchlist, min_director_buy_value, date_str)
         print("Posted to X.")
+        if skipped:
+            skipped_list = "\n".join(f"- {text}" for text in skipped)
+            send_telegram_message(
+                f"⚠️ {len(skipped)} post(s) didn't make it to X (X rejected them after retries - "
+                f"likely its bot/spam filter, not a code issue). Full content below in case you "
+                f"want to post it manually:\n\n{skipped_list}",
+                chat_id=chat_id,
+            )
     except Exception as exc:
         print(f"X posting failed (Telegram digest already sent OK): {exc}")
 
