@@ -23,8 +23,9 @@ def build_digest(
     director_dealings: list[DirectorDealing],
     watchlist: set[str],
     min_director_buy_value: float,
+    title: str = "RNS Morning Digest",
 ) -> str:
-    lines: list[str] = ["<b>RNS Morning Digest</b>", ""]
+    lines: list[str] = [f"<b>{title}</b>", ""]
     has_content = False
 
     by_class: dict[str, list[Classification]] = defaultdict(list)

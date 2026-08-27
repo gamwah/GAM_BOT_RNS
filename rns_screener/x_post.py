@@ -127,6 +127,34 @@ def _build_posts(
 RETRY_DELAYS_SECONDS = [5, 15]  # backoff schedule for a post that gets rejected
 
 
+def _post_with_retries(text: str, auth: OAuth1, in_reply_to: str | None = None) -> tuple[str | None, bool]:
+    """Posts one text with retries. Returns (new_post_id_or_None, was_skipped).
+
+    X's duplicate-content check appears to fingerprint the exact bytes of an
+    attempt even when that attempt was rejected (confirmed: retrying
+    byte-identical text after a rejection - even in a later run, even the
+    next day - gets flagged as a duplicate of the earlier failed attempt,
+    not just of a successful post). So retries after the first append a few
+    invisible zero-width-space characters to make each attempt's text
+    genuinely distinct, trimming the visible text first so it still fits
+    within MAX_POST_CHARS.
+    """
+    last_error = None
+    for attempt, delay in enumerate([0, *RETRY_DELAYS_SECONDS]):
+        if delay:
+            time.sleep(delay)
+        attempt_text = text if attempt == 0 else text[: MAX_POST_CHARS - attempt] + ("​" * attempt)
+        try:
+            new_id = _post(attempt_text, auth, in_reply_to=in_reply_to)
+            return new_id, False
+        except requests.HTTPError as exc:
+            last_error = exc.response.text if exc.response is not None else str(exc)
+            print(f"X post attempt {attempt + 1} failed: {last_error} | {text[:60]!r}")
+
+    print(f"Skipping this X post after retries: {text[:60]!r}")
+    return None, True
+
+
 def post_thread(
     classifications: list[Classification],
     director_dealings: list[DirectorDealing],
@@ -154,22 +182,30 @@ def post_thread(
     skipped: list[str] = []
 
     for text in posts:
-        last_error = None
-        for attempt, delay in enumerate([0, *RETRY_DELAYS_SECONDS]):
-            if delay:
-                time.sleep(delay)
-            try:
-                previous_id = _post(text, auth, in_reply_to=previous_id)
-                last_error = None
-                break
-            except requests.HTTPError as exc:
-                last_error = exc.response.text if exc.response is not None else str(exc)
-                print(f"X post attempt {attempt + 1} failed: {last_error} | {text[:60]!r}")
-
-        if last_error:
-            print(f"Skipping this X post after retries: {text[:60]!r}")
+        new_id, was_skipped = _post_with_retries(text, auth, in_reply_to=previous_id)
+        if was_skipped:
             skipped.append(text)
-
+        else:
+            previous_id = new_id
         time.sleep(POST_DELAY_SECONDS)
 
     return skipped
+
+
+def post_standalone(texts: list[str]) -> list[str]:
+    """Retries previously-skipped posts as independent posts (not threaded to
+    each other or to whatever thread they originally belonged to - each
+    post's text already stands on its own). Returns any still-skipped texts.
+    """
+    if not texts:
+        return []
+
+    auth = _auth()
+    still_skipped: list[str] = []
+    for text in texts:
+        _new_id, was_skipped = _post_with_retries(text, auth)
+        if was_skipped:
+            still_skipped.append(text)
+        time.sleep(POST_DELAY_SECONDS)
+
+    return still_skipped

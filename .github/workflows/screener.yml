@@ -3,10 +3,12 @@ name: RNS Screener
 on:
   # GitHub's own "schedule" trigger has proven unreliable for this repo
   # (observed 5-9 hour delays) - kept here only as a backup. The real
-  # trigger is an external cron service (cron-job.org) hitting the
-  # repository_dispatch webhook below at 7:30am UK sharp. The "already run
-  # today?" guard makes sure whichever trigger fires first each day runs
-  # the pipeline, and any of the others become no-ops instead of dupes.
+  # triggers are external cron-job.org jobs hitting the repository_dispatch
+  # webhook below, once in the morning and once around midday. screener.py
+  # tracks which announcements it's already processed each day (see
+  # rns_screener/state.py), so it's safe to call this any number of times a
+  # day - each run only handles what's new, and retries any X posts that
+  # got rejected earlier, rather than resending everything.
   schedule:
     - cron: "30 6 * * 1-5"
     - cron: "30 7 * * 1-5"
@@ -15,7 +17,7 @@ on:
   workflow_dispatch: {}  # lets you trigger a run manually from the Actions tab
 
 permissions:
-  contents: write  # needed to commit the "last run" marker back to the repo
+  contents: write  # needed to commit the day's processed-announcement state back to the repo
 
 jobs:
   run-screener:
@@ -23,32 +25,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Check if already run today
-        id: guard
-        run: |
-          TODAY=$(TZ='Europe/London' date +%Y-%m-%d)
-          LAST_RUN=$(cat last_run_date.txt 2>/dev/null || echo "")
-          echo "UK date today: $TODAY, last recorded run: $LAST_RUN"
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$TODAY" != "$LAST_RUN" ]; then
-            echo "proceed=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "proceed=false" >> "$GITHUB_OUTPUT"
-            echo "Already ran today ($TODAY) - skipping to avoid sending a duplicate digest."
-          fi
-          echo "today=$TODAY" >> "$GITHUB_OUTPUT"
-
       - name: Set up Python
-        if: steps.guard.outputs.proceed == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Install dependencies
-        if: steps.guard.outputs.proceed == 'true'
         run: pip install -r requirements.txt
 
       - name: Run screener
-        if: steps.guard.outputs.proceed == 'true'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -56,14 +41,14 @@ jobs:
           X_API_KEY_SECRET: ${{ secrets.X_API_KEY_SECRET }}
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
           X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
-        run: python screener.py
-
-      - name: Record run date
-        if: steps.guard.outputs.proceed == 'true'
         run: |
-          echo "${{ steps.guard.outputs.today }}" > last_run_date.txt
+          UK_DATE=$(TZ='Europe/London' date +%Y-%m-%d)
+          python screener.py --date "$UK_DATE"
+
+      - name: Record state
+        run: |
           git config user.name "rns-screener-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add last_run_date.txt
-          git commit -m "Record run for ${{ steps.guard.outputs.today }}" || echo "Nothing to commit"
+          git add processed_ids.json skipped_x_posts.json
+          git commit -m "Update state after run" || echo "Nothing to commit"
           git push
