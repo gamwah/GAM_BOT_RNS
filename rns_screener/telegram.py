@@ -32,17 +32,26 @@ def _chunk(text: str, size: int) -> list[str]:
     return chunks
 
 
-def send_telegram_message(text: str, chat_id: str, bot_token: str | None = None) -> None:
+def send_telegram_message(
+    text: str, chat_id: str, bot_token: str | None = None, parse_mode: str | None = "HTML"
+) -> None:
+    """parse_mode="HTML" expects text with pre-escaped &/</> outside of intentional
+    <b>/<i> tags (see rns_screener.digest.esc). Pass parse_mode=None for plain-text
+    alerts that interpolate raw AI-generated content and have no formatting to
+    preserve - simpler and safer than escaping content nobody needs escaped.
+    """
     token = bot_token or os.environ["TELEGRAM_BOT_TOKEN"]
     for chunk in _chunk(text, MAX_CHUNK_CHARS):
+        payload = {
+            "chat_id": chat_id,
+            "text": chunk,
+            "disable_web_page_preview": True,
+        }
+        if parse_mode:
+            payload["parse_mode"] = parse_mode
         resp = requests.post(
             TELEGRAM_API.format(token=token),
-            json={
-                "chat_id": chat_id,
-                "text": chunk,
-                "parse_mode": "HTML",
-                "disable_web_page_preview": True,
-            },
+            json=payload,
             timeout=15,
         )
         resp.raise_for_status()

@@ -51,6 +51,7 @@ def run(date_str: str) -> None:
                     "⚠️ RNS screener: fetch returned zero announcements today. "
                     "The source layout may have changed.",
                     chat_id=chat_id,
+                    parse_mode=None,
                 )
             else:
                 print("Zero announcements, but it's a weekend - no alert sent (expected).")
@@ -109,6 +110,7 @@ def run(date_str: str) -> None:
             f"run today. Full content below in case you want to post it manually in the meantime:"
             f"\n\n{skipped_list}",
             chat_id=chat_id,
+            parse_mode=None,
         )
 
     processed_ids |= {a.id for a in new_results} | {a.id for a in new_dealings}
