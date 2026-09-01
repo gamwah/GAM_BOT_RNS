@@ -106,11 +106,15 @@ def _build_posts(
     if buys:
         summary_bits.append(f"\U0001F454{len(buys)}")
 
-    intro = (
-        f"RNS Screen {date_str}: " + " ".join(summary_bits)
-        if summary_bits
-        else f"RNS Screen {date_str}: nothing notable today."
-    )
+    if not summary_bits:
+        # Genuinely nothing to report this pass (announcements came in, but
+        # none qualified for any section) - post nothing at all rather than
+        # a standalone "nothing notable" tweet with no content attached to
+        # it. Telegram still gets a quiet "No notable announcements" note
+        # via build_digest; X doesn't need the noise.
+        return []
+
+    intro = f"RNS Screen {date_str}: " + " ".join(summary_bits)
     posts.append(_truncate(intro, MAX_POST_CHARS))
 
     for label in _SECTION_ORDER:
