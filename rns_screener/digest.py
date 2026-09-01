@@ -37,7 +37,7 @@ def build_digest(
     director_dealings: list[DirectorDealing],
     watchlist: set[str],
     min_director_buy_value: float,
-    title: str = "RNS Morning Digest",
+    title: str = "RNS Screen",
 ) -> str:
     lines: list[str] = [f"<b>{title}</b>", ""]
     has_content = False

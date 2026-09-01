@@ -76,9 +76,8 @@ def run(date_str: str) -> None:
     director_dealings = extract_many(new_dealings) if new_dealings else []
 
     if classifications or director_dealings:
-        title = "RNS Morning Digest" if is_first_run_today else "RNS Update (new since last run today)"
-        digest = build_digest(classifications, director_dealings, watchlist, min_director_buy_value, title=title)
-        print(f"\n--- {title} ---\n")
+        digest = build_digest(classifications, director_dealings, watchlist, min_director_buy_value)
+        print("\n--- RNS Screen ---\n")
         print(digest)
         send_telegram_message(digest, chat_id=chat_id)
         print("\nSent to Telegram.")

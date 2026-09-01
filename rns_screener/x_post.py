@@ -80,15 +80,36 @@ def _build_posts(
 ) -> list[str]:
     posts: list[str] = []
 
+    watchlist_extra = [
+        c
+        for c in classifications
+        if c.classification in ("IN_LINE", "NO_GUIDANCE") and c.ticker.upper() in watchlist
+    ]
+    buys = [
+        d
+        for d in director_dealings
+        if d.direction == "buy" and (d.total_value_gbp or 0) >= min_director_buy_value
+    ]
+
+    # Count everything the thread will actually contain - not just the 4 main
+    # categories - so the intro never says "nothing notable" right before
+    # posting a watchlist company or a director buy (a real bug: a watchlist
+    # ticker classified IN_LINE/NO_GUIDANCE still gets posted below, but
+    # wasn't counted here, so the intro contradicted the very next post).
     counts = {
         label: sum(1 for c in classifications if c.classification == label)
         for label in _SECTION_ORDER
     }
     summary_bits = [f"{_EMOJI[label]}{count}" for label, count in counts.items() if count]
+    if watchlist_extra:
+        summary_bits.append(f"⭐{len(watchlist_extra)}")
+    if buys:
+        summary_bits.append(f"\U0001F454{len(buys)}")
+
     intro = (
-        f"RNS morning screen {date_str}: " + " ".join(summary_bits)
+        f"RNS Screen {date_str}: " + " ".join(summary_bits)
         if summary_bits
-        else f"RNS morning screen {date_str}: nothing notable today."
+        else f"RNS Screen {date_str}: nothing notable today."
     )
     posts.append(_truncate(intro, MAX_POST_CHARS))
 
@@ -99,20 +120,10 @@ def _build_posts(
             body = f'{_EMOJI[label]} {c.company} ({_ticker_tags(c.ticker)}): "{c.key_quote}"'
             posts.append(_truncate(body, MAX_POST_CHARS))
 
-    watchlist_extra = [
-        c
-        for c in classifications
-        if c.classification in ("IN_LINE", "NO_GUIDANCE") and c.ticker.upper() in watchlist
-    ]
     for c in watchlist_extra:
         body = f'⭐ {c.company} ({_ticker_tags(c.ticker)}) - {c.classification}: "{c.key_quote}"'
         posts.append(_truncate(body, MAX_POST_CHARS))
 
-    buys = [
-        d
-        for d in director_dealings
-        if d.direction == "buy" and (d.total_value_gbp or 0) >= min_director_buy_value
-    ]
     for d in buys:
         value_str = f"£{d.total_value_gbp:,.0f}" if d.total_value_gbp else "value n/a"
         body = (
