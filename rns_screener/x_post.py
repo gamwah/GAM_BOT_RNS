@@ -141,6 +141,19 @@ def _build_posts(
 
 RETRY_DELAYS_SECONDS = [5, 15]  # backoff schedule for a post that gets rejected
 
+# Status codes where retrying is pointless - the problem isn't this specific
+# post, it's account-wide (out of credits, bad/revoked auth), so every other
+# post this run would fail identically. Bail out immediately instead of
+# burning ~9 minutes retrying dozens of posts 3x each and then dumping the
+# whole thread's content into a Telegram alert as if it were a rare
+# one-off skip.
+HARD_FAILURE_STATUS_CODES = {401, 402, 403}
+
+
+class XHardFailure(Exception):
+    """Raised when X rejects a post for an account-wide reason, not a
+    one-off content issue - no point retrying or attempting further posts."""
+
 
 def _post_with_retries(text: str, auth: OAuth1, in_reply_to: str | None = None) -> tuple[str | None, bool]:
     """Posts one text with retries. Returns (new_post_id_or_None, was_skipped).
@@ -153,6 +166,9 @@ def _post_with_retries(text: str, auth: OAuth1, in_reply_to: str | None = None) 
     invisible zero-width-space characters to make each attempt's text
     genuinely distinct, trimming the visible text first so it still fits
     within MAX_POST_CHARS.
+
+    Raises XHardFailure without retrying if the rejection looks account-wide
+    (e.g. 402 "credits depleted") rather than specific to this one post.
     """
     last_error = None
     for attempt, delay in enumerate([0, *RETRY_DELAYS_SECONDS]):
@@ -165,6 +181,8 @@ def _post_with_retries(text: str, auth: OAuth1, in_reply_to: str | None = None) 
         except requests.HTTPError as exc:
             last_error = exc.response.text if exc.response is not None else str(exc)
             print(f"X post attempt {attempt + 1} failed: {last_error} | {text[:60]!r}")
+            if exc.response is not None and exc.response.status_code in HARD_FAILURE_STATUS_CODES:
+                raise XHardFailure(last_error) from exc
 
     print(f"Skipping this X post after retries: {text[:60]!r}")
     return None, True
@@ -176,8 +194,8 @@ def post_thread(
     watchlist: set[str],
     min_director_buy_value: float,
     date_str: str,
-) -> list[str]:
-    """Posts the thread; returns the text of any posts that had to be skipped.
+) -> tuple[list[str], str | None]:
+    """Posts the thread. Returns (skipped_post_texts, hard_failure_reason).
 
     A handful of posts have failed transiently in testing (X's spam/bot
     heuristics seem to occasionally flag one post out of a long,
@@ -187,40 +205,56 @@ def post_thread(
     the thread; the caller surfaces skipped posts to the user, since
     they'd otherwise silently go missing from X with no record anywhere
     the user would see.
+
+    If a post fails for an account-wide reason (out of credits, bad auth),
+    posting stops immediately - hard_failure_reason is set, and any posts
+    not yet attempted are NOT included in skipped_post_texts (retrying them
+    individually later would just hit the same wall).
     """
     posts = _build_posts(classifications, director_dealings, watchlist, min_director_buy_value, date_str)
     if not posts:
-        return []
+        return [], None
 
     auth = _auth()
     previous_id: str | None = None
     skipped: list[str] = []
 
-    for text in posts:
-        new_id, was_skipped = _post_with_retries(text, auth, in_reply_to=previous_id)
+    for i, text in enumerate(posts):
+        try:
+            new_id, was_skipped = _post_with_retries(text, auth, in_reply_to=previous_id)
+        except XHardFailure as exc:
+            # Posts not yet attempted would otherwise be lost entirely, since
+            # the caller marks all of today's announcements processed
+            # regardless of X outcome - remember them for a later retry.
+            return skipped + posts[i:], str(exc)
         if was_skipped:
             skipped.append(text)
         else:
             previous_id = new_id
         time.sleep(POST_DELAY_SECONDS)
 
-    return skipped
+    return skipped, None
 
 
-def post_standalone(texts: list[str]) -> list[str]:
+def post_standalone(texts: list[str]) -> tuple[list[str], str | None]:
     """Retries previously-skipped posts as independent posts (not threaded to
     each other or to whatever thread they originally belonged to - each
-    post's text already stands on its own). Returns any still-skipped texts.
+    post's text already stands on its own). Returns (still_skipped, hard_failure_reason).
     """
     if not texts:
-        return []
+        return [], None
 
     auth = _auth()
     still_skipped: list[str] = []
-    for text in texts:
-        _new_id, was_skipped = _post_with_retries(text, auth)
+    for i, text in enumerate(texts):
+        try:
+            _new_id, was_skipped = _post_with_retries(text, auth)
+        except XHardFailure as exc:
+            # Whatever's left (this one plus anything after it) stays pending
+            # for next time rather than being dropped.
+            return still_skipped + texts[i:], str(exc)
         if was_skipped:
             still_skipped.append(text)
         time.sleep(POST_DELAY_SECONDS)
 
-    return still_skipped
+    return still_skipped, None

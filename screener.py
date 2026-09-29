@@ -85,23 +85,38 @@ def run(date_str: str) -> None:
         print("Nothing new to report this pass (only pending X retries below).")
 
     newly_skipped: list[str] = []
+    hard_failure: str | None = None
     try:
         if classifications or director_dealings:
-            newly_skipped = post_thread(
+            newly_skipped, hard_failure = post_thread(
                 classifications, director_dealings, watchlist, min_director_buy_value, date_str
             )
-        if pending_x_posts:
+        if pending_x_posts and not hard_failure:
             print(f"Retrying {len(pending_x_posts)} previously skipped X post(s)...")
-            still_skipped = post_standalone(pending_x_posts)
+            still_skipped, hard_failure = post_standalone(pending_x_posts)
             recovered = len(pending_x_posts) - len(still_skipped)
             if recovered:
                 print(f"  {recovered} of them posted successfully this time.")
             pending_x_posts = still_skipped
-        print("Posted to X.")
+        print("Posted to X." if not hard_failure else f"X posting stopped early: {hard_failure}")
     except Exception as exc:
         print(f"X posting failed (Telegram digest already sent OK): {exc}")
 
-    if newly_skipped:
+    if hard_failure:
+        # Account-wide problem (e.g. credits depleted, bad auth) - one short
+        # alert, not a dump of every post's full text (that's what caused
+        # the "doubled up" Telegram messages: when everything fails at once,
+        # the old code repeated the entire digest a second time).
+        send_telegram_message(
+            f"⚠️ X posting is completely failing this run, not just one post "
+            f"({hard_failure}). All content still went to Telegram above as "
+            f"normal - nothing was lost, but nothing reached X either. Check "
+            f"your X API account (credits/billing or auth) - unposted items "
+            f"will retry automatically once it's fixed.",
+            chat_id=chat_id,
+            parse_mode=None,
+        )
+    elif newly_skipped:
         skipped_list = "\n".join(f"- {text}" for text in newly_skipped)
         send_telegram_message(
             f"⚠️ {len(newly_skipped)} post(s) didn't make it to X (X rejected them after retries - "
