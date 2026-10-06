@@ -103,16 +103,28 @@ def run(date_str: str) -> None:
         print(f"X posting failed (Telegram digest already sent OK): {exc}")
 
     if hard_failure:
-        # Account-wide problem (e.g. credits depleted, bad auth) - one short
-        # alert, not a dump of every post's full text (that's what caused
-        # the "doubled up" Telegram messages: when everything fails at once,
-        # the old code repeated the entire digest a second time).
+        # X rejected a post with a status we treat as "stop for this run"
+        # (401/402/403) - one short alert, not a dump of every post's full
+        # text (that's what caused the "doubled up" Telegram messages: when
+        # everything fails at once, the old code repeated the entire digest
+        # a second time). The cause isn't always the account: X also uses 403
+        # for a duplicate-content rejection, so say what X said rather than
+        # assuming credits/billing.
+        if "duplicate content" in hard_failure.lower():
+            likely_cause = (
+                "X rejected a post as duplicate content (the same text was already "
+                "posted or attempted before). This is not a credits or auth problem."
+            )
+        else:
+            likely_cause = (
+                "This may be an account-level problem (credits/billing or auth) - "
+                "check your X API account."
+            )
         send_telegram_message(
-            f"⚠️ X posting is completely failing this run, not just one post "
-            f"({hard_failure}). All content still went to Telegram above as "
-            f"normal - nothing was lost, but nothing reached X either. Check "
-            f"your X API account (credits/billing or auth) - unposted items "
-            f"will retry automatically once it's fixed.",
+            f"⚠️ X posting stopped early this run. X said: {hard_failure}\n\n"
+            f"{likely_cause}\n\n"
+            f"All content still went to Telegram above as normal - nothing was lost. "
+            f"Unposted items will be retried on the next run.",
             chat_id=chat_id,
             parse_mode=None,
         )

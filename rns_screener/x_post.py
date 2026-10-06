@@ -25,6 +25,7 @@ load_dotenv()
 X_API_URL = "https://api.x.com/2/tweets"
 MAX_POST_CHARS = 280
 POST_DELAY_SECONDS = 1.5  # be polite between posts in a thread
+INTRO_PREFIX = "RNS Screen "
 
 _EMOJI = {
     "STRONGLY_AHEAD": "\U0001F680",
@@ -114,7 +115,7 @@ def _build_posts(
         # via build_digest; X doesn't need the noise.
         return []
 
-    intro = f"RNS Screen {date_str}: " + " ".join(summary_bits)
+    intro = f"{INTRO_PREFIX}{date_str}: " + " ".join(summary_bits)
     posts.append(_truncate(intro, MAX_POST_CHARS))
 
     for label in _SECTION_ORDER:
@@ -240,7 +241,12 @@ def post_standalone(texts: list[str]) -> tuple[list[str], str | None]:
     """Retries previously-skipped posts as independent posts (not threaded to
     each other or to whatever thread they originally belonged to - each
     post's text already stands on its own). Returns (still_skipped, hard_failure_reason).
+
+    Thread intros ("RNS Screen <date>: ...") are dropped rather than retried:
+    an intro only makes sense at the head of its own thread, and posted alone
+    it's just a stray count with nothing under it.
     """
+    texts = [t for t in texts if not t.startswith(INTRO_PREFIX)]
     if not texts:
         return [], None
 
