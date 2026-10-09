@@ -7,6 +7,7 @@ own keys plus your own access token, no 3-legged OAuth flow.
 from __future__ import annotations
 
 import os
+import random
 import time
 
 import truststore
@@ -142,40 +143,59 @@ def _build_posts(
 
 RETRY_DELAYS_SECONDS = [5, 15]  # backoff schedule for a post that gets rejected
 
-# Status codes where retrying is pointless - the problem isn't this specific
-# post, it's account-wide (out of credits, bad/revoked auth), so every other
-# post this run would fail identically. Bail out immediately instead of
-# burning ~9 minutes retrying dozens of posts 3x each and then dumping the
-# whole thread's content into a Telegram alert as if it were a rare
-# one-off skip.
-HARD_FAILURE_STATUS_CODES = {401, 402, 403}
+# Status codes meaning the whole account is blocked, not just this post, so
+# every other post would fail identically: 401 (bad/revoked auth) and 402
+# (credits depleted). Deliberately NOT 403: X returns 403 "You are not
+# permitted to perform this action" for one-off spam/duplicate-filter
+# rejections of a single post (seen repeatedly), so treating 403 as
+# account-wide let one flaky post abort every run and block the whole retry
+# queue behind it.
+HARD_FAILURE_STATUS_CODES = {401, 402}
+
+# If this many posts in a row are still rejected after all their retries,
+# something systemic is wrong (e.g. the app lost write permission) - stop
+# rather than grinding through the rest of the thread.
+MAX_CONSECUTIVE_SKIPS = 4
+
+_INVISIBLE_CHARS = ["​", "‌", "‍", "⁠"]
 
 
 class XHardFailure(Exception):
-    """Raised when X rejects a post for an account-wide reason, not a
+    """Raised when X rejects posts for an account-wide reason, not a
     one-off content issue - no point retrying or attempting further posts."""
 
 
-def _post_with_retries(text: str, auth: OAuth1, in_reply_to: str | None = None) -> tuple[str | None, bool]:
+def _varied(text: str, length: int) -> str:
+    """text plus a random invisible suffix, still within MAX_POST_CHARS."""
+    suffix = "".join(random.choices(_INVISIBLE_CHARS, k=length))
+    return _truncate(text, MAX_POST_CHARS - length) + suffix
+
+
+def _post_with_retries(
+    text: str,
+    auth: OAuth1,
+    in_reply_to: str | None = None,
+    vary_first: bool = False,
+) -> tuple[str | None, bool]:
     """Posts one text with retries. Returns (new_post_id_or_None, was_skipped).
 
-    X's duplicate-content check appears to fingerprint the exact bytes of an
-    attempt even when that attempt was rejected (confirmed: retrying
-    byte-identical text after a rejection - even in a later run, even the
-    next day - gets flagged as a duplicate of the earlier failed attempt,
-    not just of a successful post). So retries after the first append a few
-    invisible zero-width-space characters to make each attempt's text
-    genuinely distinct, trimming the visible text first so it still fits
-    within MAX_POST_CHARS.
+    X's duplicate-content check fingerprints the exact bytes of an attempt
+    even when that attempt was rejected, so retrying byte-identical text
+    just gets flagged as a duplicate of the earlier failed attempt - even in
+    a later run or the next day. So retries append a *random* invisible
+    suffix (zero-width characters): random rather than a fixed pattern,
+    because a fixed pattern repeats identically every run and is already
+    fingerprinted after the first. vary_first=True skips the pristine
+    attempt, for posts already known to have been rejected before.
 
-    Raises XHardFailure without retrying if the rejection looks account-wide
+    Raises XHardFailure without retrying if the rejection is account-wide
     (e.g. 402 "credits depleted") rather than specific to this one post.
     """
     last_error = None
     for attempt, delay in enumerate([0, *RETRY_DELAYS_SECONDS]):
         if delay:
             time.sleep(delay)
-        attempt_text = text if attempt == 0 else text[: MAX_POST_CHARS - attempt] + ("​" * attempt)
+        attempt_text = text if (attempt == 0 and not vary_first) else _varied(text, 4 + attempt)
         try:
             new_id = _post(attempt_text, auth, in_reply_to=in_reply_to)
             return new_id, False
@@ -220,6 +240,7 @@ def post_thread(
     previous_id: str | None = None
     skipped: list[str] = []
 
+    consecutive_skips = 0
     for i, text in enumerate(posts):
         try:
             new_id, was_skipped = _post_with_retries(text, auth, in_reply_to=previous_id)
@@ -230,8 +251,14 @@ def post_thread(
             return skipped + posts[i:], str(exc)
         if was_skipped:
             skipped.append(text)
+            consecutive_skips += 1
+            if consecutive_skips >= MAX_CONSECUTIVE_SKIPS:
+                return skipped + posts[i + 1:], (
+                    f"{consecutive_skips} posts in a row were rejected by X even after retries"
+                )
         else:
             previous_id = new_id
+            consecutive_skips = 0
         time.sleep(POST_DELAY_SECONDS)
 
     return skipped, None
@@ -252,15 +279,25 @@ def post_standalone(texts: list[str]) -> tuple[list[str], str | None]:
 
     auth = _auth()
     still_skipped: list[str] = []
+    consecutive_skips = 0
     for i, text in enumerate(texts):
         try:
-            _new_id, was_skipped = _post_with_retries(text, auth)
+            # These were rejected before, so the pristine text is already
+            # fingerprinted by X - vary it from the very first attempt.
+            _new_id, was_skipped = _post_with_retries(text, auth, vary_first=True)
         except XHardFailure as exc:
             # Whatever's left (this one plus anything after it) stays pending
             # for next time rather than being dropped.
             return still_skipped + texts[i:], str(exc)
         if was_skipped:
             still_skipped.append(text)
+            consecutive_skips += 1
+            if consecutive_skips >= MAX_CONSECUTIVE_SKIPS:
+                return still_skipped + texts[i + 1:], (
+                    f"{consecutive_skips} queued posts in a row were rejected by X even after retries"
+                )
+        else:
+            consecutive_skips = 0
         time.sleep(POST_DELAY_SECONDS)
 
     return still_skipped, None
