@@ -127,8 +127,17 @@ def classify_announcement(announcement: Announcement, model: str = MODEL_DAILY) 
     return Classification(announcement=announcement, **data)
 
 
-def classify_many(announcements: list[Announcement], model: str = MODEL_DAILY) -> list[Classification]:
-    """Classify announcements concurrently (spec calls for 5-10 parallel requests)."""
+def classify_many(
+    announcements: list[Announcement],
+    model: str = MODEL_DAILY,
+    failures: list[tuple[Announcement, str]] | None = None,
+) -> list[Classification]:
+    """Classify announcements concurrently (spec calls for 5-10 parallel requests).
+
+    Failed announcements are left out of the returned list. Pass a `failures`
+    list to have (announcement, error message) appended for each one, so the
+    caller can avoid treating them as handled.
+    """
     results: list[Classification] = []
     with ThreadPoolExecutor(max_workers=MAX_PARALLEL) as pool:
         futures = {pool.submit(classify_announcement, ann, model): ann for ann in announcements}
@@ -138,4 +147,6 @@ def classify_many(announcements: list[Announcement], model: str = MODEL_DAILY) -
                 results.append(future.result())
             except Exception as exc:
                 print(f"Classification failed for {ann.company} ({ann.ticker}): {exc}")
+                if failures is not None:
+                    failures.append((ann, str(exc)))
     return results

@@ -72,8 +72,30 @@ def run(date_str: str) -> None:
         print("Nothing new since the last run today, and no pending X retries - nothing to do.")
         return
 
-    classifications = classify_many(new_results) if new_results else []
-    director_dealings = extract_many(new_dealings) if new_dealings else []
+    failures: list[tuple] = []
+    classifications = classify_many(new_results, failures=failures) if new_results else []
+    director_dealings = extract_many(new_dealings, failures=failures) if new_dealings else []
+
+    if failures:
+        # Previously these were swallowed: a run where every classification
+        # failed (e.g. Anthropic credits ran out) reported "nothing new" AND
+        # marked every announcement processed, so they were lost for good.
+        # Now they stay unprocessed (retried next run) and you're told why.
+        out_of_credit = any("credit balance is too low" in err for _ann, err in failures)
+        if out_of_credit:
+            reason = (
+                "Your Anthropic API credit balance has run out. Top it up at "
+                "console.anthropic.com > Plans & Billing (auto-reload avoids this recurring)."
+            )
+        else:
+            reason = f"Example error: {failures[0][1][:200]}"
+        send_telegram_message(
+            f"⚠️ {len(failures)} announcement(s) could not be analysed this run and are NOT "
+            f"in today's digest. {reason}\n\nThey will be retried automatically on the next "
+            f"run once this is fixed.",
+            chat_id=chat_id,
+            parse_mode=None,
+        )
 
     if classifications or director_dealings:
         digest = build_digest(classifications, director_dealings, watchlist, min_director_buy_value)
@@ -139,7 +161,11 @@ def run(date_str: str) -> None:
             parse_mode=None,
         )
 
-    processed_ids |= {a.id for a in new_results} | {a.id for a in new_dealings}
+    # Only announcements that were actually analysed count as processed; failed
+    # ones must come round again on the next run.
+    processed_ids |= {c.announcement.id for c in classifications} | {
+        d.announcement.id for d in director_dealings
+    }
     save_processed_ids(date_str, processed_ids)
     save_skipped_posts(pending_x_posts + newly_skipped)
 

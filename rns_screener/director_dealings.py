@@ -84,7 +84,12 @@ def extract_director_dealing(announcement: Announcement) -> DirectorDealing:
     return DirectorDealing(announcement=announcement, **data)
 
 
-def extract_many(announcements: list[Announcement]) -> list[DirectorDealing]:
+def extract_many(
+    announcements: list[Announcement],
+    failures: list[tuple[Announcement, str]] | None = None,
+) -> list[DirectorDealing]:
+    """Failed announcements are left out of the result; pass a `failures` list
+    to collect (announcement, error message) for each one."""
     results: list[DirectorDealing] = []
     with ThreadPoolExecutor(max_workers=MAX_PARALLEL) as pool:
         futures = {pool.submit(extract_director_dealing, a): a for a in announcements}
@@ -94,4 +99,6 @@ def extract_many(announcements: list[Announcement]) -> list[DirectorDealing]:
                 results.append(future.result())
             except Exception as exc:
                 print(f"Director dealing extraction failed for {ann.company}: {exc}")
+                if failures is not None:
+                    failures.append((ann, str(exc)))
     return results
