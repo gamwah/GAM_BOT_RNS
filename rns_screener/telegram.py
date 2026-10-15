@@ -58,3 +58,48 @@ def send_telegram_message(
         data = resp.json()
         if not data.get("ok"):
             raise RuntimeError(f"Telegram send failed: {data}")
+
+
+def channel_id() -> str | None:
+    """Optional second destination for the digest (a private channel others can
+    subscribe to). Unset/blank means private-chat-only, exactly as before."""
+    return (os.environ.get("TELEGRAM_CHANNEL_ID") or "").strip() or None
+
+
+def describe_error(exc: Exception) -> str:
+    """Short, token-free description of a send failure. str(exc) for an
+    HTTPError includes the full request URL, which contains the bot token."""
+    resp = getattr(exc, "response", None)
+    if resp is not None:
+        try:
+            detail = resp.json().get("description", "")
+        except Exception:
+            detail = ""
+        return f"HTTP {resp.status_code}: {detail or resp.reason}"
+    return type(exc).__name__
+
+
+def send_telegram_broadcast(
+    text: str,
+    chat_ids: list[str],
+    bot_token: str | None = None,
+    parse_mode: str | None = "HTML",
+) -> list[tuple[str, str]]:
+    """Sends the same message to every chat_id, independently - one failing
+    doesn't stop the others. Returns [(chat_id, error description)] for the
+    ones that failed. Raises only if *every* destination failed, so a total
+    delivery failure still aborts the run (and the announcements stay
+    unprocessed) the way a single failed send always did.
+    """
+    failed: list[tuple[str, str]] = []
+    last_exc: Exception | None = None
+    for cid in chat_ids:
+        try:
+            send_telegram_message(text, chat_id=cid, bot_token=bot_token, parse_mode=parse_mode)
+        except Exception as exc:
+            last_exc = exc
+            failed.append((cid, describe_error(exc)))
+            print(f"Telegram send to {cid} failed: {describe_error(exc)}")
+    if len(failed) == len(chat_ids) and last_exc is not None:
+        raise last_exc
+    return failed

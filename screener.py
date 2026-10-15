@@ -25,7 +25,7 @@ from rns_screener.director_dealings import extract_many
 from rns_screener.fetcher import fetch_day_announcements
 from rns_screener.filters import prefilter
 from rns_screener.state import load_processed_ids, load_skipped_posts, save_processed_ids, save_skipped_posts
-from rns_screener.telegram import send_telegram_message
+from rns_screener.telegram import channel_id, send_telegram_broadcast, send_telegram_message
 from rns_screener.x_post import post_standalone, post_thread
 
 
@@ -101,8 +101,20 @@ def run(date_str: str) -> None:
         digest = build_digest(classifications, director_dealings, watchlist, min_director_buy_value)
         print("\n--- RNS Screen ---\n")
         print(digest)
-        send_telegram_message(digest, chat_id=chat_id)
-        print("\nSent to Telegram.")
+        # The digest goes to your private chat and, if configured, the
+        # subscriber channel. Operational alerts elsewhere in this file stay
+        # private - subscribers shouldn't see "credits ran out" or X errors.
+        destinations = [chat_id] + ([channel_id()] if channel_id() else [])
+        send_failures = send_telegram_broadcast(digest, destinations)
+        print("\nSent to Telegram." if not send_failures else "\nSent to Telegram (with failures).")
+        for failed_id, why in send_failures:
+            if failed_id != chat_id:
+                send_telegram_message(
+                    f"⚠️ The digest reached this chat but NOT the channel ({why}). "
+                    f"Check the bot is still an admin there with Post Messages.",
+                    chat_id=chat_id,
+                    parse_mode=None,
+                )
     else:
         print("Nothing new to report this pass (only pending X retries below).")
 
