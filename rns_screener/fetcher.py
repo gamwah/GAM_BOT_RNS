@@ -22,6 +22,13 @@ BASE_URL = "https://www.investegate.co.uk"
 USER_AGENT = "RNS-Screener-Bot/0.1 (personal research tool; contact: hywelgammage@gmail.com)"
 REQUEST_DELAY_SECONDS = 0.75  # politeness: well under 1-2 req/sec
 
+MIN_ARTICLE_WORDS = 15  # real announcements are far longer; below this the extraction has failed
+
+
+class EmptyArticleError(RuntimeError):
+    """The article page was fetched but no body text could be extracted from it."""
+
+
 CACHE_DIR = Path(__file__).resolve().parent.parent / "cache"
 
 _session = requests.Session()
@@ -140,6 +147,49 @@ def fetch_article_text(announcement: Announcement, use_cache: bool = True) -> st
     """Fetch the full announcement body text (the div.news-window content)."""
     cache_file = _cache_path("articles", f"{announcement.id}.html") if use_cache else None
     html = _get(announcement.url, cache_file)
+    text = _extract_body_text(html)
+    if len(text.split()) < MIN_ARTICLE_WORDS:
+        # Better to fail loudly (the run alerts you and retries next time) than
+        # to let the classifier judge an announcement from its headline alone,
+        # which is how a layout change once made every "ahead" result invisible.
+        if cache_file and cache_file.exists():
+            cache_file.unlink()  # don't keep serving a bad page from the cache
+        raise EmptyArticleError(
+            f"No readable article text for {announcement.company} ({announcement.id}) - "
+            f"the page layout may have changed"
+        )
+    return text
+
+
+def _extract_body_text(html: str) -> str:
+    """Pull the announcement body out of an Investegate article page.
+
+    Investegate now renders the body inside a declarative shadow DOM
+    (<template shadowrootmode="open"> ... </template>) rather than as plain
+    child elements. BeautifulSoup deliberately leaves <template> contents out
+    of get_text(), so the old extraction returned an empty string for every
+    announcement - and the classifier then judged each one from its headline
+    alone (e.g. a "Trading Update" saying revenue was up 36.7% came back
+    NO_GUIDANCE). So: read the template's contents explicitly, dropping the
+    <style> block that sits inside it, and keep the plain-element path as a
+    fallback in case the site changes back.
+    """
     soup = BeautifulSoup(html, "html.parser")
     body = soup.select_one("div.news-window")
-    return body.get_text("\n", strip=True) if body else ""
+    if body is None:
+        return ""
+
+    parts: list[str] = []
+    for template in body.find_all("template"):
+        inner = BeautifulSoup(template.decode_contents(), "html.parser")
+        for junk in inner(["style", "script"]):
+            junk.decompose()
+        text = inner.get_text("\n", strip=True)
+        if text:
+            parts.append(text)
+    if parts:
+        return "\n".join(parts)
+
+    for junk in body(["style", "script"]):
+        junk.decompose()
+    return body.get_text("\n", strip=True)
