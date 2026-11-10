@@ -1,0 +1,535 @@
+{
+ "updated": "2026-11-10T17:56:37+00:00",
+ "dates": [
+  {
+   "date": "2026-11-06",
+   "counts": {
+    "STRONGLY_AHEAD": 4,
+    "AHEAD": 3,
+    "MIXED": 1,
+    "BELOW": 3,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-11-05",
+   "counts": {
+    "STRONGLY_AHEAD": 4,
+    "AHEAD": 11,
+    "MIXED": 2,
+    "BELOW": 1,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-11-04",
+   "counts": {
+    "STRONGLY_AHEAD": 7,
+    "AHEAD": 6,
+    "MIXED": 2,
+    "BELOW": 3,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-11-03",
+   "counts": {
+    "STRONGLY_AHEAD": 3,
+    "AHEAD": 4,
+    "MIXED": 1,
+    "BELOW": 3,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-11-02",
+   "counts": {
+    "STRONGLY_AHEAD": 0,
+    "AHEAD": 4,
+    "MIXED": 1,
+    "BELOW": 2,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-10-30",
+   "counts": {
+    "STRONGLY_AHEAD": 2,
+    "AHEAD": 2,
+    "MIXED": 1,
+    "BELOW": 1,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-10-29",
+   "counts": {
+    "STRONGLY_AHEAD": 3,
+    "AHEAD": 4,
+    "MIXED": 3,
+    "BELOW": 1,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-10-28",
+   "counts": {
+    "STRONGLY_AHEAD": 4,
+    "AHEAD": 6,
+    "MIXED": 3,
+    "BELOW": 2,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-10-27",
+   "counts": {
+    "STRONGLY_AHEAD": 1,
+    "AHEAD": 5,
+    "MIXED": 2,
+    "BELOW": 0,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-10-26",
+   "counts": {
+    "STRONGLY_AHEAD": 3,
+    "AHEAD": 1,
+    "MIXED": 1,
+    "BELOW": 2,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-10-23",
+   "counts": {
+    "STRONGLY_AHEAD": 1,
+    "AHEAD": 2,
+    "MIXED": 0,
+    "BELOW": 2,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-10-22",
+   "counts": {
+    "STRONGLY_AHEAD": 3,
+    "AHEAD": 9,
+    "MIXED": 0,
+    "BELOW": 3,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-10-21",
+   "counts": {
+    "STRONGLY_AHEAD": 3,
+    "AHEAD": 9,
+    "MIXED": 0,
+    "BELOW": 1,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-10-20",
+   "counts": {
+    "STRONGLY_AHEAD": 2,
+    "AHEAD": 2,
+    "MIXED": 0,
+    "BELOW": 1,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-10-19",
+   "counts": {
+    "STRONGLY_AHEAD": 2,
+    "AHEAD": 4,
+    "MIXED": 0,
+    "BELOW": 2,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-10-16",
+   "counts": {
+    "STRONGLY_AHEAD": 0,
+    "AHEAD": 2,
+    "MIXED": 1,
+    "BELOW": 1,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-10-15",
+   "counts": {
+    "STRONGLY_AHEAD": 6,
+    "AHEAD": 8,
+    "MIXED": 3,
+    "BELOW": 2,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-10-14",
+   "counts": {
+    "STRONGLY_AHEAD": 3,
+    "AHEAD": 6,
+    "MIXED": 0,
+    "BELOW": 3,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-10-13",
+   "counts": {
+    "STRONGLY_AHEAD": 5,
+    "AHEAD": 4,
+    "MIXED": 1,
+    "BELOW": 2,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-10-12",
+   "counts": {
+    "STRONGLY_AHEAD": 1,
+    "AHEAD": 3,
+    "MIXED": 1,
+    "BELOW": 0,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-10-09",
+   "counts": {
+    "STRONGLY_AHEAD": 0,
+    "AHEAD": 4,
+    "MIXED": 1,
+    "BELOW": 3,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-10-08",
+   "counts": {
+    "STRONGLY_AHEAD": 3,
+    "AHEAD": 2,
+    "MIXED": 0,
+    "BELOW": 1,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-10-07",
+   "counts": {
+    "STRONGLY_AHEAD": 2,
+    "AHEAD": 6,
+    "MIXED": 0,
+    "BELOW": 2,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-10-06",
+   "counts": {
+    "STRONGLY_AHEAD": 4,
+    "AHEAD": 5,
+    "MIXED": 0,
+    "BELOW": 2,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-10-05",
+   "counts": {
+    "STRONGLY_AHEAD": 2,
+    "AHEAD": 3,
+    "MIXED": 0,
+    "BELOW": 0,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-10-02",
+   "counts": {
+    "STRONGLY_AHEAD": 0,
+    "AHEAD": 2,
+    "MIXED": 1,
+    "BELOW": 2,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-10-01",
+   "counts": {
+    "STRONGLY_AHEAD": 1,
+    "AHEAD": 2,
+    "MIXED": 0,
+    "BELOW": 2,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-09-30",
+   "counts": {
+    "STRONGLY_AHEAD": 5,
+    "AHEAD": 16,
+    "MIXED": 5,
+    "BELOW": 6,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-09-29",
+   "counts": {
+    "STRONGLY_AHEAD": 2,
+    "AHEAD": 9,
+    "MIXED": 2,
+    "BELOW": 1,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-09-28",
+   "counts": {
+    "STRONGLY_AHEAD": 3,
+    "AHEAD": 7,
+    "MIXED": 3,
+    "BELOW": 2,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-09-25",
+   "counts": {
+    "STRONGLY_AHEAD": 0,
+    "AHEAD": 4,
+    "MIXED": 0,
+    "BELOW": 3,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-09-24",
+   "counts": {
+    "STRONGLY_AHEAD": 5,
+    "AHEAD": 12,
+    "MIXED": 4,
+    "BELOW": 3,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-09-23",
+   "counts": {
+    "STRONGLY_AHEAD": 3,
+    "AHEAD": 5,
+    "MIXED": 1,
+    "BELOW": 2,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-09-22",
+   "counts": {
+    "STRONGLY_AHEAD": 6,
+    "AHEAD": 9,
+    "MIXED": 1,
+    "BELOW": 2,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-09-21",
+   "counts": {
+    "STRONGLY_AHEAD": 4,
+    "AHEAD": 5,
+    "MIXED": 1,
+    "BELOW": 2,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-09-18",
+   "counts": {
+    "STRONGLY_AHEAD": 0,
+    "AHEAD": 0,
+    "MIXED": 2,
+    "BELOW": 2,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-09-17",
+   "counts": {
+    "STRONGLY_AHEAD": 5,
+    "AHEAD": 10,
+    "MIXED": 0,
+    "BELOW": 2,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-09-16",
+   "counts": {
+    "STRONGLY_AHEAD": 1,
+    "AHEAD": 7,
+    "MIXED": 3,
+    "BELOW": 2,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-09-15",
+   "counts": {
+    "STRONGLY_AHEAD": 6,
+    "AHEAD": 11,
+    "MIXED": 2,
+    "BELOW": 1,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-09-14",
+   "counts": {
+    "STRONGLY_AHEAD": 2,
+    "AHEAD": 5,
+    "MIXED": 1,
+    "BELOW": 2,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-09-11",
+   "counts": {
+    "STRONGLY_AHEAD": 0,
+    "AHEAD": 2,
+    "MIXED": 0,
+    "BELOW": 0,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-09-10",
+   "counts": {
+    "STRONGLY_AHEAD": 5,
+    "AHEAD": 4,
+    "MIXED": 4,
+    "BELOW": 1,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-09-09",
+   "counts": {
+    "STRONGLY_AHEAD": 2,
+    "AHEAD": 8,
+    "MIXED": 0,
+    "BELOW": 1,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-09-08",
+   "counts": {
+    "STRONGLY_AHEAD": 5,
+    "AHEAD": 5,
+    "MIXED": 0,
+    "BELOW": 1,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-09-07",
+   "counts": {
+    "STRONGLY_AHEAD": 4,
+    "AHEAD": 6,
+    "MIXED": 0,
+    "BELOW": 2,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-09-04",
+   "counts": {
+    "STRONGLY_AHEAD": 0,
+    "AHEAD": 2,
+    "MIXED": 1,
+    "BELOW": 0,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-09-03",
+   "counts": {
+    "STRONGLY_AHEAD": 1,
+    "AHEAD": 6,
+    "MIXED": 1,
+    "BELOW": 2,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-09-02",
+   "counts": {
+    "STRONGLY_AHEAD": 5,
+    "AHEAD": 1,
+    "MIXED": 1,
+    "BELOW": 0,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-09-01",
+   "counts": {
+    "STRONGLY_AHEAD": 3,
+    "AHEAD": 2,
+    "MIXED": 1,
+    "BELOW": 3,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-08-31",
+   "counts": {
+    "STRONGLY_AHEAD": 0,
+    "AHEAD": 0,
+    "MIXED": 0,
+    "BELOW": 0,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-08-28",
+   "counts": {
+    "STRONGLY_AHEAD": 3,
+    "AHEAD": 1,
+    "MIXED": 1,
+    "BELOW": 1,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-08-27",
+   "counts": {
+    "STRONGLY_AHEAD": 3,
+    "AHEAD": 4,
+    "MIXED": 1,
+    "BELOW": 0,
+    "buys": 0
+   }
+  },
+  {
+   "date": "2026-08-26",
+   "counts": {
+    "STRONGLY_AHEAD": 4,
+    "AHEAD": 3,
+    "MIXED": 2,
+    "BELOW": 1,
+    "buys": 0
+   }
+  }
+ ]
+}
