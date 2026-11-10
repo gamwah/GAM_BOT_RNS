@@ -418,7 +418,7 @@ async function renderPerformance() {
   const h = state.horizon;
   const measured = bt.events.filter((e) => e.returns).length;
   const rows = CLASS_ORDER.slice(0, 4).map((cls) => ({ cls, s: bt.summary?.[cls]?.[h] || { n: 0 } }));
-  const maxAbs = Math.max(0.01, ...rows.filter((r) => r.s.n).map((r) => Math.abs(r.s.avg_excess)));
+  const maxAbs = Math.max(0.01, ...rows.filter((r) => r.s.n).map((r) => Math.abs(r.s.median_excess)));
 
   const evs = bt.events.filter((e) => state.perfClass === "ALL" || e.classification === state.perfClass);
 
@@ -426,28 +426,28 @@ async function renderPerformance() {
     <p class="hint">Benchmark: ${esc(bt.benchmark === "^FTAS" ? "FTSE All-Share" : bt.benchmark || "n/a")} · ${measured} of ${bt.events.length} calls measured · updated ${esc(new Date(bt.generated).toLocaleDateString("en-GB", { day: "numeric", month: "short" }))}</p>
     <div class="seg" role="group" aria-label="Horizon">${bt.horizons.map((k) => `<button data-h="${k}" aria-pressed="${k === h}">${esc(HORIZON_LABEL[k] || k)}</button>`).join("")}</div>
 
-    <section class="card"><h2>Average return vs the market · ${esc(HORIZON_LABEL[h] || h)}</h2>
-      <table><thead><tr><th>Call</th><th>Calls</th><th>Avg return</th><th>vs market</th><th>Beat it</th></tr></thead><tbody>
+    <section class="card"><h2>Return vs the market · ${esc(HORIZON_LABEL[h] || h)}</h2>
+      <table><thead><tr><th>Call</th><th>Calls</th><th>Typical vs market</th><th>Average</th><th>Beat it</th></tr></thead><tbody>
       ${rows.map(({ cls, s }) => `<tr><td><span class="pill ${cls}">${esc(CLASS_LABEL[cls])}</span></td>
         <td>${s.n}${s.n && s.n < 10 ? ' <span class="muted" title="Small sample">*</span>' : ""}</td>
-        <td class="${signClass(s.avg_return)}">${s.n ? fmtPct(s.avg_return) : "–"}</td>
+        <td class="${signClass(s.median_excess)}"><strong>${s.n ? fmtPct(s.median_excess) : "–"}</strong></td>
         <td class="${signClass(s.avg_excess)}">${s.n ? fmtPct(s.avg_excess) : "–"}</td>
         <td>${s.n ? Math.round(s.hit_rate * 100) + "%" : "–"}</td></tr>`).join("")}
       </tbody></table>
       <div class="bars" aria-hidden="true">${rows.filter((r) => r.s.n).map(({ cls, s }) => {
-        const w = Math.min(50, (Math.abs(s.avg_excess) / maxAbs) * 50);
+        const w = Math.min(50, (Math.abs(s.median_excess) / maxAbs) * 50);
         return `<div class="bar-row"><span>${esc(CLASS_LABEL[cls])}</span>
-          <div class="bar-track"><div class="bar ${s.avg_excess >= 0 ? "pos" : "neg"}" style="${s.avg_excess >= 0 ? "left:50%" : "right:50%"};width:${w}%"></div></div>
-          <span class="val ${signClass(s.avg_excess)}">${fmtPct(s.avg_excess)}</span></div>`;
+          <div class="bar-track"><div class="bar ${s.median_excess >= 0 ? "pos" : "neg"}" style="${s.median_excess >= 0 ? "left:50%" : "right:50%"};width:${w}%"></div></div>
+          <span class="val ${signClass(s.median_excess)}">${fmtPct(s.median_excess)}</span></div>`;
       }).join("")}</div>
-      <p class="hint">* fewer than 10 calls: treat as a guide, not a result.</p>
+      <p class="hint">“Typical” is the median, which a few extreme movers can't skew; “Average” is the mean. * fewer than 10 calls: a guide, not a result.</p>
     </section>
 
-    <section class="card"><h2>Average vs market, all horizons</h2>
+    <section class="card"><h2>Typical vs market, all horizons</h2>
       <table><thead><tr><th>Call</th>${bt.horizons.map((k) => `<th>${esc(HORIZON_SHORT[k] || k)}</th>`).join("")}</tr></thead><tbody>
       ${CLASS_ORDER.slice(0, 4).map((cls) => `<tr><td><span class="pill ${cls}">${esc(CLASS_LABEL[cls])}</span></td>${bt.horizons.map((k) => {
         const s = bt.summary?.[cls]?.[k];
-        return `<td class="${signClass(s?.avg_excess)}">${s?.n ? fmtPct(s.avg_excess) : "–"}</td>`;
+        return `<td class="${signClass(s?.median_excess)}">${s?.n ? fmtPct(s.median_excess) : "–"}</td>`;
       }).join("")}</tr>`).join("")}</tbody></table>
     </section>
 
@@ -464,6 +464,7 @@ async function renderPerformance() {
         <td class="${signClass(e.excess?.[h])}">${e.excess && e.excess[h] != null ? fmtPct(e.excess[h]) : "–"}</td></tr>`).join("") || '<tr><td colspan="3" class="muted">No calls in this view.</td></tr>'}
       </tbody></table>
       ${bt.missing?.length ? `<p class="hint">No Yahoo Finance price data for: ${esc(bt.missing.join(", "))}</p>` : ""}
+      ${bt.suspect?.length ? `<p class="hint">Left out as likely bad quotes (moves over 500%): ${esc(bt.suspect.join(", "))}</p>` : ""}
     </section>
     <p class="disclaimer">Daily closes only; returns measured from the prior day's close. Small samples and survivorship effects apply. This is research, not investment advice.</p>`;
 }

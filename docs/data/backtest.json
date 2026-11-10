@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10T17:56:38+00:00",
+ "generated": "2026-11-10T18:01:46+00:00",
  "benchmark": "^FTAS",
  "horizons": [
   "1d",
@@ -1502,18 +1502,8 @@
    "classification": "AHEAD",
    "key_quote": "ASA International delivered another quarter of strong underlying growth, with Gross OLP increasing 20% year-on-year and 5% quarter-on-quarter in our markets with our client base expanding to 2.8 million customers.",
    "url": "https://www.investegate.co.uk/announcement/rns/asa-international-group--asai/q3-2026-business-update/9846889",
-   "returns": {
-    "1d": -0.0388,
-    "5d": -0.062,
-    "1m": null,
-    "3m": null
-   },
-   "excess": {
-    "1d": -0.0412,
-    "5d": -0.0743,
-    "1m": null,
-    "3m": null
-   }
+   "returns": null,
+   "excess": null
   },
   {
    "id": "9846879",
@@ -9713,18 +9703,8 @@
    "classification": "AHEAD",
    "key_quote": "the Board's expectation is that the underlying net profit for 2026 (which excludes the favourable India-related one-off items) will be in line or slightly ahead of the Board's understanding of the current market consensus for FY 2026 of USD 70.2m",
    "url": "https://www.investegate.co.uk/announcement/rns/asa-international-group--asai/h1-2026-results/9761839",
-   "returns": {
-    "1d": 0.0277,
-    "5d": -0.0553,
-    "1m": -0.0827,
-    "3m": null
-   },
-   "excess": {
-    "1d": 0.0404,
-    "5d": -0.0403,
-    "1m": -0.0525,
-    "3m": null
-   }
+   "returns": null,
+   "excess": null
   },
   {
    "id": "9761838",
@@ -10859,18 +10839,8 @@
    "classification": "BELOW",
    "key_quote": "the Group expects to report revenues of £236.10 million for FY 2025 (FY 2024: £230.23 million) and a loss after tax of approximately £4.88 million for FY 2025 (FY 2024: £3.45 million loss after tax)",
    "url": "https://www.investegate.co.uk/announcement/rns/mobilityone-ltd---mbo/update-re-annual-report-accounts-sincere-acres/9747100",
-   "returns": {
-    "1d": 0.0,
-    "5d": 0.0,
-    "1m": 110.1111,
-    "3m": null
-   },
-   "excess": {
-    "1d": 0.0048,
-    "5d": 0.0022,
-    "1m": 110.1289,
-    "3m": null
-   }
+   "returns": null,
+   "excess": null
   },
   {
    "id": "9747090",
@@ -11418,25 +11388,25 @@
   },
   "AHEAD": {
    "1d": {
-    "n": 244,
-    "avg_return": 0.0089,
-    "avg_excess": 0.009,
+    "n": 242,
+    "avg_return": 0.009,
+    "avg_excess": 0.0091,
     "median_excess": 0.0057,
-    "hit_rate": 0.586
+    "hit_rate": 0.587
    },
    "5d": {
-    "n": 234,
-    "avg_return": 0.0094,
-    "avg_excess": 0.011,
-    "median_excess": 0.0077,
-    "hit_rate": 0.547
+    "n": 232,
+    "avg_return": 0.01,
+    "avg_excess": 0.0115,
+    "median_excess": 0.0083,
+    "hit_rate": 0.552
    },
    "1m": {
-    "n": 165,
-    "avg_return": -0.0102,
-    "avg_excess": -0.0108,
-    "median_excess": -0.006,
-    "hit_rate": 0.473
+    "n": 164,
+    "avg_return": -0.0097,
+    "avg_excess": -0.0106,
+    "median_excess": -0.0054,
+    "hit_rate": 0.476
    },
    "3m": {
     "n": 0
@@ -11470,25 +11440,25 @@
   },
   "BELOW": {
    "1d": {
-    "n": 81,
-    "avg_return": -0.1237,
-    "avg_excess": -0.1233,
-    "median_excess": -0.0737,
-    "hit_rate": 0.21
+    "n": 80,
+    "avg_return": -0.1252,
+    "avg_excess": -0.1249,
+    "median_excess": -0.0757,
+    "hit_rate": 0.2
    },
    "5d": {
-    "n": 78,
-    "avg_return": -0.1441,
-    "avg_excess": -0.1418,
-    "median_excess": -0.0882,
-    "hit_rate": 0.256
+    "n": 77,
+    "avg_return": -0.1459,
+    "avg_excess": -0.1437,
+    "median_excess": -0.0884,
+    "hit_rate": 0.247
    },
    "1m": {
-    "n": 53,
-    "avg_return": 1.8914,
-    "avg_excess": 1.8897,
-    "median_excess": -0.1472,
-    "hit_rate": 0.283
+    "n": 52,
+    "avg_return": -0.1898,
+    "avg_excess": -0.1918,
+    "median_excess": -0.1528,
+    "hit_rate": 0.269
    },
    "3m": {
     "n": 0
@@ -11520,6 +11490,7 @@
   "ADB",
   "ADS",
   "ALH",
+  "ASAI",
   "FNEWS",
   "HEY1",
   "MCJ",
@@ -11529,5 +11500,8 @@
   "TTA",
   "UNTU",
   "ZCC"
+ ],
+ "suspect": [
+  "MBO"
  ]
 }

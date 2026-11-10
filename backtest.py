@@ -38,6 +38,7 @@ BENCHMARKS = ["^FTAS", "^FTSE"]  # first one that returns data is used
 CLASSES = ["STRONGLY_AHEAD", "AHEAD", "MIXED", "BELOW"]
 HORIZONS = {"1d": 1, "5d": 5, "1m": 21, "3m": 63}
 MAX_GAP_DAYS = 5  # ignore if the first price is this long after the announcement (suspended?)
+SUSPECT_RETURN = 5.0  # a >500% move is treated as a bad/illiquid quote, not a real result
 
 
 def yahoo_symbol(ticker: str) -> str:
@@ -87,6 +88,8 @@ def forward_returns(stock: pd.Series, bench: pd.Series, ann_date: date) -> dict 
             returns[label] = excess[label] = None
             continue
         stock_ret = float(stock.iloc[pos]) / base - 1
+        if abs(stock_ret) > SUSPECT_RETURN:
+            return {"suspect": True}
         bench_end = bench.asof(idx[pos])
         returns[label] = round(stock_ret, 4)
         excess[label] = None if pd.isna(bench_end) else round(stock_ret - (float(bench_end) / float(bench_base) - 1), 4)
@@ -138,7 +141,7 @@ def run(results_dir: Path = RESULTS_DIR, out_file: Path = OUT_FILE) -> dict:
 
     if not events:
         out = {"generated": generated, "benchmark": None, "horizons": list(HORIZONS), "events": [],
-               "summary": summarise([]), "missing": []}
+               "summary": summarise([]), "missing": [], "suspect": []}
         out_file.write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")
         return out
 
@@ -156,6 +159,7 @@ def run(results_dir: Path = RESULTS_DIR, out_file: Path = OUT_FILE) -> dict:
 
     prices: dict[str, pd.Series | None] = {}
     missing: set[str] = set()
+    suspect: set[str] = set()
     for ev in events:
         symbol = yahoo_symbol(ev["ticker"])
         if symbol not in prices:
@@ -165,6 +169,9 @@ def run(results_dir: Path = RESULTS_DIR, out_file: Path = OUT_FILE) -> dict:
         result = forward_returns(closes, bench, date.fromisoformat(ev["date"])) if closes is not None else None
         if result is None:
             missing.add(ev["ticker"])
+            ev["returns"] = ev["excess"] = None
+        elif result.get("suspect"):
+            suspect.add(ev["ticker"])
             ev["returns"] = ev["excess"] = None
         else:
             ev.update(result)
@@ -176,10 +183,11 @@ def run(results_dir: Path = RESULTS_DIR, out_file: Path = OUT_FILE) -> dict:
         "events": events,
         "summary": summarise(events),
         "missing": sorted(missing),
+        "suspect": sorted(suspect),
     }
     out_file.write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     measured = sum(1 for e in events if e.get("returns"))
-    print(f"Measured {measured}/{len(events)} events vs {bench_name}; no price data for: {sorted(missing) or 'none'}")
+    print(f"Measured {measured}/{len(events)} events vs {bench_name}; no price data for: {sorted(missing) or 'none'}; dropped as bad quotes: {sorted(suspect) or 'none'}")
     return out
 
 
