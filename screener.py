@@ -25,6 +25,7 @@ from rns_screener.director_dealings import extract_many
 from rns_screener.fetcher import fetch_day_announcements
 from rns_screener.filters import prefilter
 from rns_screener.state import load_processed_ids, load_skipped_posts, save_processed_ids, save_skipped_posts
+from rns_screener.store import save_results
 from rns_screener.telegram import channel_id, send_telegram_broadcast, send_telegram_message
 from rns_screener.x_post import post_standalone, post_thread
 
@@ -59,7 +60,7 @@ def run(date_str: str) -> None:
             print("No announcements found on a later pass - nothing to do.")
         return
 
-    buckets = prefilter(announcements)
+    buckets = prefilter(announcements, config.get("keywords"))
     new_results = [a for a in buckets["results_candidate"] if a.id not in processed_ids]
     new_dealings = [a for a in buckets["director_dealing"] if a.id not in processed_ids]
     print(
@@ -98,6 +99,12 @@ def run(date_str: str) -> None:
         )
 
     if classifications or director_dealings:
+        # History for the web app. Never let a storage problem stop the digest.
+        try:
+            save_results(date_str, classifications, director_dealings, watchlist)
+        except Exception as exc:
+            print(f"Could not save results for the web app (digest unaffected): {exc}")
+
         digest = build_digest(classifications, director_dealings, watchlist, min_director_buy_value)
         print("\n--- RNS Screen ---\n")
         print(digest)
