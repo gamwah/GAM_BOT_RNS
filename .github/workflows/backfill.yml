@@ -1,0 +1,60 @@
+name: Backfill
+
+# One-off / on-demand: classify past days into docs/data/results/ (no Telegram, no X),
+# then refresh the backtest. Safe to re-run: dates that already have results are skipped.
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: "First date (YYYY-MM-DD)"
+        required: true
+      end:
+        description: "Last date (YYYY-MM-DD)"
+        required: true
+      dealings:
+        description: "Also extract director dealings (costs a little more)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt -r requirements-backtest.txt
+
+      - name: Backfill
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          START: ${{ inputs.start }}
+          END: ${{ inputs.end }}
+          DEALINGS: ${{ inputs.dealings }}
+        run: |
+          ARGS=""
+          if [ "$DEALINGS" = "true" ]; then ARGS="--dealings"; fi
+          python backfill.py "$START" "$END" $ARGS
+
+      - name: Backtest
+        if: always()
+        run: python backtest.py
+
+      - name: Commit results
+        if: always()
+        run: |
+          git config user.name "rns-screener-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/data
+          git commit -m "Backfill results" || echo "Nothing to commit"
+          git pull --rebase
+          git push
