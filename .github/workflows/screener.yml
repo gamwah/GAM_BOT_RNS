@@ -50,6 +50,8 @@ jobs:
         run: |
           git config user.name "rns-screener-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add processed_ids.json skipped_x_posts.json
+          git add processed_ids.json skipped_x_posts.json docs/data
           git commit -m "Update state after run" || echo "Nothing to commit"
+          # The web app (or the backtest job) may have pushed since this run checked out.
+          git pull --rebase
           git push

@@ -1,0 +1,35 @@
+name: Backtest
+
+on:
+  schedule:
+    - cron: "45 17 * * 1-5"  # after the London close
+  workflow_dispatch: {}
+
+permissions:
+  contents: write  # commits docs/data/backtest.json back to the repo
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements-backtest.txt
+
+      - name: Run backtest
+        run: python backtest.py
+
+      - name: Record results
+        run: |
+          git config user.name "rns-screener-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/data/backtest.json
+          git commit -m "Update backtest" || echo "Nothing to commit"
+          git pull --rebase
+          git push
