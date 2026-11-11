@@ -574,6 +574,21 @@
    "metrics_ahead": [],
    "guidance_change": "none_stated",
    "watchlist": false
+  },
+  {
+   "id": "9870674",
+   "time": "11 Nov 2026 03:01 PM",
+   "company": "AVI Japan Opportunity Trust",
+   "ticker": "AJOT",
+   "headline": "Monthly Update - October 2026",
+   "url": "https://www.investegate.co.uk/announcement/rns/avi-japan-opportunity-trust--ajot/monthly-update-october-2026/9870674",
+   "classification": "NO_GUIDANCE",
+   "confidence": "high",
+   "key_quote": "Monthly Update, reporting performance figures for the month ended 31 October 2026, is now available on the Company's website",
+   "summary": "This is a routine monthly update announcement for AVI Japan Opportunity Trust PLC notifying shareholders that the October 2026 monthly update document is available on the company's website. The RNS announcement itself contains no performance data, financial metrics, or any comparison to expectations. The actual performance figures are contained in the referenced PDF document which is not provided in this announcement text. Without access to the underlying monthly update document and without any stated expectations or guidance in this announcement, no classification relative to expectations can be made.",
+   "metrics_ahead": [],
+   "guidance_change": "none_stated",
+   "watchlist": false
   }
  ],
  "dealings": [
@@ -758,6 +773,48 @@
    "shares": 68,
    "price_per_share_gbp": 5.567,
    "total_value_gbp": 378.56
+  },
+  {
+   "id": "9870611",
+   "time": "11 Nov 2026 02:44 PM",
+   "company": "Lloyds Banking Group",
+   "ticker": "LLOY",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/lloyds-banking-group--lloy/director-pdmr-shareholding/9870611",
+   "director_name": "Kate Cheetham",
+   "role": "Chief Legal Officer and Group Company Secretary",
+   "direction": "other",
+   "shares": 203,
+   "price_per_share_gbp": 0.9588,
+   "total_value_gbp": 194.6524
+  },
+  {
+   "id": "9870666",
+   "time": "11 Nov 2026 03:00 PM",
+   "company": "Greencoat UK Wind",
+   "ticker": "UKW",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/greencoat-uk-wind--ukw/director-pdmr-shareholding/9870666",
+   "director_name": "Schroders Greencoat LLP",
+   "role": "Investment Manager",
+   "direction": "other",
+   "shares": 276392,
+   "price_per_share_gbp": null,
+   "total_value_gbp": null
+  },
+  {
+   "id": "9870713",
+   "time": "11 Nov 2026 03:18 PM",
+   "company": "Smith & Nephew",
+   "ticker": "SN.",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/smith-nephew--sn./director-pdmr-shareholding/9870713",
+   "director_name": "Deepak Nath",
+   "role": "Chief Executive Officer",
+   "direction": "buy",
+   "shares": 4355,
+   "price_per_share_gbp": 11.676693,
+   "total_value_gbp": 50821.36
   }
  ]
 }
