@@ -477,7 +477,131 @@
    "metrics_ahead": [],
    "guidance_change": "none_stated",
    "watchlist": false
+  },
+  {
+   "id": "9869733",
+   "time": "11 Nov 2026 08:32 AM",
+   "company": "NewRiver REIT",
+   "ticker": "NRR",
+   "headline": "Notice of Results",
+   "url": "https://www.investegate.co.uk/announcement/rns/newriver-reit--nrr/notice-of-results/9869733",
+   "classification": "NO_GUIDANCE",
+   "confidence": "high",
+   "key_quote": "Notice of Half Year Results announcement scheduled for 25 November 2026",
+   "summary": "This is a notice announcing the upcoming half-year results announcement for the six months ended 30 September 2026. No actual results, performance metrics, or comparisons to expectations are provided in this announcement. The company is simply notifying of the date, time, and location of the results presentation. No guidance upgrade, downgrade, or performance assessment versus expectations is stated.",
+   "metrics_ahead": [],
+   "guidance_change": "none_stated",
+   "watchlist": false
+  },
+  {
+   "id": "9869888",
+   "time": "11 Nov 2026 09:49 AM",
+   "company": "ASTER TREASURY PLC",
+   "ticker": "42RJ",
+   "headline": "Trading Statement - 6 months to 30 September 2026",
+   "url": "https://www.investegate.co.uk/announcement/rns/aster-treasury-plc--42rj/trading-statement-6-months-to-30-september-2026/9869888",
+   "classification": "AHEAD",
+   "confidence": "high",
+   "key_quote": "Despite another challenging period we've made a strong start to the year. We achieved an underlying profit before tax, adjusted for exceptional items, for the six months ended 30 September 2026 of £25.8m, compared to £21.7m for the same period last year.",
+   "summary": "Aster Treasury reported results ahead of expectations with underlying profit before tax up 18.9% year-on-year to £25.8m. Revenue grew 10.7% to £181.2m with underlying operating profit of £47.0m, £4.8m ahead of the prior year. The company explicitly states it has 'made a strong start to the year' despite a challenging period, investment was £10.2m ahead of plan, and asset sales surplus increased from £15.5m to £17.3m. The company remains on track to deliver 925 homes in 2026/27 and achieved the highest C1 consumer grade under new regulatory standards.",
+   "metrics_ahead": [
+    "Underlying profit before tax up 18.9% to £25.8m",
+    "Underlying operating profit £4.8m ahead of prior year at £47.0m",
+    "Revenue up 10.7% to £181.2m",
+    "Investment £10.2m ahead of plan at £64.9m",
+    "Asset sales surplus increased to £17.3m from £15.5m",
+    "On track with development programme (359 homes completed, on track for 925 target)"
+   ],
+   "guidance_change": "maintained",
+   "watchlist": false
+  },
+  {
+   "id": "9869960",
+   "time": "11 Nov 2026 10:12 AM",
+   "company": "Conduit Holdings Limited  Com Shs (DI)",
+   "ticker": "CRE",
+   "headline": "Trading update for Q3 2026",
+   "url": "https://www.investegate.co.uk/announcement/rns/conduit-holdings-limited-com-shs-di---cre/trading-update-for-q3-2026/9869960",
+   "classification": "IN_LINE",
+   "confidence": "medium",
+   "key_quote": "Throughout 2026, we have executed our underwriting strategy as planned, with continued progress in rebalancing the portfolio towards excess of loss",
+   "summary": "Conduit Holdings reports Q3 2026 trading results in line with stated strategy and expectations. Gross premiums written declined 3.8% as the company intentionally rebalanced its Property portfolio towards higher-margin excess of loss business in a softening market, while Casualty premiums grew 8.9% with preferred clients. Reinsurance revenue increased 1.6% year-on-year. Managed investments grew 14% to $2.3 billion despite unrealised losses from rising treasury yields. The company notes market conditions have softened as expected with pricing remaining broadly adequate. No guidance upgrade or downgrade is stated; results reflect execution of planned underwriting strategy amid anticipated market softening.",
+   "metrics_ahead": [],
+   "guidance_change": "none_stated",
+   "watchlist": false
+  },
+  {
+   "id": "9869961",
+   "time": "11 Nov 2026 10:12 AM",
+   "company": "City Natural Resources Growth and Income PLC",
+   "ticker": "CYN",
+   "headline": "Update note from QuotedData",
+   "url": "https://www.investegate.co.uk/announcement/rns/city-natural-resources-growth-and-income-plc--cyn/update-note-from-quoteddata/9869961",
+   "classification": "NO_GUIDANCE",
+   "confidence": "high",
+   "key_quote": "CYN's NAV rose 28.8% and its share price 37.2%, both including income, over the year to 31 October 2026.",
+   "summary": "This is an update note from QuotedData on City Natural Resources Growth and Income PLC following a management transfer to Tufton Investment Management in September 2026. The note reports strong performance with NAV up 28.8% and share price up 37.2% over the year to 31 October 2026, but does not compare these results to any stated expectations, guidance, or forecasts. No explicit statements are made regarding performance versus expectations, analyst forecasts, or management guidance.",
+   "metrics_ahead": [],
+   "guidance_change": "none_stated",
+   "watchlist": false
   }
  ],
- "dealings": []
+ "dealings": [
+  {
+   "id": "9869972",
+   "time": "11 Nov 2026 10:23 AM",
+   "company": "Softcat",
+   "ticker": "SCT",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/softcat--sct/director-pdmr-shareholding/9869972",
+   "director_name": "Graham Charlton",
+   "role": "CEO",
+   "direction": "other",
+   "shares": 10,
+   "price_per_share_gbp": 15.37,
+   "total_value_gbp": 153.7
+  },
+  {
+   "id": "9869997",
+   "time": "11 Nov 2026 10:44 AM",
+   "company": "IMI",
+   "ticker": "IMI",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/imi--imi/director-pdmr-shareholding/9869997",
+   "director_name": "Roy Twite",
+   "role": "Chief Executive Officer",
+   "direction": "other",
+   "shares": 5,
+   "price_per_share_gbp": 29.26,
+   "total_value_gbp": 146.3
+  },
+  {
+   "id": "9870018",
+   "time": "11 Nov 2026 10:50 AM",
+   "company": "Diageo",
+   "ticker": "DGE",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/diageo--dge/director-pdmr-shareholding/9870018",
+   "director_name": "Dayalan Nayager",
+   "role": "Member of the Executive Committee",
+   "direction": "buy",
+   "shares": 8,
+   "price_per_share_gbp": 18.96,
+   "total_value_gbp": 151.68
+  },
+  {
+   "id": "9870220",
+   "time": "11 Nov 2026 11:42 AM",
+   "company": "Croda International",
+   "ticker": "CRDA",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/croda-international--crda/director-pdmr-shareholding/9870220",
+   "director_name": "Stephen Edward Foots",
+   "role": "Executive Director (PDMR)",
+   "direction": "other",
+   "shares": 8,
+   "price_per_share_gbp": 36.25,
+   "total_value_gbp": 290.0
+  }
+ ]
 }
