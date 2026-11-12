@@ -932,6 +932,56 @@
    "metrics_ahead": [],
    "guidance_change": "none_stated",
    "watchlist": false
+  },
+  {
+   "id": "9873033",
+   "time": "12 Nov 2026 02:10 PM",
+   "company": "Schroder Income Growth Fund",
+   "ticker": "SCF",
+   "headline": "Results analysis from Kepler Trust Intelligence",
+   "url": "https://www.investegate.co.uk/announcement/rns/schroder-income-growth-fund--scf/results-analysis-from-kepler-trust-intelligence/9873033",
+   "classification": "IN_LINE",
+   "confidence": "medium",
+   "key_quote": "NAV total return of 19.0% for the year to 31/08/2026, against the FTSE All-Share's 21.3%",
+   "summary": "SCF reported an NAV total return of 19.0%, which underperformed the FTSE All-Share benchmark of 21.3% over the year. However, the share price total return was stronger at 23.0%, aided by discount narrowing and buybacks. Over the longer term (since July 2011), SCF has delivered annualised NAV total return of 8.7%, ahead of the FTSE All-Share's 8.1%. The fund raised its dividend by 4.1%, extending its 31-year consecutive dividend growth record and staying ahead of inflation. Challenges included holdings like Diageo and Taylor Wimpey cutting dividends, with dividend cover at 0.89x. The fund's performance is characterized as 'good results for income investors' with no explicit statement that results beat formal expectations.",
+   "metrics_ahead": [
+    "longer-term annualised NAV return (8.7% vs 8.1% benchmark since 2011)",
+    "dividend growth (31 consecutive years)",
+    "share price total return (23.0%)",
+    "ongoing charges reduction (to 0.57% from 0.78%)"
+   ],
+   "guidance_change": "maintained",
+   "watchlist": false
+  },
+  {
+   "id": "9873047",
+   "time": "12 Nov 2026 02:24 PM",
+   "company": "Galantas Gold Corp.",
+   "ticker": "GAL",
+   "headline": "Indiana Project Drilling Update",
+   "url": "https://www.investegate.co.uk/announcement/rns/galantas-gold-corp---gal/indiana-project-drilling-update/9873047",
+   "classification": "NO_GUIDANCE",
+   "confidence": "high",
+   "key_quote": "This is a very significant drill intercept, as it is the first documented gold mineralization at Indiana not associated with narrow structures.",
+   "summary": "Galantas announced positive exploration drill results at its Indiana gold-copper project, including a significant gold intersection of 1.18 g/t Au over 18 meters in a newly discovered skarn zone. The announcement presents this as an exploration success and new target discovery rather than comparing results against prior expectations or guidance. No comparison to market expectations, analyst forecasts, or company guidance is provided.",
+   "metrics_ahead": [],
+   "guidance_change": "none_stated",
+   "watchlist": false
+  },
+  {
+   "id": "9873145",
+   "time": "12 Nov 2026 03:16 PM",
+   "company": "LONDON & QUADRANT HOUSING TRUST",
+   "ticker": "44EB",
+   "headline": "EMTN Programme Update",
+   "url": "https://www.investegate.co.uk/announcement/rns/london-quadrant-housing-trust--44eb/emtn-programme-update-/9873145",
+   "classification": "NO_GUIDANCE",
+   "confidence": "high",
+   "key_quote": "Publication of Base Offering Circular dated 12 November 2026 relating to the £2,500,000,000 Euro Medium Term Note Programme",
+   "summary": "This announcement is an EMTN programme update notifying the market of the approval and publication of a Base Offering Circular by the FCA. It is a procedural/regulatory disclosure regarding a debt issuance programme and contains no financial results, performance metrics, or comparisons to expectations. No guidance is provided or updated.",
+   "metrics_ahead": [],
+   "guidance_change": "none_stated",
+   "watchlist": false
   }
  ],
  "dealings": [
@@ -1088,6 +1138,90 @@
    "shares": 5000,
    "price_per_share_gbp": 54.79,
    "total_value_gbp": 273950.0
+  },
+  {
+   "id": "9872790",
+   "time": "12 Nov 2026 12:45 PM",
+   "company": "Avon Technologies plc",
+   "ticker": "AVON",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/avon-technologies-plc--avon/director-pdmr-shareholding/9872790",
+   "director_name": "Bindi Foyle",
+   "role": "Senior Independent Director",
+   "direction": "buy",
+   "shares": 1000,
+   "price_per_share_gbp": 22.846,
+   "total_value_gbp": 22846.0
+  },
+  {
+   "id": "9872974",
+   "time": "12 Nov 2026 01:44 PM",
+   "company": "Kainos Group",
+   "ticker": "KNOS",
+   "headline": "Director / PDMR shareholdings",
+   "url": "https://www.investegate.co.uk/announcement/rns/kainos-group--knos/director-pdmr-shareholdings/9872974",
+   "director_name": "Brendan Mooney",
+   "role": "CEO",
+   "direction": "other",
+   "shares": 200,
+   "price_per_share_gbp": 0.0,
+   "total_value_gbp": 0.0
+  },
+  {
+   "id": "9873023",
+   "time": "12 Nov 2026 02:01 PM",
+   "company": "FirstGroup",
+   "ticker": "FGP",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/prn/firstgroup--fgp/director-pdmr-shareholding/9873023",
+   "director_name": "Ryan Mangold",
+   "role": "Executive Director and Chief Financial Officer",
+   "direction": "other",
+   "shares": 64,
+   "price_per_share_gbp": 2.335,
+   "total_value_gbp": 149.44
+  },
+  {
+   "id": "9873042",
+   "time": "12 Nov 2026 02:17 PM",
+   "company": "Pembroke Vct B",
+   "ticker": "PEMB",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/pembroke-vct-b--pemb/director-pdmr-shareholding/9873042",
+   "director_name": "Christopher Lewis",
+   "role": "PDMR – Investment Manager's COO & CFO",
+   "direction": "buy",
+   "shares": 19029,
+   "price_per_share_gbp": 1.051,
+   "total_value_gbp": 19994.549
+  },
+  {
+   "id": "9873043",
+   "time": "12 Nov 2026 02:17 PM",
+   "company": "AJ Bell",
+   "ticker": "AJB",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/aj-bell--ajb/director-pdmr-shareholding/9873043",
+   "director_name": "Mohamed Tagari",
+   "role": "Chief Technology & Customer Services Officer/PDMR",
+   "direction": "buy",
+   "shares": 26,
+   "price_per_share_gbp": 5.73,
+   "total_value_gbp": 148.98
+  },
+  {
+   "id": "9873055",
+   "time": "12 Nov 2026 02:30 PM",
+   "company": "M&G",
+   "ticker": "MNG",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/m-g--mng/director-pdmr-shareholding/9873055",
+   "director_name": "Joseph Pinto",
+   "role": "CEO Asset Management",
+   "direction": "sell",
+   "shares": 912,
+   "price_per_share_gbp": 3.304,
+   "total_value_gbp": 3013.248
   }
  ]
 }
