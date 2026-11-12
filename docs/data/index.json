@@ -1,14 +1,14 @@
 {
- "updated": "2026-11-12T15:30:01+00:00",
+ "updated": "2026-11-12T16:04:48+00:00",
  "dates": [
   {
    "date": "2026-11-12",
    "counts": {
-    "STRONGLY_AHEAD": 3,
+    "STRONGLY_AHEAD": 4,
     "AHEAD": 11,
     "MIXED": 2,
     "BELOW": 4,
-    "buys": 5
+    "buys": 6
    }
   },
   {

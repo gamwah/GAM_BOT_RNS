@@ -982,6 +982,27 @@
    "metrics_ahead": [],
    "guidance_change": "none_stated",
    "watchlist": false
+  },
+  {
+   "id": "9873221",
+   "time": "12 Nov 2026 03:45 PM",
+   "company": "HELLENIQ ENERGY HOLDINGS SOCIETE ANONYME",
+   "ticker": "HLPD",
+   "headline": "HELLENiQ ENERGY Holdings S.A. 3Q 2026 Fin. Results",
+   "url": "https://www.investegate.co.uk/announcement/rns/helleniq-energy-holdings-societe-anonyme--hlpd/helleniq-energy-holdings-s-a-3q-2026-fin-results/9873221",
+   "classification": "STRONGLY_AHEAD",
+   "confidence": "high",
+   "key_quote": "Adjusted EBITDA of €1,162m in 3Q, driven by record-high benchmark refining margins, flexible refinery operations and strong exports contribution",
+   "summary": "HELLENiQ Energy reported exceptionally strong Q3 2026 results with Adjusted EBITDA of €1,162m and Adjusted Net Income of €808m, materially driven by record-high benchmark refining margins and operational flexibility. Results represent significant outperformance with EBITDA more than tripling versus Q3 2025 (€365m) and net income more than quadrupling (€186m). The company demonstrated operational excellence amid challenging market conditions, captured export opportunities, maintained high production runs, and delivered record refining margins. Management doubled the interim dividend from €0.20 to €0.40 per share and announced substantial reinvestment of ~€600m in the nine-month period, signaling confidence in sustained strong performance. This performance is characterized as record-high results driven by exceptional market conditions and operational execution.",
+   "metrics_ahead": [
+    "Adjusted EBITDA of €1,162m (3Q26 vs €365m 3Q25 - 218% increase)",
+    "Adjusted Net Income of €808m (3Q26 vs €186m 3Q25 - 334% increase)",
+    "Record-high benchmark refining margins achieved",
+    "Strong export performance capturing market opportunities",
+    "Doubled interim dividend from €0.20 to €0.40 per share"
+   ],
+   "guidance_change": "none_stated",
+   "watchlist": false
   }
  ],
  "dealings": [
@@ -1222,6 +1243,62 @@
    "shares": 912,
    "price_per_share_gbp": 3.304,
    "total_value_gbp": 3013.248
+  },
+  {
+   "id": "9873198",
+   "time": "12 Nov 2026 03:29 PM",
+   "company": "3i Group",
+   "ticker": "III",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/3i-group--iii/director-pdmr-shareholding/9873198",
+   "director_name": "Simon Borrows",
+   "role": "Director and person discharging managerial responsibilities",
+   "direction": "buy",
+   "shares": 37600,
+   "price_per_share_gbp": 26.735071,
+   "total_value_gbp": 1005224.67
+  },
+  {
+   "id": "9873206",
+   "time": "12 Nov 2026 03:30 PM",
+   "company": "GSK",
+   "ticker": "GSK",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/gsk--gsk/director-pdmr-shareholding/9873206",
+   "director_name": "Lynn Baxter",
+   "role": "CEO, ViiV Healthcare and President, Global Health, GSK",
+   "direction": "other",
+   "shares": 12,
+   "price_per_share_gbp": 19.3453,
+   "total_value_gbp": 232.1436
+  },
+  {
+   "id": "9873236",
+   "time": "12 Nov 2026 03:56 PM",
+   "company": "SThree",
+   "ticker": "STEM",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/sthree--stem/director-pdmr-shareholding/9873236",
+   "director_name": "Damian Fehrenberg",
+   "role": "PDMR - Interim CFO",
+   "direction": "other",
+   "shares": 68,
+   "price_per_share_gbp": 2.95501,
+   "total_value_gbp": 150.71
+  },
+  {
+   "id": "9873238",
+   "time": "12 Nov 2026 04:00 PM",
+   "company": "NATWEST GROUP",
+   "ticker": "NWG",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/natwest-group--nwg/director-pdmr-shareholding/9873238",
+   "director_name": "Paul Thwaite",
+   "role": "Group Chief Executive Officer",
+   "direction": "other",
+   "shares": 51332,
+   "price_per_share_gbp": 5.9276,
+   "total_value_gbp": 304167.91
   }
  ]
 }
