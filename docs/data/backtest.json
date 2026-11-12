@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11T23:43:43+00:00",
+ "generated": "2026-11-12T22:52:02+00:00",
  "benchmark": "^FTAS",
  "horizons": [
   "1d",
@@ -8,6 +8,407 @@
   "3m"
  ],
  "events": [
+  {
+   "id": "9873221",
+   "date": "2026-11-12",
+   "ticker": "HLPD",
+   "company": "HELLENIQ ENERGY HOLDINGS SOCIETE ANONYME",
+   "classification": "STRONGLY_AHEAD",
+   "key_quote": "Adjusted EBITDA of €1,162m in 3Q, driven by record-high benchmark refining margins, flexible refinery operations and strong exports contribution",
+   "url": "https://www.investegate.co.uk/announcement/rns/helleniq-energy-holdings-societe-anonyme--hlpd/helleniq-energy-holdings-s-a-3q-2026-fin-results/9873221",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9872062",
+   "date": "2026-11-12",
+   "ticker": "0GFN",
+   "company": "Aac Clyde Space Ab",
+   "classification": "BELOW",
+   "key_quote": "Lower sales outlook; margins...",
+   "url": "https://www.investegate.co.uk/announcement/mfn/aac-clyde-space-ab--0gfn/aac-clyde-space-lower-sales-outlook-margins-/9872062",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9871524",
+   "date": "2026-11-12",
+   "ticker": "AIRA",
+   "company": "Air Astana",
+   "classification": "MIXED",
+   "key_quote": "Q3 saw improvement in the RASK/CASK growth differential for the third consecutive quarter...while cost pressures continue to impact the Group...EBITDAR margin was 4.0pp lower at 20.0%",
+   "url": "https://www.investegate.co.uk/announcement/rns/air-astana--aira/q3-and-9m-2026-results/9871524",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9871479",
+   "date": "2026-11-12",
+   "ticker": "ATYM",
+   "company": "Atalaya Mining",
+   "classification": "AHEAD",
+   "key_quote": "Record quarterly and nine-month EBITDA and on track to achieve FY2026 guidance",
+   "url": "https://www.investegate.co.uk/announcement/rns/atalaya-mining--atym/q3-and-ytd-2026-financial-results/9871479",
+   "returns": {
+    "1d": -0.0241,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.0263,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
+   "id": "9871473",
+   "date": "2026-11-12",
+   "ticker": "85FA",
+   "company": "NOTTING HILL GENESIS",
+   "classification": "BELOW",
+   "key_quote": "These results show some areas of progress, but we are clear about the challenges and underlying pressures on our operating performance.",
+   "url": "https://www.investegate.co.uk/announcement/rns/notting-hill-genesis--85fa/half-year-trading-update/9871473",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9871382",
+   "date": "2026-11-12",
+   "ticker": "QQ.",
+   "company": "QinetiQ Group",
+   "classification": "AHEAD",
+   "key_quote": "We have delivered solid first-half results, improving profitability through execution and efficiency...Our engineering, test and mission support capabilities put us at the heart of growing customer demand for warfighting readiness.",
+   "url": "https://www.investegate.co.uk/announcement/rns/qinetiq-group--qq./h1-double-digit-profit-growth-and-higher-margins/9871382",
+   "returns": {
+    "1d": -0.044,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.0462,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
+   "id": "9871314",
+   "date": "2026-11-12",
+   "ticker": "PCIP",
+   "company": "PCI-PAL",
+   "classification": "AHEAD",
+   "key_quote": "New business sales were ahead of management expectations, which positions the Company well for the remainder of the year ahead, supporting its ambitious organic growth objectives.",
+   "url": "https://www.investegate.co.uk/announcement/rns/pci-pal--pcip/fy26-results-timing-fy27-trading-update/9871314",
+   "returns": {
+    "1d": 0.0857,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": 0.0835,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
+   "id": "9871309",
+   "date": "2026-11-12",
+   "ticker": "DOCS",
+   "company": "Dr. Martens",
+   "classification": "BELOW",
+   "key_quote": "the H1 performance we're announcing today is disappointing, with Group revenue down 9% CC",
+   "url": "https://www.investegate.co.uk/announcement/rns/dr-martens--docs/h1-fy27-results/9871309",
+   "returns": {
+    "1d": -0.1467,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.1489,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
+   "id": "9871260",
+   "date": "2026-11-12",
+   "ticker": "PFD",
+   "company": "Premier Foods",
+   "classification": "STRONGLY_AHEAD",
+   "key_quote": "We are therefore today upgrading both our adjusted PBT and adjusted EPS expectations...reflecting the Group's strong cash generation and our confidence in continued value creation for shareholders.",
+   "url": "https://www.investegate.co.uk/announcement/rns/premier-foods--pfd/half-year-results/9871260",
+   "returns": {
+    "1d": -0.0365,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.0387,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
+   "id": "9871258",
+   "date": "2026-11-12",
+   "ticker": "WIZZ",
+   "company": "Wizz Air Holdings",
+   "classification": "AHEAD",
+   "key_quote": "Q2 RASK increased 0.5 per cent year-on-year...ahead of the 'flat' guidance. For H1, RASK decreased 2.9 per cent year-on-year, reflecting the 8.1% fall in RASK in the Q1 period. Year-on-year ex-fuel CASK lower at €3.07 cents...which is an improvement against expectations of a low single digit increase.",
+   "url": "https://www.investegate.co.uk/announcement/rns/wizz-air-holdings--wizz/half-year-results-/9871258",
+   "returns": {
+    "1d": -0.0139,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.0162,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
+   "id": "9871230",
+   "date": "2026-11-12",
+   "ticker": "AXL",
+   "company": "Arrow Exploration Corp. (Cdi)",
+   "classification": "AHEAD",
+   "key_quote": "Icaco has outperformed management expectations in production rates and estimated ultimate oil recoveries.",
+   "url": "https://www.investegate.co.uk/announcement/rns/arrow-exploration-corp-cdi---axl/arrow-announces-ic-hz9-well-results/9871230",
+   "returns": {
+    "1d": 0.0385,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": 0.0362,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
+   "id": "9871225",
+   "date": "2026-11-12",
+   "ticker": "CHG",
+   "company": "Chemring Group",
+   "classification": "AHEAD",
+   "key_quote": "Our record order book and strategic contract wins demonstrate the strength of our business and the successful execution of our strategy. We delivered a solid performance in FY26 despite well-documented headwinds in parts of the UK market and we remain confident in delivering strong year-on-year growth in FY27",
+   "url": "https://www.investegate.co.uk/announcement/rns/chemring-group--chg/post-close-trading-update/9871225",
+   "returns": {
+    "1d": -0.0304,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.0326,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
+   "id": "9871224",
+   "date": "2026-11-12",
+   "ticker": "SCT",
+   "company": "Softcat",
+   "classification": "AHEAD",
+   "key_quote": "The Group traded well during the Period, delivering strong double-digit year-on-year growth in gross profit and underlying operating profit. The Board is pleased with the Q1 performance.",
+   "url": "https://www.investegate.co.uk/announcement/rns/softcat--sct/q1-2027-trading-update/9871224",
+   "returns": {
+    "1d": 0.0256,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": 0.0233,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
+   "id": "9871221",
+   "date": "2026-11-12",
+   "ticker": "VID",
+   "company": "Videndum",
+   "classification": "BELOW",
+   "key_quote": "Trading has fallen short of our expectations, and we recognise shareholders' disappointment... Due to the factors outlined above, the Board now expects FY26 revenue and adjusted EBITDA to be broadly similar to FY25 revenue and adjusted EBITDA.",
+   "url": "https://www.investegate.co.uk/announcement/rns/videndum--vid/trading-update/9871221",
+   "returns": {
+    "1d": -0.1264,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.1287,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
+   "id": "9871220",
+   "date": "2026-11-12",
+   "ticker": "WRKS",
+   "company": "TheWorks.Co.Uk",
+   "classification": "STRONGLY_AHEAD",
+   "key_quote": "The Board now expects pre-IFRS 16 Adjusted EBITDA for the current financial year to be ahead of market expectations and at least £17.0m. This upgrade, together with the upgrade announced by the Group on 7 September 2026, represents an increase in FY27 pre-IFRS 16 Adjusted EBITDA of more than 13.0% since the start of the financial year.",
+   "url": "https://www.investegate.co.uk/announcement/rns/theworks-co-uk--wrks/half-year-trading-update/9871220",
+   "returns": {
+    "1d": 0.0769,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": 0.0747,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
+   "id": "9871218",
+   "date": "2026-11-12",
+   "ticker": "TBLD",
+   "company": "Tinybuild Inc. (DI) (Reg s, CAT 3)",
+   "classification": "STRONGLY_AHEAD",
+   "key_quote": "FY26 revenue expected to be in the $54-56 million range and adjusted EBITDA at $7-8 million, ahead of expectations.",
+   "url": "https://www.investegate.co.uk/announcement/rns/tinybuild-inc-di-reg-s-cat-3---tbld/trading-update/9871218",
+   "returns": {
+    "1d": -0.1154,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.1176,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
+   "id": "9871216",
+   "date": "2026-11-12",
+   "ticker": "BA.",
+   "company": "BAE Systems",
+   "classification": "AHEAD",
+   "key_quote": "sales, EBIT and EPS targets remain on track following the upgrade to guidance at our half year results in July",
+   "url": "https://www.investegate.co.uk/announcement/rns/bae-systems--ba./trading-statement/9871216",
+   "returns": {
+    "1d": -0.0112,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.0134,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
+   "id": "9871191",
+   "date": "2026-11-12",
+   "ticker": "GFRD",
+   "company": "Galliford Try",
+   "classification": "AHEAD",
+   "key_quote": "Our strong operational performance has continued into the new financial year with trading slightly ahead of Board expectations and encouraging contract wins.",
+   "url": "https://www.investegate.co.uk/announcement/rns/galliford-try--gfrd/agm-statement/9871191",
+   "returns": {
+    "1d": -0.0154,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.0177,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
+   "id": "9871189",
+   "date": "2026-11-12",
+   "ticker": "CMCL",
+   "company": "Caledonia Mining Corporation (DI)",
+   "classification": "MIXED",
+   "key_quote": "Whilst the Group's financial performance was adversely affected by the lower production arising from these operating challenges, revenues and profits before non-cash fair value adjustments to derivatives nonetheless exceeded the comparative performance in the third quarter of 2025",
+   "url": "https://www.investegate.co.uk/announcement/rns/caledonia-mining-corporation-di---cmcl/3rd-quarter-results/9871189",
+   "returns": {
+    "1d": -0.0299,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.0321,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
+   "id": "9871085",
+   "date": "2026-11-12",
+   "ticker": "AMRQ",
+   "company": "Amaroq Ltd.",
+   "classification": "AHEAD",
+   "key_quote": "processed grades running ahead of expectations, at almost 24 g/t in Q3 2026",
+   "url": "https://www.investegate.co.uk/announcement/gnw/amaroq-ltd---amrq/q3-2026-operational-and-financial-results/9871085",
+   "returns": {
+    "1d": -0.0332,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.0354,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
+   "id": "9871060",
+   "date": "2026-11-12",
+   "ticker": "EDV",
+   "company": "Endeavour Mining",
+   "classification": "AHEAD",
+   "key_quote": "FY-2026 guidance on track...Record YTD-2026 Free Cash Flow of $1,023m...Our strong operational performance over the first three quarters positions us on track to deliver",
+   "url": "https://www.investegate.co.uk/announcement/gnw/endeavour-mining--edv/endeavour-reports-strong-q3-2026-results/9871060",
+   "returns": {
+    "1d": -0.0846,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.0868,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
   {
    "id": "9869888",
    "date": "2026-11-11",
@@ -70,13 +471,13 @@
    "key_quote": "West Coast Silver's updated Mineral Resource is a significant step forward for Elizabeth Hill, lifting contained silver to approximately 3.36 million ounces at an exceptional grade and materially increasing the proportion in the higher-confidence Indicated category.",
    "url": "https://www.investegate.co.uk/announcement/rns/alien-metals-limited-npv-di---ufo/elizabeth-hill-mineral-resource-estimate-update/9868675",
    "returns": {
-    "1d": -0.0086,
+    "1d": 0.0,
     "5d": null,
     "1m": null,
     "3m": null
    },
    "excess": {
-    "1d": -0.0163,
+    "1d": -0.0077,
     "5d": null,
     "1m": null,
     "3m": null
@@ -281,13 +682,13 @@
    "url": "https://www.investegate.co.uk/announcement/prn/rightmove--rmv/trading-statement/9861765",
    "returns": {
     "1d": 0.0091,
-    "5d": null,
+    "5d": 0.0229,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": 0.0189,
-    "5d": null,
+    "5d": 0.0152,
     "1m": null,
     "3m": null
    }
@@ -302,13 +703,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/wheaton-precious-metals-corp-npv-cdi---wpm/q3-2026-results/9861524",
    "returns": {
     "1d": 0.0267,
-    "5d": null,
+    "5d": 0.0288,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": 0.0365,
-    "5d": null,
+    "5d": 0.0211,
     "1m": null,
     "3m": null
    }
@@ -344,13 +745,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/feedback--fdbk/final-results-notice-of-agm/9861499",
    "returns": {
     "1d": -0.1875,
-    "5d": null,
+    "5d": -0.2604,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.1777,
-    "5d": null,
+    "5d": -0.2681,
     "1m": null,
     "3m": null
    }
@@ -365,13 +766,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/scottish-mortgage-inv-trust--smt/scottish-mortgage-half-year-results/9861484",
    "returns": {
     "1d": 0.0251,
-    "5d": null,
+    "5d": 0.0551,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": 0.0349,
-    "5d": null,
+    "5d": 0.0474,
     "1m": null,
     "3m": null
    }
@@ -386,13 +787,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/lords-group-trading--lord/trading-update-banking-facility-amendments-/9861475",
    "returns": {
     "1d": -0.2174,
-    "5d": null,
+    "5d": -0.2826,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.2076,
-    "5d": null,
+    "5d": -0.2903,
     "1m": null,
     "3m": null
    }
@@ -407,13 +808,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/record--rec/interim-results-/9861469",
    "returns": {
     "1d": 0.015,
-    "5d": null,
+    "5d": 0.1111,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": 0.0247,
-    "5d": null,
+    "5d": 0.1034,
     "1m": null,
     "3m": null
    }
@@ -428,13 +829,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/tbc-bank-group--tbcg/3q-and-9m-2026-results-report/9861459",
    "returns": {
     "1d": 0.0176,
-    "5d": null,
+    "5d": 0.14,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": 0.0274,
-    "5d": null,
+    "5d": 0.1323,
     "1m": null,
     "3m": null
    }
@@ -449,13 +850,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/mj-gleeson--gle/agm-trading-update-/9861448",
    "returns": {
     "1d": -0.0235,
-    "5d": null,
+    "5d": -0.0488,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.0137,
-    "5d": null,
+    "5d": -0.0565,
     "1m": null,
     "3m": null
    }
@@ -470,13 +871,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/billington-holdings--biln/trading-update/9861442",
    "returns": {
     "1d": -0.1902,
-    "5d": null,
+    "5d": -0.0488,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.1805,
-    "5d": null,
+    "5d": -0.0565,
     "1m": null,
     "3m": null
    }
@@ -672,13 +1073,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/forgent-plc--forg/outstanding-shallow-gold-results-at-curley-s-/9859142",
    "returns": {
     "1d": -0.0909,
-    "5d": -0.2182,
+    "5d": -0.1818,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.0861,
-    "5d": -0.2188,
+    "5d": -0.1824,
     "1m": null,
     "3m": null
    }
@@ -3524,13 +3925,13 @@
    "returns": {
     "1d": 0.0,
     "5d": -0.0062,
-    "1m": null,
+    "1m": 0.0031,
     "3m": null
    },
    "excess": {
     "1d": -0.0098,
     "5d": -0.0089,
-    "1m": null,
+    "1m": -0.0107,
     "3m": null
    }
   },
@@ -3545,13 +3946,13 @@
    "returns": {
     "1d": 0.0774,
     "5d": 0.0935,
-    "1m": null,
+    "1m": 0.1371,
     "3m": null
    },
    "excess": {
     "1d": 0.0676,
     "5d": 0.0909,
-    "1m": null,
+    "1m": 0.1233,
     "3m": null
    }
   },
@@ -3577,13 +3978,13 @@
    "returns": {
     "1d": 0.0,
     "5d": 0.0287,
-    "1m": null,
+    "1m": -0.0902,
     "3m": null
    },
    "excess": {
     "1d": -0.0098,
     "5d": 0.026,
-    "1m": null,
+    "1m": -0.104,
     "3m": null
    }
   },
@@ -3598,13 +3999,13 @@
    "returns": {
     "1d": -0.0231,
     "5d": -0.0724,
-    "1m": null,
+    "1m": -0.0995,
     "3m": null
    },
    "excess": {
     "1d": -0.0329,
     "5d": -0.075,
-    "1m": null,
+    "1m": -0.1133,
     "3m": null
    }
   },
@@ -3619,13 +4020,13 @@
    "returns": {
     "1d": -0.0119,
     "5d": 0.02,
-    "1m": null,
+    "1m": 0.0702,
     "3m": null
    },
    "excess": {
     "1d": -0.0217,
     "5d": 0.0174,
-    "1m": null,
+    "1m": 0.0564,
     "3m": null
    }
   },
@@ -3640,13 +4041,13 @@
    "returns": {
     "1d": 0.1728,
     "5d": 0.2284,
-    "1m": null,
+    "1m": 0.2778,
     "3m": null
    },
    "excess": {
     "1d": 0.163,
     "5d": 0.2257,
-    "1m": null,
+    "1m": 0.2639,
     "3m": null
    }
   },
@@ -3661,13 +4062,13 @@
    "returns": {
     "1d": -0.2679,
     "5d": -0.2679,
-    "1m": null,
+    "1m": -0.1964,
     "3m": null
    },
    "excess": {
     "1d": -0.2777,
     "5d": -0.2705,
-    "1m": null,
+    "1m": -0.2103,
     "3m": null
    }
   },
@@ -3682,13 +4083,13 @@
    "returns": {
     "1d": 0.0648,
     "5d": -0.0741,
-    "1m": null,
+    "1m": -0.3056,
     "3m": null
    },
    "excess": {
     "1d": 0.055,
     "5d": -0.0767,
-    "1m": null,
+    "1m": -0.3194,
     "3m": null
    }
   },
@@ -3724,13 +4125,13 @@
    "returns": {
     "1d": -0.0233,
     "5d": -0.0977,
-    "1m": null,
+    "1m": -0.0977,
     "3m": null
    },
    "excess": {
     "1d": -0.0331,
     "5d": -0.1003,
-    "1m": null,
+    "1m": -0.1115,
     "3m": null
    }
   },
@@ -3745,13 +4146,13 @@
    "returns": {
     "1d": -0.0844,
     "5d": -0.0741,
-    "1m": null,
+    "1m": -0.1259,
     "3m": null
    },
    "excess": {
     "1d": -0.0942,
     "5d": -0.0767,
-    "1m": null,
+    "1m": -0.1398,
     "3m": null
    }
   },
@@ -3766,13 +4167,13 @@
    "returns": {
     "1d": 0.1628,
     "5d": 0.4179,
-    "1m": null,
+    "1m": 0.3743,
     "3m": null
    },
    "excess": {
     "1d": 0.153,
     "5d": 0.4152,
-    "1m": null,
+    "1m": 0.3604,
     "3m": null
    }
   },
@@ -3787,13 +4188,13 @@
    "returns": {
     "1d": -0.0104,
     "5d": -0.0092,
-    "1m": null,
+    "1m": 0.0703,
     "3m": null
    },
    "excess": {
     "1d": -0.0202,
     "5d": -0.0119,
-    "1m": null,
+    "1m": 0.0564,
     "3m": null
    }
   },
@@ -3808,13 +4209,13 @@
    "returns": {
     "1d": 0.0358,
     "5d": 0.0299,
-    "1m": null,
+    "1m": 0.0628,
     "3m": null
    },
    "excess": {
     "1d": 0.026,
     "5d": 0.0273,
-    "1m": null,
+    "1m": 0.0489,
     "3m": null
    }
   },
@@ -3829,13 +4230,13 @@
    "returns": {
     "1d": -0.3795,
     "5d": -0.4103,
-    "1m": null,
+    "1m": -0.5641,
     "3m": null
    },
    "excess": {
     "1d": -0.3893,
     "5d": -0.4129,
-    "1m": null,
+    "1m": -0.5779,
     "3m": null
    }
   },
@@ -3850,13 +4251,13 @@
    "returns": {
     "1d": -0.0595,
     "5d": -0.0928,
-    "1m": null,
+    "1m": -0.0328,
     "3m": null
    },
    "excess": {
     "1d": -0.0693,
     "5d": -0.0955,
-    "1m": null,
+    "1m": -0.0466,
     "3m": null
    }
   },
@@ -3912,7 +4313,7 @@
    "key_quote": "This is our 50th year of increased dividend but it has been a difficult year. The Gulf situation created clear pressure on material and energy costs while weaker demand and structural changes in the UK distribution market also affected sales and profit in the short term.",
    "url": "https://www.investegate.co.uk/announcement/rns/james-halstead--jhd/preliminary-results/9821337",
    "returns": {
-    "1d": 0.0312,
+    "1d": 0.0313,
     "5d": 0.0234,
     "1m": 0.0594,
     "3m": null
@@ -11645,25 +12046,25 @@
  "summary": {
   "STRONGLY_AHEAD": {
    "1d": {
-    "n": 141,
-    "avg_return": 0.0366,
-    "avg_excess": 0.0366,
-    "median_excess": 0.0274,
-    "hit_rate": 0.773
+    "n": 144,
+    "avg_return": 0.0353,
+    "avg_excess": 0.0353,
+    "median_excess": 0.0268,
+    "hit_rate": 0.764
    },
    "5d": {
-    "n": 133,
-    "avg_return": 0.0303,
-    "avg_excess": 0.031,
-    "median_excess": 0.0324,
-    "hit_rate": 0.639
+    "n": 137,
+    "avg_return": 0.0321,
+    "avg_excess": 0.0326,
+    "median_excess": 0.0336,
+    "hit_rate": 0.65
    },
    "1m": {
-    "n": 94,
-    "avg_return": 0.0102,
-    "avg_excess": 0.0121,
-    "median_excess": 0.0114,
-    "hit_rate": 0.511
+    "n": 99,
+    "avg_return": 0.0128,
+    "avg_excess": 0.0139,
+    "median_excess": 0.017,
+    "hit_rate": 0.515
    },
    "3m": {
     "n": 0
@@ -11671,25 +12072,25 @@
   },
   "AHEAD": {
    "1d": {
-    "n": 248,
-    "avg_return": 0.009,
-    "avg_excess": 0.009,
-    "median_excess": 0.0057,
-    "hit_rate": 0.585
+    "n": 259,
+    "avg_return": 0.0082,
+    "avg_excess": 0.0081,
+    "median_excess": 0.0046,
+    "hit_rate": 0.571
    },
    "5d": {
-    "n": 242,
-    "avg_return": 0.0093,
+    "n": 243,
+    "avg_return": 0.0094,
     "avg_excess": 0.0108,
-    "median_excess": 0.0077,
-    "hit_rate": 0.545
+    "median_excess": 0.008,
+    "hit_rate": 0.547
    },
    "1m": {
-    "n": 171,
-    "avg_return": -0.0085,
-    "avg_excess": -0.0098,
+    "n": 177,
+    "avg_return": -0.0077,
+    "avg_excess": -0.0094,
     "median_excess": -0.006,
-    "hit_rate": 0.468
+    "hit_rate": 0.469
    },
    "3m": {
     "n": 0
@@ -11697,25 +12098,25 @@
   },
   "MIXED": {
    "1d": {
-    "n": 60,
-    "avg_return": -0.0571,
-    "avg_excess": -0.057,
-    "median_excess": -0.0285,
-    "hit_rate": 0.3
+    "n": 61,
+    "avg_return": -0.0566,
+    "avg_excess": -0.0566,
+    "median_excess": -0.0289,
+    "hit_rate": 0.295
    },
    "5d": {
-    "n": 58,
-    "avg_return": -0.0835,
-    "avg_excess": -0.0822,
-    "median_excess": -0.0307,
-    "hit_rate": 0.362
+    "n": 59,
+    "avg_return": -0.0865,
+    "avg_excess": -0.0853,
+    "median_excess": -0.0316,
+    "hit_rate": 0.356
    },
    "1m": {
-    "n": 39,
-    "avg_return": -0.075,
-    "avg_excess": -0.075,
-    "median_excess": -0.0605,
-    "hit_rate": 0.282
+    "n": 42,
+    "avg_return": -0.0781,
+    "avg_excess": -0.0791,
+    "median_excess": -0.0618,
+    "hit_rate": 0.262
    },
    "3m": {
     "n": 0
@@ -11723,25 +12124,25 @@
   },
   "BELOW": {
    "1d": {
-    "n": 84,
-    "avg_return": -0.1236,
-    "avg_excess": -0.1237,
-    "median_excess": -0.0735,
-    "hit_rate": 0.19
+    "n": 86,
+    "avg_return": -0.1239,
+    "avg_excess": -0.1241,
+    "median_excess": -0.0757,
+    "hit_rate": 0.186
    },
    "5d": {
-    "n": 77,
-    "avg_return": -0.1459,
-    "avg_excess": -0.1437,
-    "median_excess": -0.0884,
-    "hit_rate": 0.247
+    "n": 80,
+    "avg_return": -0.1452,
+    "avg_excess": -0.1434,
+    "median_excess": -0.0882,
+    "hit_rate": 0.237
    },
    "1m": {
-    "n": 55,
-    "avg_return": -0.1828,
-    "avg_excess": -0.1857,
-    "median_excess": -0.1472,
-    "hit_rate": 0.273
+    "n": 56,
+    "avg_return": -0.1896,
+    "avg_excess": -0.1927,
+    "median_excess": -0.152,
+    "hit_rate": 0.268
    },
    "3m": {
     "n": 0
@@ -11751,6 +12152,7 @@
  "missing": [
   "0A3M",
   "0ABD",
+  "0GFN",
   "0HDP",
   "0LN7",
   "0LQ1",
@@ -11770,12 +12172,15 @@
   "51GC",
   "51NI",
   "79IU",
+  "85FA",
   "93LF",
   "ADB",
   "ADS",
+  "AIRA",
   "ALH",
   "FNEWS",
   "HEY1",
+  "HLPD",
   "MCJ",
   "PBX",
   "SHPP",
