@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T07:11:16+00:00",
+ "updated": "2026-11-12T12:16:01+00:00",
  "dates": [
   {
    "date": "2026-11-12",
@@ -7,8 +7,8 @@
     "STRONGLY_AHEAD": 3,
     "AHEAD": 11,
     "MIXED": 2,
-    "BELOW": 3,
-    "buys": 0
+    "BELOW": 4,
+    "buys": 2
    }
   },
   {
