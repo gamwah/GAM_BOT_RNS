@@ -497,6 +497,56 @@
    "metrics_ahead": [],
    "guidance_change": "none_stated",
    "watchlist": false
+  },
+  {
+   "id": "9875252",
+   "time": "13 Nov 2026 03:05 PM",
+   "company": "CITIZEN TREASURY PLC",
+   "ticker": "93GA",
+   "headline": "Unaudited H1 report & credit rating update",
+   "url": "https://www.investegate.co.uk/announcement/rns/citizen-treasury-plc--93ga/unaudited-h1-report-credit-rating-update-/9875252",
+   "classification": "NO_GUIDANCE",
+   "confidence": "high",
+   "key_quote": "Moody's have published an updated credit opinion for Citizen Housing Group maintaining our A3 stable rating. The credit opinion reflects the high proportion of turnover coming from social housing lettings and improving operating performance.",
+   "summary": "Citizen Treasury plc announced H1 2026 unaudited results with an updated credit rating from Moody's. The rating was maintained at A3 stable, with Moody's noting improving operating performance and the stable nature of social housing lettings revenue. However, the announcement provides no explicit comparison of results to market expectations, analyst forecasts, board guidance, or prior guidance. The results are reported without stated expectations or forward guidance comparisons.",
+   "metrics_ahead": [],
+   "guidance_change": "none_stated",
+   "watchlist": false
+  },
+  {
+   "id": "9875273",
+   "time": "13 Nov 2026 03:17 PM",
+   "company": "Standard Chartered",
+   "ticker": "STAN",
+   "headline": "Admission to Trading & Publication of Final Terms",
+   "url": "https://www.investegate.co.uk/announcement/rns/standard-chartered--stan/admission-to-trading-publication-of-final-terms/9875273",
+   "classification": "NO_GUIDANCE",
+   "confidence": "high",
+   "key_quote": "Admission to Trading & Publication of Final Terms - Notification of admission to trading on the Main Market of the London Stock Exchange plc for U.S.$1,000,000,000 5.747 per cent. Fixed Rate Reset Notes due 2032",
+   "summary": "This is a regulatory notification regarding the admission to trading of debt securities (fixed rate reset notes) on the London Stock Exchange. The announcement contains no financial results, performance metrics, or comparison to expectations. It is purely a procedural announcement about the listing and issuance of debt instruments under Standard Chartered's debt issuance programme.",
+   "metrics_ahead": [],
+   "guidance_change": "none_stated",
+   "watchlist": false
+  },
+  {
+   "id": "9875318",
+   "time": "13 Nov 2026 03:28 PM",
+   "company": "Schroder Oriental Income Fund Ltd.",
+   "ticker": "SOI",
+   "headline": "Results analysis from Kepler Trust Intelligence",
+   "url": "https://www.investegate.co.uk/announcement/rns/schroder-oriental-income-fund-ltd---soi/results-analysis-from-kepler-trust-intelligence/9875318",
+   "classification": "STRONGLY_AHEAD",
+   "confidence": "high",
+   "key_quote": "NAV total return of 51.7%, notably ahead of its benchmark",
+   "summary": "The trust delivered exceptional performance with a NAV total return of 51.7% that was notably ahead of its benchmark, along with even stronger share price returns of 56.9%. The fund achieved 20 consecutive years of dividend growth, earning the first-ever Dividend Hero accolade for an Asian trust. Performance was driven by strong stock selection (particularly in Taiwan and Korea technology), strategic underweighting of China, and value factor contributions. The manager's disciplined approach of taking profits and rebalancing positions is highlighted as a key strength.",
+   "metrics_ahead": [
+    "NAV total return of 51.7% notably ahead of benchmark",
+    "share price total return of 56.9%",
+    "stock selection outperformance",
+    "20-year consecutive dividend growth achievement"
+   ],
+   "guidance_change": "none_stated",
+   "watchlist": false
   }
  ],
  "dealings": [
@@ -583,6 +633,48 @@
    "shares": 250,
    "price_per_share_gbp": 997.87,
    "total_value_gbp": 249467.5
+  },
+  {
+   "id": "9875236",
+   "time": "13 Nov 2026 03:00 PM",
+   "company": "HGCapital Trust",
+   "ticker": "HGT",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/hgcapital-trust--hgt/director-pdmr-shareholding/9875236",
+   "director_name": "Helena Coles",
+   "role": "Non-Executive Director",
+   "direction": "buy",
+   "shares": 83,
+   "price_per_share_gbp": 3.8614,
+   "total_value_gbp": 320.5862
+  },
+  {
+   "id": "9875272",
+   "time": "13 Nov 2026 03:15 PM",
+   "company": "Oberon Investments Group Plc",
+   "ticker": "OBE",
+   "headline": "SIP Shares and Director/PDMR Dealing",
+   "url": "https://www.investegate.co.uk/announcement/rns/oberon-investments-group-plc--obe/sip-shares-and-director-pdmr-dealing-/9875272",
+   "director_name": "Simon McGivern",
+   "role": "Chief Executive Officer",
+   "direction": "other",
+   "shares": 12766,
+   "price_per_share_gbp": 0.0235,
+   "total_value_gbp": 300.01
+  },
+  {
+   "id": "9875319",
+   "time": "13 Nov 2026 03:29 PM",
+   "company": "Breedon Group",
+   "ticker": "BREE",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/breedon-group--bree/director-pdmr-shareholding/9875319",
+   "director_name": "Clive Watson",
+   "role": "Non-executive Director and PDMR",
+   "direction": "buy",
+   "shares": 715,
+   "price_per_share_gbp": 3.2888,
+   "total_value_gbp": 2351.49
   }
  ]
 }
