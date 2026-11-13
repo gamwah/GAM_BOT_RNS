@@ -437,6 +437,66 @@
    "metrics_ahead": [],
    "guidance_change": "none_stated",
    "watchlist": false
+  },
+  {
+   "id": "9874877",
+   "time": "13 Nov 2026 12:30 PM",
+   "company": "OSB Group",
+   "ticker": "OSB",
+   "headline": "OSB GROUP PLC announces Final Results of its ...",
+   "url": "https://www.investegate.co.uk/announcement/gnw/osb-group--osb/osb-group-plc-announces-final-results-of-its-/9874877",
+   "classification": "NO_GUIDANCE",
+   "confidence": "high",
+   "key_quote": "OSB GROUP PLC announces final results of its separate invitations to holders of its outstanding...to tender their Notes for purchase by the Offeror for cash",
+   "summary": "This announcement relates to the final results of tender offers for two series of fixed rate resetting notes (£300m due 2028 and £400m due 2030). OSB accepted £279.585m of the 2028 Notes and £354.849m of the 2030 Notes, with settlement expected 16 November 2026. This is a debt management/refinancing announcement with no operational performance metrics, financial results, or comparison to expectations disclosed.",
+   "metrics_ahead": [],
+   "guidance_change": "none_stated",
+   "watchlist": false
+  },
+  {
+   "id": "9874880",
+   "time": "13 Nov 2026 12:31 PM",
+   "company": "OSB Group",
+   "ticker": "OSB",
+   "headline": "OSB GROUP PLC Tender offer results: projected...",
+   "url": "https://www.investegate.co.uk/announcement/gnw/osb-group--osb/osb-group-plc-tender-offer-results-projected-/9874880",
+   "classification": "NO_GUIDANCE",
+   "confidence": "high",
+   "key_quote": "Following completion and not including the one-off charge referred to above, the tender offer is expected to deliver a total income benefit through the reduction in coupon payments, net of hedging, on the Senior Holdco securities.",
+   "summary": "OSB Group announced results of a tender offer for Senior Holdco securities totalling £634.4m, exceeding the £500m cap. The announcement discloses projected incremental financial impacts through to 2029, including a one-off 2026 charge of c.£42m but expected cumulative total income benefits of c.£51m through 2029. This is a technical capital management announcement with forward-looking projections rather than reported results, and contains no comparison to market expectations or guidance changes.",
+   "metrics_ahead": [],
+   "guidance_change": "none_stated",
+   "watchlist": false
+  },
+  {
+   "id": "9875126",
+   "time": "13 Nov 2026 02:00 PM",
+   "company": "GUINNESS PARTNERSHIP (THE) LIMITED",
+   "ticker": "BB26",
+   "headline": "The Guinness Partnership Limited Half Year Results",
+   "url": "https://www.investegate.co.uk/announcement/rns/guinness-partnership-the-limited--bb26/the-guinness-partnership-limited-half-year-results/9875126",
+   "classification": "IN_LINE",
+   "confidence": "medium",
+   "key_quote": "Development activity is lower than expected in H1 due to slippage across a number of schemes.",
+   "summary": "The Guinness Partnership reported H1 2026/27 results with mixed operational performance. Turnover was essentially flat (£263m vs £262m prior year H1), up just 0.5%. Operating surplus improved to £70.2m (from £61.4m) and total surplus increased to £26.3m (from £17.8m), but this reflects 'profiling of planned maintenance expenditure' rather than operational outperformance. Critically, development activity was explicitly stated as 'lower than expected in H1 due to slippage across a number of schemes,' with investment in new homes falling to £79m from £97m. Financial metrics including operating margin (26.7%), interest cover (197%), and liquidity (£870m) remain solid. However, the results show no comparison to external expectations or guidance, with explicit underperformance noted in development activity.",
+   "metrics_ahead": [],
+   "guidance_change": "none_stated",
+   "watchlist": false
+  },
+  {
+   "id": "9875152",
+   "time": "13 Nov 2026 02:12 PM",
+   "company": "Miotal Plc",
+   "ticker": "MIO",
+   "headline": "Update on Opportunity",
+   "url": "https://www.investegate.co.uk/announcement/rns/miotal-plc--mio/update-on-opportunity-/9875152",
+   "classification": "NO_GUIDANCE",
+   "confidence": "high",
+   "key_quote": "it is no longer pursuing this opportunity",
+   "summary": "This announcement concerns Wolfram Resources PLC (not Miotal Plc as stated in the prompt), which is updating the market that it has discontinued pursuit of precious metals exploration assets in Central Asia after completing due diligence. The company states it is actively pursuing other opportunities with clear value advantage. No performance metrics, financial results, or comparisons to expectations are provided in this announcement.",
+   "metrics_ahead": [],
+   "guidance_change": "none_stated",
+   "watchlist": false
   }
  ],
  "dealings": [
@@ -509,6 +569,20 @@
    "shares": 12,
    "price_per_share_gbp": 15.4022,
    "total_value_gbp": 184.8264
+  },
+  {
+   "id": "9875165",
+   "time": "13 Nov 2026 02:30 PM",
+   "company": "London Stock Exchange Group",
+   "ticker": "LSEG",
+   "headline": "Director/PDMR Dealing",
+   "url": "https://www.investegate.co.uk/announcement/rns/london-stock-exchange-group--lseg/director-pdmr-dealing/9875165",
+   "director_name": "Michel-Alain Proch",
+   "role": "Group Chief Financial Officer",
+   "direction": "other",
+   "shares": 250,
+   "price_per_share_gbp": 997.87,
+   "total_value_gbp": 249467.5
   }
  ]
 }
