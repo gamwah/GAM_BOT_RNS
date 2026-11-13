@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12T22:52:02+00:00",
+ "generated": "2026-11-13T22:54:06+00:00",
  "benchmark": "^FTAS",
  "horizons": [
   "1d",
@@ -8,6 +8,133 @@
   "3m"
  ],
  "events": [
+  {
+   "id": "9875318",
+   "date": "2026-11-13",
+   "ticker": "SOI",
+   "company": "Schroder Oriental Income Fund Ltd.",
+   "classification": "STRONGLY_AHEAD",
+   "key_quote": "NAV total return of 51.7%, notably ahead of its benchmark",
+   "url": "https://www.investegate.co.uk/announcement/rns/schroder-oriental-income-fund-ltd---soi/results-analysis-from-kepler-trust-intelligence/9875318",
+   "returns": {
+    "1d": -0.0093,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.012,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
+   "id": "9874559",
+   "date": "2026-11-13",
+   "ticker": "HKLD",
+   "company": "Hongkong Land Holding Ltd. (Sing.Reg)",
+   "classification": "AHEAD",
+   "key_quote": "Hongkong Land exceeds US$4 billion 2027 capital recycling target ahead of schedule",
+   "url": "https://www.investegate.co.uk/announcement/rns/hongkong-land-holding-ltd-sing-reg---hkld/capital-recycling-update-share-buyback-expansion/9874559",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9874495",
+   "date": "2026-11-13",
+   "ticker": "46QW",
+   "company": "PEABODY CAPITAL PLC",
+   "classification": "MIXED",
+   "key_quote": "overall, our net surplus has increased when compared to the same period last year by £18m to £73m and we have continued to comfortably meet lender interest cover requirements, maintaining significant levels of headroom",
+   "url": "https://www.investegate.co.uk/announcement/rns/peabody-capital-plc--46qw/half-year-trading-update-/9874495",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9873668",
+   "date": "2026-11-13",
+   "ticker": "AGY",
+   "company": "Allergy Therapeutics",
+   "classification": "AHEAD",
+   "key_quote": "Strong revenue growth expected in the year ending 30 June 2027, the first year to benefit from a full high season of Grassmuno availability",
+   "url": "https://www.investegate.co.uk/announcement/rns/allergy-therapeutics--agy/audited-preliminary-results-and-annual-report-/9873668",
+   "returns": {
+    "1d": 0.0,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.0027,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
+   "id": "9873584",
+   "date": "2026-11-13",
+   "ticker": "HE1",
+   "company": "Helium One Group Ltd (DI)",
+   "classification": "AHEAD",
+   "key_quote": "This has been an incredibly busy period for the Company which has seen us deliver some very significant milestones...Helium One have transitioned from an exploration company into a company with production in the US and a world class development project in Tanzania",
+   "url": "https://www.investegate.co.uk/announcement/rns/helium-one-group-ltd-di---he1/audited-results-for-the-year-ended-30-june-2026/9873584",
+   "returns": {
+    "1d": 0.0089,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": 0.0063,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
+   "id": "9873564",
+   "date": "2026-11-13",
+   "ticker": "WISE",
+   "company": "Wise Class A",
+   "classification": "AHEAD",
+   "key_quote": "More than 16 million people and businesses used Wise in the past six months. These customers moved $141 billion across borders, up 24% year on year.",
+   "url": "https://www.investegate.co.uk/announcement/rns/wise-class-a--wise/wise-group-plc-h1-fy27-results/9873564",
+   "returns": {
+    "1d": 0.0768,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": 0.0742,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
+   "id": "9873374",
+   "date": "2026-11-13",
+   "ticker": "0ACL",
+   "company": "Hydrogenpro ASA",
+   "classification": "BELOW",
+   "key_quote": "Given the Company's liquidity position and the need to secure additional funding in the short to near term, the Board is continuing to evaluate alternative financing measures",
+   "url": "https://www.investegate.co.uk/announcement/mfn/hydrogenpro-asa--0acl/hydrogenpro-asa-third-quarter-2026-results-/9873374",
+   "returns": {
+    "1d": -0.2692,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.2719,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
   {
    "id": "9873221",
    "date": "2026-11-12",
@@ -724,13 +851,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/vaalco-energy-inc-di---egy/third-quarter-2026-results/9861517",
    "returns": {
     "1d": -0.0471,
-    "5d": null,
+    "5d": -0.0471,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.0373,
-    "5d": null,
+    "5d": -0.0547,
     "1m": null,
     "3m": null
    }
@@ -3841,13 +3968,13 @@
    "returns": {
     "1d": -0.0299,
     "5d": -0.0365,
-    "1m": null,
+    "1m": -0.0561,
     "3m": null
    },
    "excess": {
     "1d": -0.0338,
     "5d": -0.0261,
-    "1m": null,
+    "1m": -0.0628,
     "3m": null
    }
   },
@@ -3862,13 +3989,13 @@
    "returns": {
     "1d": -0.0727,
     "5d": -0.1091,
-    "1m": null,
+    "1m": -0.0818,
     "3m": null
    },
    "excess": {
     "1d": -0.0766,
     "5d": -0.0986,
-    "1m": null,
+    "1m": -0.0885,
     "3m": null
    }
   },
@@ -3883,13 +4010,13 @@
    "returns": {
     "1d": -0.0769,
     "5d": -0.0855,
-    "1m": null,
+    "1m": -0.0091,
     "3m": null
    },
    "excess": {
     "1d": -0.0808,
     "5d": -0.0751,
-    "1m": null,
+    "1m": -0.0158,
     "3m": null
    }
   },
@@ -3904,13 +4031,13 @@
    "returns": {
     "1d": 0.0107,
     "5d": -0.0511,
-    "1m": null,
+    "1m": -0.0642,
     "3m": null
    },
    "excess": {
     "1d": 0.0068,
     "5d": -0.0407,
-    "1m": null,
+    "1m": -0.0709,
     "3m": null
    }
   },
@@ -4104,13 +4231,13 @@
    "returns": {
     "1d": 0.0,
     "5d": 0.0,
-    "1m": null,
+    "1m": 0.0,
     "3m": null
    },
    "excess": {
     "1d": -0.0098,
     "5d": -0.0027,
-    "1m": null,
+    "1m": -0.0138,
     "3m": null
    }
   },
@@ -12046,11 +12173,11 @@
  "summary": {
   "STRONGLY_AHEAD": {
    "1d": {
-    "n": 144,
-    "avg_return": 0.0353,
-    "avg_excess": 0.0353,
-    "median_excess": 0.0268,
-    "hit_rate": 0.764
+    "n": 145,
+    "avg_return": 0.035,
+    "avg_excess": 0.035,
+    "median_excess": 0.0261,
+    "hit_rate": 0.759
    },
    "5d": {
     "n": 137,
@@ -12072,25 +12199,25 @@
   },
   "AHEAD": {
    "1d": {
-    "n": 259,
-    "avg_return": 0.0082,
-    "avg_excess": 0.0081,
-    "median_excess": 0.0046,
-    "hit_rate": 0.571
+    "n": 262,
+    "avg_return": 0.0084,
+    "avg_excess": 0.0083,
+    "median_excess": 0.0047,
+    "hit_rate": 0.573
    },
    "5d": {
-    "n": 243,
-    "avg_return": 0.0094,
-    "avg_excess": 0.0108,
-    "median_excess": 0.008,
-    "hit_rate": 0.547
+    "n": 244,
+    "avg_return": 0.0091,
+    "avg_excess": 0.0105,
+    "median_excess": 0.0077,
+    "hit_rate": 0.545
    },
    "1m": {
-    "n": 177,
-    "avg_return": -0.0077,
-    "avg_excess": -0.0094,
+    "n": 180,
+    "avg_return": -0.008,
+    "avg_excess": -0.0098,
     "median_excess": -0.006,
-    "hit_rate": 0.469
+    "hit_rate": 0.461
    },
    "3m": {
     "n": 0
@@ -12112,11 +12239,11 @@
     "hit_rate": 0.356
    },
    "1m": {
-    "n": 42,
-    "avg_return": -0.0781,
-    "avg_excess": -0.0791,
-    "median_excess": -0.0618,
-    "hit_rate": 0.262
+    "n": 43,
+    "avg_return": -0.0782,
+    "avg_excess": -0.0793,
+    "median_excess": -0.0631,
+    "hit_rate": 0.256
    },
    "3m": {
     "n": 0
@@ -12124,11 +12251,11 @@
   },
   "BELOW": {
    "1d": {
-    "n": 86,
-    "avg_return": -0.1239,
-    "avg_excess": -0.1241,
-    "median_excess": -0.0757,
-    "hit_rate": 0.186
+    "n": 87,
+    "avg_return": -0.1256,
+    "avg_excess": -0.1258,
+    "median_excess": -0.0778,
+    "hit_rate": 0.184
    },
    "5d": {
     "n": 80,
@@ -12138,11 +12265,11 @@
     "hit_rate": 0.237
    },
    "1m": {
-    "n": 56,
-    "avg_return": -0.1896,
-    "avg_excess": -0.1927,
-    "median_excess": -0.152,
-    "hit_rate": 0.268
+    "n": 57,
+    "avg_return": -0.1873,
+    "avg_excess": -0.1904,
+    "median_excess": -0.1472,
+    "hit_rate": 0.263
    },
    "3m": {
     "n": 0
@@ -12169,6 +12296,7 @@
   "35CS",
   "42RJ",
   "45GD",
+  "46QW",
   "51GC",
   "51NI",
   "79IU",
@@ -12180,6 +12308,7 @@
   "ALH",
   "FNEWS",
   "HEY1",
+  "HKLD",
   "HLPD",
   "MCJ",
   "PBX",
