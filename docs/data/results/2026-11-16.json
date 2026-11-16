@@ -544,6 +544,56 @@
    "metrics_ahead": [],
    "guidance_change": "none_stated",
    "watchlist": false
+  },
+  {
+   "id": "9877976",
+   "time": "16 Nov 2026 04:35 PM",
+   "company": "Big Yellow Group",
+   "ticker": "BYG",
+   "headline": "Interim Results",
+   "url": "https://www.investegate.co.uk/announcement/rns/big-yellow-group--byg/interim-results-/9877976",
+   "classification": "IN_LINE",
+   "confidence": "medium",
+   "key_quote": "This business has been carefully positioned over many years for all weathers...the defensive qualities of the Company have, to date, proved effective.",
+   "summary": "Big Yellow reported mixed operational metrics with revenue up 4% and like-for-like store revenue up 3%, but adjusted profit before tax flat year-on-year at £59.4m (down from £59.6m). Like-for-like occupancy declined slightly by 0.3 ppts to 77.7%, though rents increased 3%. The company maintained its interim dividend at 23.8 pence. No explicit comparison to analyst or market expectations was provided. The statutory loss of £213.1m was driven by asset revaluations due to rising interest rates, not operational underperformance. The company's commentary suggests results are tracking in line with the defensive positioning strategy, with management expressing continued confidence.",
+   "metrics_ahead": [
+    "Revenue growth 4%",
+    "Like-for-like store revenue growth 3%",
+    "Average achieved net rent per sq ft up 3%",
+    "Closing net rent per sq ft up 3%"
+   ],
+   "guidance_change": "maintained",
+   "watchlist": false
+  },
+  {
+   "id": "9877986",
+   "time": "16 Nov 2026 04:45 PM",
+   "company": "ASM International NV",
+   "ticker": "0NX3",
+   "headline": "ASM share buyback update November 11 – 13, 20...",
+   "url": "https://www.investegate.co.uk/announcement/gnw/asm-international-nv--0nx3/asm-share-buyback-update-november-11-13-20-/9877986",
+   "classification": "NO_GUIDANCE",
+   "confidence": "high",
+   "key_quote": "These repurchases were made as part of the €300 million share buyback program which started on November 11, 2026.",
+   "summary": "This is a routine share buyback update reporting transactions conducted under ASM's €300 million buyback program during November 11-13, 2026. The announcement provides transactional details only (shares repurchased, prices, values) with no comparison to expectations, guidance, or performance metrics.",
+   "metrics_ahead": [],
+   "guidance_change": "none_stated",
+   "watchlist": false
+  },
+  {
+   "id": "9878010",
+   "time": "16 Nov 2026 05:00 PM",
+   "company": "Irish Continental Group Units (Comp) (CDI)",
+   "ticker": "ICGC",
+   "headline": "Update on Scheme Record Time and Effective Ti...",
+   "url": "https://www.investegate.co.uk/announcement/gnw/irish-continental-group-units-comp-cdi---icgc/update-on-scheme-record-time-and-effective-ti-/9878010",
+   "classification": "NO_GUIDANCE",
+   "confidence": "high",
+   "key_quote": "Update on Scheme Record Time and Effective Time - Scheme Record Time shall be 6.00 p.m. on 20 November 2026",
+   "summary": "This is a regulatory announcement regarding the implementation of a recommended cash acquisition scheme for Irish Continental Group by Bluefin Bidco Limited. It provides administrative updates on the scheme record time and effective time following High Court sanction. The announcement contains no operational performance metrics, financial results, or guidance comparisons to expectations.",
+   "metrics_ahead": [],
+   "guidance_change": "none_stated",
+   "watchlist": false
   }
  ],
  "dealings": [
@@ -686,6 +736,62 @@
    "shares": 79,
    "price_per_share_gbp": 1.82,
    "total_value_gbp": 143.78
+  },
+  {
+   "id": "9877961",
+   "time": "16 Nov 2026 04:20 PM",
+   "company": "Finsbury Growth & Income Trust",
+   "ticker": "FGT",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/prn/finsbury-growth-income-trust--fgt/director-pdmr-shareholding/9877961",
+   "director_name": "James Ashton",
+   "role": "Non-executive Director",
+   "direction": "other",
+   "shares": 21,
+   "price_per_share_gbp": 8.4943,
+   "total_value_gbp": 178.3803
+  },
+  {
+   "id": "9877970",
+   "time": "16 Nov 2026 04:30 PM",
+   "company": "Vistry Group",
+   "ticker": "VTY",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/vistry-group--vty/director-pdmr-shareholding/9877970",
+   "director_name": "Daniel King",
+   "role": "Executive Chair",
+   "direction": "other",
+   "shares": 63,
+   "price_per_share_gbp": 2.36603,
+   "total_value_gbp": 149.05989
+  },
+  {
+   "id": "9877971",
+   "time": "16 Nov 2026 04:30 PM",
+   "company": "Mitie Group",
+   "ticker": "MTO",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/mitie-group--mto/director-pdmr-shareholding/9877971",
+   "director_name": "Phil Bentley",
+   "role": "Chief Executive Officer",
+   "direction": "buy",
+   "shares": 72,
+   "price_per_share_gbp": 2.088,
+   "total_value_gbp": 150.34
+  },
+  {
+   "id": "9878019",
+   "time": "16 Nov 2026 05:01 PM",
+   "company": "Fidelity Emerging Markets Limited Ptg NPV",
+   "ticker": "FEML",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/prn/fidelity-emerging-markets-limited-ptg-npv--feml/director-pdmr-shareholding/9878019",
+   "director_name": "Mr Torsten Koster",
+   "role": "Non-executive director",
+   "direction": "buy",
+   "shares": 8000,
+   "price_per_share_gbp": 11.78,
+   "total_value_gbp": 94240.0
   }
  ]
 }
