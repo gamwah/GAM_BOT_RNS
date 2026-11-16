@@ -452,6 +452,98 @@
    "metrics_ahead": [],
    "guidance_change": "none_stated",
    "watchlist": false
+  },
+  {
+   "id": "9877631",
+   "time": "16 Nov 2026 01:34 PM",
+   "company": "HarbourVest Global Private Equity Limited A Shs",
+   "ticker": "HVPE",
+   "headline": "Results of Extraordinary General Meeting",
+   "url": "https://www.investegate.co.uk/announcement/rns/harbourvest-global-private-equity-limited-a-shs--hvpe/results-of-extraordinary-general-meeting/9877631",
+   "classification": "NO_GUIDANCE",
+   "confidence": "high",
+   "key_quote": "The Board expects to make further announcements shortly in relation to Tender Offer elections and the Tender Price, which is due to be calculated as at close of business on 20 November 2026.",
+   "summary": "This announcement reports the results of an Extraordinary General Meeting held on 16 November 2026, detailing shareholder voting on two special resolutions related to a tender offer and share buyback authorizations. The announcement contains no performance metrics, financial results, or comparisons to expectations. It is purely a procedural announcement confirming voting outcomes (90.08% and 99.90% approval rates respectively) and noting that further announcements regarding tender offer elections and pricing will follow.",
+   "metrics_ahead": [],
+   "guidance_change": "none_stated",
+   "watchlist": false
+  },
+  {
+   "id": "9877778",
+   "time": "16 Nov 2026 02:41 PM",
+   "company": "Ecofin Global Utilities and Infrastructure Trust",
+   "ticker": "EGL",
+   "headline": "Portfolio Update as at 31 October 2026",
+   "url": "https://www.investegate.co.uk/announcement/rns/ecofin-global-utilities-and-infrastructure-trust--egl/portfolio-update-as-at-31-october-2026/9877778",
+   "classification": "NO_GUIDANCE",
+   "confidence": "high",
+   "key_quote": "Portfolio Update as at 31 October 2026",
+   "summary": "This is a routine monthly portfolio update announcement directing investors to a factsheet. No performance metrics, results comparison to expectations, or guidance information is provided in the RNS announcement itself.",
+   "metrics_ahead": [],
+   "guidance_change": "none_stated",
+   "watchlist": false
+  },
+  {
+   "id": "9877922",
+   "time": "16 Nov 2026 03:33 PM",
+   "company": "Red Rock Resources",
+   "ticker": "RRR",
+   "headline": "Update",
+   "url": "https://www.investegate.co.uk/announcement/rns/red-rock-resources--rrr/update/9877922",
+   "classification": "AHEAD",
+   "confidence": "medium",
+   "key_quote": "the CPR has come in at the upper end of our expectations",
+   "summary": "Red Rock Resources reported that a Competent Person's Report (CPR) on oil licences in Ivory Coast (held by subsidiary of investee Elephant Oil Corporation) came in at the upper end of expectations. This indicates performance ahead of expectations for this specific asset. The announcement also covers routine operational updates on licence renewals and due diligence extensions, but the material forward-looking statement concerns the CPR exceeding expectations.",
+   "metrics_ahead": [
+    "Elephant Oil CPR valuation/resources came in at upper end of expectations"
+   ],
+   "guidance_change": "none_stated",
+   "watchlist": false
+  },
+  {
+   "id": "9877933",
+   "time": "16 Nov 2026 03:47 PM",
+   "company": "Orosur Mining Inc",
+   "ticker": "OMI",
+   "headline": "AGM Results & Investor Q&A Session",
+   "url": "https://www.investegate.co.uk/announcement/rns/orosur-mining-inc--omi/agm-results-investor-q-a-session-/9877933",
+   "classification": "NO_GUIDANCE",
+   "confidence": "high",
+   "key_quote": "At the AGM, a total of 54,633,688 common shares of the 452,196,324 shares outstanding as at the record date of October 7th 2026, were voted at the meeting, representing approximately 12.1% of the then issued and outstanding common shares of the Company.",
+   "summary": "This announcement reports AGM voting results and notification of an investor Q&A session. All resolutions were passed with strong support (ranging from 82.8% to 99.0% approval). The announcement contains no operational or financial performance data, no comparison to expectations, and no guidance updates. It is purely procedural in nature regarding shareholder votes on directors, auditors, and equity plan renewal. A discrepancy in previously disclosed broker fees is also noted. No performance metrics or forward guidance are discussed.",
+   "metrics_ahead": [],
+   "guidance_change": "none_stated",
+   "watchlist": false
+  },
+  {
+   "id": "9877941",
+   "time": "16 Nov 2026 04:00 PM",
+   "company": "SOCIETATEA ENERGETICA ELECTRICA SA",
+   "ticker": "ELSA",
+   "headline": "3rd Quarter 2026 Results",
+   "url": "https://www.investegate.co.uk/announcement/rns/societatea-energetica-electrica-sa--elsa/3rd-quarter-2026-results/9877941",
+   "classification": "IN_LINE",
+   "confidence": "high",
+   "key_quote": "The results of the first nine months of the year show a solid and resilient Group in a liberalized, yet volatile and challenging market. The results remain close to those of the same period last year.",
+   "summary": "Electrica reported 9M 2026 results with metrics essentially flat or slightly declining compared to 9M 2025: revenues down 0.2%, net profit down 4.6%, EBITDA down 2.6%. The CEO explicitly stated results 'remain close to those of the same period last year,' indicating in-line performance. While the supply segment showed operational improvement, this was offset by distribution segment declines. No guidance upgrade or change was stated. The company characterizes performance as 'solid and resilient' despite challenging market conditions, with no indication of beating expectations.",
+   "metrics_ahead": [],
+   "guidance_change": "none_stated",
+   "watchlist": false
+  },
+  {
+   "id": "9877954",
+   "time": "16 Nov 2026 04:05 PM",
+   "company": "Kavango Resources",
+   "ticker": "KAV",
+   "headline": "Results of General Meeting",
+   "url": "https://www.investegate.co.uk/announcement/rns/kavango-resources--kav/results-of-general-meeting/9877954",
+   "classification": "NO_GUIDANCE",
+   "confidence": "high",
+   "key_quote": "All three resolutions put to members were passed on a show of hands.",
+   "summary": "This announcement reports the results of a General Meeting held on 16 November 2026. Three resolutions were passed: adoption of a new Share Option Plan 2026, approval of the Remuneration Policy 2026, and approval for future general meetings to be called on 14 clear days' notice. The announcement contains voting statistics only and makes no reference to company performance, operational results, financial metrics, or expectations. No comparison to any expectations, forecasts, or guidance is provided.",
+   "metrics_ahead": [],
+   "guidance_change": "none_stated",
+   "watchlist": false
   }
  ],
  "dealings": [
@@ -552,6 +644,48 @@
    "shares": 32907,
    "price_per_share_gbp": 0.5637,
    "total_value_gbp": 18555.63
+  },
+  {
+   "id": "9877863",
+   "time": "16 Nov 2026 03:13 PM",
+   "company": "Motorpoint Group",
+   "ticker": "MOTR",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/motorpoint-group--motr/director-pdmr-shareholding/9877863",
+   "director_name": "Mark Carpenter",
+   "role": "Chief Executive Officer",
+   "direction": "sell",
+   "shares": 100000,
+   "price_per_share_gbp": 1.45,
+   "total_value_gbp": 145000.0
+  },
+  {
+   "id": "9877924",
+   "time": "16 Nov 2026 03:35 PM",
+   "company": "Elementis",
+   "ticker": "ELM",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/elementis--elm/director-pdmr-shareholding/9877924",
+   "director_name": "TRUDY SCHOOLENBERG",
+   "role": "CHAIR, DIRECTOR, PDMR",
+   "direction": "buy",
+   "shares": 15000,
+   "price_per_share_gbp": 1.9208,
+   "total_value_gbp": 28812.0
+  },
+  {
+   "id": "9877952",
+   "time": "16 Nov 2026 04:02 PM",
+   "company": "SSP Group",
+   "ticker": "SSPG",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/ssp-group--sspg/director-pdmr-shareholding/9877952",
+   "director_name": "Satya Menard",
+   "role": "CEO Continental Europe",
+   "direction": "other",
+   "shares": 79,
+   "price_per_share_gbp": 1.82,
+   "total_value_gbp": 143.78
   }
  ]
 }
