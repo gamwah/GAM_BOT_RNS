@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13T22:54:06+00:00",
+ "generated": "2026-11-17T01:05:32+00:00",
  "benchmark": "^FTAS",
  "horizons": [
   "1d",
@@ -8,6 +8,94 @@
   "3m"
  ],
  "events": [
+  {
+   "id": "9877922",
+   "date": "2026-11-16",
+   "ticker": "RRR",
+   "company": "Red Rock Resources",
+   "classification": "AHEAD",
+   "key_quote": "the CPR has come in at the upper end of our expectations",
+   "url": "https://www.investegate.co.uk/announcement/rns/red-rock-resources--rrr/update/9877922",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9876987",
+   "date": "2026-11-16",
+   "ticker": "ZAM",
+   "company": "Zambeef Products",
+   "classification": "MIXED",
+   "key_quote": "Revenue for the financial year ended 30 September 2026 will be approximately 20% ahead of market expectations (in US Dollar terms), while Operating Profit is expected to be broadly in line with market expectations.",
+   "url": "https://www.investegate.co.uk/announcement/rns/zambeef-products--zam/full-year-trading-update/9876987",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9875770",
+   "date": "2026-11-16",
+   "ticker": "APN",
+   "company": "Applied Nutrition Plc",
+   "classification": "AHEAD",
+   "key_quote": "Strong growth and accelerating performance throughout the year delivered revenue and Adjusted EBITDA in line with upgraded market expectations",
+   "url": "https://www.investegate.co.uk/announcement/rns/applied-nutrition-plc--apn/preliminary-results-/9875770",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9875750",
+   "date": "2026-11-16",
+   "ticker": "SRE",
+   "company": "Sirius Real Estate Ltd.",
+   "classification": "STRONGLY_AHEAD",
+   "key_quote": "Sirius delivered another strong first half with like-for-like rent roll growth of 5.1% and total rent roll growth of 11.3% overall...continue to drive FFO and deliver inflation beating dividend growth for our shareholders.",
+   "url": "https://www.investegate.co.uk/announcement/rns/sirius-real-estate-ltd---sre/interim-results-for-six-months-ended-30-sept-2026/9875750",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9875739",
+   "date": "2026-11-16",
+   "ticker": "KLSO",
+   "company": "Kelso Group Holdings",
+   "classification": "AHEAD",
+   "key_quote": "NAV/share increase of 68% since 1 January 2026...estimated unaudited NAV per share was 3.9p, up 68% since the start of the year and 153% since inception in January 2023, a compounded annualised growth rate of 28%",
+   "url": "https://www.investegate.co.uk/announcement/rns/kelso-group-holdings--klso/trading-update/9875739",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9875718",
+   "date": "2026-11-16",
+   "ticker": "SOLI",
+   "company": "Solid State",
+   "classification": "AHEAD",
+   "key_quote": "The Board is very pleased to report strong growth in the underlying business in the Period, reflecting growth of circa 25% in non-NATO Support and Procurement Agency revenues, and resulting in revenue and adjusted profit before tax exceeding the exceptionally strong prior year comparative",
+   "url": "https://www.investegate.co.uk/announcement/rns/solid-state--soli/trading-update-notice-of-results-presentations/9875718",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9875713",
+   "date": "2026-11-16",
+   "ticker": "LGEN",
+   "company": "Legal & General Group",
+   "classification": "AHEAD",
+   "key_quote": "Core operating EPS growth remains on track to be above the top-end of our 6-9% target range for 2026",
+   "url": "https://www.investegate.co.uk/announcement/rns/legal-general-group--lgen/q3-trading-update-2026/9875713",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9875707",
+   "date": "2026-11-16",
+   "ticker": "MEGP",
+   "company": "Me Group International",
+   "classification": "MIXED",
+   "key_quote": "Wash.ME is expected to deliver a c.14% increase in revenue in FY 2026 compared with FY 2025...achieved despite softer consumer demand for laundry drying services due to a sustained period of abnormally hot and dry summer weather across Europe.",
+   "url": "https://www.investegate.co.uk/announcement/rns/me-group-international--megp/year-end-trading-update/9875707",
+   "returns": null,
+   "excess": null
+  },
   {
    "id": "9875318",
    "date": "2026-11-13",
@@ -37,8 +125,18 @@
    "classification": "AHEAD",
    "key_quote": "Hongkong Land exceeds US$4 billion 2027 capital recycling target ahead of schedule",
    "url": "https://www.investegate.co.uk/announcement/rns/hongkong-land-holding-ltd-sing-reg---hkld/capital-recycling-update-share-buyback-expansion/9874559",
-   "returns": null,
-   "excess": null
+   "returns": {
+    "1d": 0.0,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.0027,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
   },
   {
    "id": "9874495",
@@ -81,13 +179,13 @@
    "key_quote": "This has been an incredibly busy period for the Company which has seen us deliver some very significant milestones...Helium One have transitioned from an exploration company into a company with production in the US and a world class development project in Tanzania",
    "url": "https://www.investegate.co.uk/announcement/rns/helium-one-group-ltd-di---he1/audited-results-for-the-year-ended-30-june-2026/9873584",
    "returns": {
-    "1d": 0.0089,
+    "1d": 0.0107,
     "5d": null,
     "1m": null,
     "3m": null
    },
    "excess": {
-    "1d": 0.0063,
+    "1d": 0.0081,
     "5d": null,
     "1m": null,
     "3m": null
@@ -12199,11 +12297,11 @@
   },
   "AHEAD": {
    "1d": {
-    "n": 262,
+    "n": 263,
     "avg_return": 0.0084,
     "avg_excess": 0.0083,
-    "median_excess": 0.0047,
-    "hit_rate": 0.573
+    "median_excess": 0.0046,
+    "hit_rate": 0.57
    },
    "5d": {
     "n": 244,
@@ -12306,16 +12404,23 @@
   "ADS",
   "AIRA",
   "ALH",
+  "APN",
   "FNEWS",
   "HEY1",
-  "HKLD",
   "HLPD",
+  "KLSO",
+  "LGEN",
   "MCJ",
+  "MEGP",
   "PBX",
+  "RRR",
   "SHPP",
   "SNOX",
+  "SOLI",
+  "SRE",
   "TTA",
   "UNTU",
+  "ZAM",
   "ZCC"
  ],
  "suspect": [
