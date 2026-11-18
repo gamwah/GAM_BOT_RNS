@@ -710,6 +710,21 @@
    "metrics_ahead": [],
    "guidance_change": "none_stated",
    "watchlist": false
+  },
+  {
+   "id": "9882540",
+   "time": "18 Nov 2026 04:31 PM",
+   "company": "Integrated Diagnostics Holdings",
+   "ticker": "IDHC",
+   "headline": "Notice of Results",
+   "url": "https://www.investegate.co.uk/announcement/rns/integrated-diagnostics-holdings--idhc/notice-of-results/9882540",
+   "classification": "NO_GUIDANCE",
+   "confidence": "high",
+   "key_quote": "Notice of Results - unaudited results for the nine months ended 30 September 2026 will be published on 25 November 2026",
+   "summary": "This is a notice announcing the publication date of nine-month results for the period ended 30 September 2026, with no actual financial results, performance metrics, or comparisons to expectations included in this announcement. The actual results will be released on 25 November 2026, followed by an analyst call on 7 December 2026.",
+   "metrics_ahead": [],
+   "guidance_change": "none_stated",
+   "watchlist": false
   }
  ],
  "dealings": [
@@ -1034,6 +1049,62 @@
    "shares": 141,
    "price_per_share_gbp": 8.863,
    "total_value_gbp": 1249.683
+  },
+  {
+   "id": "9882521",
+   "time": "18 Nov 2026 04:09 PM",
+   "company": "NCC Group",
+   "ticker": "NCC",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/ncc-group--ncc/director-pdmr-shareholding/9882521",
+   "director_name": "Guy Ellis",
+   "role": "Chief Executive Officer / PDMR",
+   "direction": "buy",
+   "shares": 104,
+   "price_per_share_gbp": 1.5787,
+   "total_value_gbp": 164.1848
+  },
+  {
+   "id": "9882525",
+   "time": "18 Nov 2026 04:18 PM",
+   "company": "TotalEnergies SE",
+   "ticker": "TTE",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/bzw/totalenergies-se--tte/director-pdmr-shareholding/9882525",
+   "director_name": "SBRAIRE JEAN PIERRE",
+   "role": "Member of the Executive Committee",
+   "direction": "sell",
+   "shares": 5505,
+   "price_per_share_gbp": null,
+   "total_value_gbp": null
+  },
+  {
+   "id": "9882530",
+   "time": "18 Nov 2026 04:20 PM",
+   "company": "Finsbury Growth & Income Trust",
+   "ticker": "FGT",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/prn/finsbury-growth-income-trust--fgt/director-pdmr-shareholding/9882530",
+   "director_name": "Sandra Kelly",
+   "role": "Non-executive Director",
+   "direction": "other",
+   "shares": 78,
+   "price_per_share_gbp": 8.863,
+   "total_value_gbp": 691.714
+  },
+  {
+   "id": "9882532",
+   "time": "18 Nov 2026 04:26 PM",
+   "company": "ASA International Group",
+   "ticker": "ASAI",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/asa-international-group--asai/director-pdmr-shareholding/9882532",
+   "director_name": "Martijn Bollen",
+   "role": "General Counsel / PDMR",
+   "direction": "other",
+   "shares": 52822,
+   "price_per_share_gbp": 0.86,
+   "total_value_gbp": 45442.32
   }
  ]
 }
