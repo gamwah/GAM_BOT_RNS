@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T23:58:00+00:00",
+ "generated": "2026-11-18T23:36:16+00:00",
  "benchmark": "^FTAS",
  "horizons": [
   "1d",
@@ -9,6 +9,111 @@
  ],
  "events": [
   {
+   "id": "9880600",
+   "date": "2026-11-18",
+   "ticker": "HAS",
+   "company": "Hays",
+   "classification": "STRONGLY_AHEAD",
+   "key_quote": "We now expect pre-exceptional operating profit in the first half of FY27 will be at least £35m, materially above current consensus",
+   "url": "https://www.investegate.co.uk/announcement/rns/hays--has/trading-update-/9880600",
+   "returns": {
+    "1d": 0.3893,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": 0.4009,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
+   "id": "9880549",
+   "date": "2026-11-18",
+   "ticker": "ITH",
+   "company": "Ithaca Energy",
+   "classification": "STRONGLY_AHEAD",
+   "key_quote": "record quarterly adjusted EBITDAX of $663 million...and a second material upgrade to management's guidance range of $560-580 million for FY 2026, reflecting a $75 million increase to guidance at the mid-point during the year",
+   "url": "https://www.investegate.co.uk/announcement/rns/ithaca-energy--ith/third-quarter-update-and-results-/9880549",
+   "returns": {
+    "1d": -0.0229,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.0113,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
+   "id": "9880521",
+   "date": "2026-11-18",
+   "ticker": "MPAC",
+   "company": "MPAC Group",
+   "classification": "BELOW",
+   "key_quote": "The Group now expects FY26 revenue to be behind previous expectations, marginally ahead year-on-year on an underlying basis, and with operating margins also slightly below the Board's previous expectations.",
+   "url": "https://www.investegate.co.uk/announcement/rns/mpac-group--mpac/fy26-trading-update/9880521",
+   "returns": {
+    "1d": -0.1095,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.0979,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
+   "id": "9880517",
+   "date": "2026-11-18",
+   "ticker": "CTEC",
+   "company": "Convatec Group",
+   "classification": "STRONGLY_AHEAD",
+   "key_quote": "Revenue growth has accelerated in the second half, as we expected. We saw notable strength in Infusion Care, where improved execution enabled us to meet rising demand, ahead of new capacity coming online in 2027.",
+   "url": "https://www.investegate.co.uk/announcement/rns/convatec-group--ctec/convatec-10-month-trading-update/9880517",
+   "returns": {
+    "1d": 0.094,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": 0.1056,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
+   "id": "9880506",
+   "date": "2026-11-18",
+   "ticker": "VEL",
+   "company": "Velocity Composites",
+   "classification": "BELOW",
+   "key_quote": "FY 2026 revenue and Adjusted EBITDA will be slightly below market expectations",
+   "url": "https://www.investegate.co.uk/announcement/rns/velocity-composites--vel/trading-statement/9880506",
+   "returns": {
+    "1d": -0.0943,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.0828,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
    "id": "9879486",
    "date": "2026-11-17",
    "ticker": "JAR",
@@ -16,8 +121,18 @@
    "classification": "AHEAD",
    "key_quote": "Jardines' portfolio delivered strong performance in the third quarter of 2026, ahead of expectations at the half year. Profit guidance was lifted in October to between US$5.50 and US$5.65 per share for the full year on an underlying basis (+3-6%) from previous guidance of US$5.33 per share.",
    "url": "https://www.investegate.co.uk/announcement/rns/jardine-matheson-holdings-ltd-singapore-reg---jar/interim-management-statement-/9879486",
-   "returns": null,
-   "excess": null
+   "returns": {
+    "1d": 0.0,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": 0.017,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
   },
   {
    "id": "9879077",
@@ -556,13 +671,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/atalaya-mining--atym/q3-and-ytd-2026-financial-results/9871479",
    "returns": {
     "1d": -0.0241,
-    "5d": null,
+    "5d": -0.1633,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.0263,
-    "5d": null,
+    "5d": -0.1376,
     "1m": null,
     "3m": null
    }
@@ -588,13 +703,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/qinetiq-group--qq./h1-double-digit-profit-growth-and-higher-margins/9871382",
    "returns": {
     "1d": -0.044,
-    "5d": null,
+    "5d": -0.0772,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.0462,
-    "5d": null,
+    "5d": -0.0515,
     "1m": null,
     "3m": null
    }
@@ -609,13 +724,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/pci-pal--pcip/fy26-results-timing-fy27-trading-update/9871314",
    "returns": {
     "1d": 0.0857,
-    "5d": null,
+    "5d": 0.1143,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": 0.0835,
-    "5d": null,
+    "5d": 0.14,
     "1m": null,
     "3m": null
    }
@@ -630,13 +745,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/dr-martens--docs/h1-fy27-results/9871309",
    "returns": {
     "1d": -0.1467,
-    "5d": null,
+    "5d": -0.1151,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.1489,
-    "5d": null,
+    "5d": -0.0894,
     "1m": null,
     "3m": null
    }
@@ -651,13 +766,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/premier-foods--pfd/half-year-results/9871260",
    "returns": {
     "1d": -0.0365,
-    "5d": null,
+    "5d": -0.0502,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.0387,
-    "5d": null,
+    "5d": -0.0245,
     "1m": null,
     "3m": null
    }
@@ -672,13 +787,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/wizz-air-holdings--wizz/half-year-results-/9871258",
    "returns": {
     "1d": -0.0139,
-    "5d": null,
+    "5d": -0.0166,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.0162,
-    "5d": null,
+    "5d": 0.0092,
     "1m": null,
     "3m": null
    }
@@ -693,13 +808,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/arrow-exploration-corp-cdi---axl/arrow-announces-ic-hz9-well-results/9871230",
    "returns": {
     "1d": 0.0385,
-    "5d": null,
+    "5d": -0.0615,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": 0.0362,
-    "5d": null,
+    "5d": -0.0358,
     "1m": null,
     "3m": null
    }
@@ -714,13 +829,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/chemring-group--chg/post-close-trading-update/9871225",
    "returns": {
     "1d": -0.0304,
-    "5d": null,
+    "5d": -0.0114,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.0326,
-    "5d": null,
+    "5d": 0.0144,
     "1m": null,
     "3m": null
    }
@@ -735,13 +850,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/softcat--sct/q1-2027-trading-update/9871224",
    "returns": {
     "1d": 0.0256,
-    "5d": null,
+    "5d": -0.0314,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": 0.0233,
-    "5d": null,
+    "5d": -0.0056,
     "1m": null,
     "3m": null
    }
@@ -756,13 +871,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/videndum--vid/trading-update/9871221",
    "returns": {
     "1d": -0.1264,
-    "5d": null,
+    "5d": -0.1356,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.1287,
-    "5d": null,
+    "5d": -0.1099,
     "1m": null,
     "3m": null
    }
@@ -777,13 +892,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/theworks-co-uk--wrks/half-year-trading-update/9871220",
    "returns": {
     "1d": 0.0769,
-    "5d": null,
+    "5d": 0.0136,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": 0.0747,
-    "5d": null,
+    "5d": 0.0393,
     "1m": null,
     "3m": null
    }
@@ -798,13 +913,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/tinybuild-inc-di-reg-s-cat-3---tbld/trading-update/9871218",
    "returns": {
     "1d": -0.1154,
-    "5d": null,
+    "5d": -0.1538,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.1176,
-    "5d": null,
+    "5d": -0.1281,
     "1m": null,
     "3m": null
    }
@@ -819,13 +934,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/bae-systems--ba./trading-statement/9871216",
    "returns": {
     "1d": -0.0112,
-    "5d": null,
+    "5d": -0.0467,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.0134,
-    "5d": null,
+    "5d": -0.0209,
     "1m": null,
     "3m": null
    }
@@ -840,13 +955,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/galliford-try--gfrd/agm-statement/9871191",
    "returns": {
     "1d": -0.0154,
-    "5d": null,
+    "5d": -0.0379,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.0177,
-    "5d": null,
+    "5d": -0.0122,
     "1m": null,
     "3m": null
    }
@@ -861,13 +976,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/caledonia-mining-corporation-di---cmcl/3rd-quarter-results/9871189",
    "returns": {
     "1d": -0.0299,
-    "5d": null,
+    "5d": -0.0646,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.0321,
-    "5d": null,
+    "5d": -0.0388,
     "1m": null,
     "3m": null
    }
@@ -882,13 +997,13 @@
    "url": "https://www.investegate.co.uk/announcement/gnw/amaroq-ltd---amrq/q3-2026-operational-and-financial-results/9871085",
    "returns": {
     "1d": -0.0332,
-    "5d": null,
+    "5d": -0.0768,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.0354,
-    "5d": null,
+    "5d": -0.051,
     "1m": null,
     "3m": null
    }
@@ -903,13 +1018,13 @@
    "url": "https://www.investegate.co.uk/announcement/gnw/endeavour-mining--edv/endeavour-reports-strong-q3-2026-results/9871060",
    "returns": {
     "1d": -0.0846,
-    "5d": null,
+    "5d": -0.1679,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.0868,
-    "5d": null,
+    "5d": -0.1422,
     "1m": null,
     "3m": null
    }
@@ -977,13 +1092,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/alien-metals-limited-npv-di---ufo/elizabeth-hill-mineral-resource-estimate-update/9868675",
    "returns": {
     "1d": 0.0,
-    "5d": -0.0948,
+    "5d": -0.0862,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.0077,
-    "5d": -0.0881,
+    "5d": -0.0795,
     "1m": null,
     "3m": null
    }
@@ -1061,13 +1176,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/pipehawk--pip/final-results-for-the-year-ended-30-june-2026/9868647",
    "returns": {
     "1d": -0.2105,
-    "5d": null,
+    "5d": -0.3421,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.2183,
-    "5d": null,
+    "5d": -0.3354,
     "1m": null,
     "3m": null
    }
@@ -3820,13 +3935,13 @@
    "returns": {
     "1d": -0.0625,
     "5d": -0.0469,
-    "1m": null,
+    "1m": 0.0,
     "3m": null
    },
    "excess": {
     "1d": -0.0645,
     "5d": -0.0446,
-    "1m": null,
+    "1m": 0.0151,
     "3m": null
    }
   },
@@ -3841,13 +3956,13 @@
    "returns": {
     "1d": -0.0863,
     "5d": -0.0522,
-    "1m": null,
+    "1m": -0.0881,
     "3m": null
    },
    "excess": {
     "1d": -0.0883,
     "5d": -0.0499,
-    "1m": null,
+    "1m": -0.073,
     "3m": null
    }
   },
@@ -3862,13 +3977,13 @@
    "returns": {
     "1d": 0.0411,
     "5d": -0.0836,
-    "1m": null,
+    "1m": -0.2815,
     "3m": null
    },
    "excess": {
     "1d": 0.039,
     "5d": -0.0813,
-    "1m": null,
+    "1m": -0.2664,
     "3m": null
    }
   },
@@ -3883,13 +3998,13 @@
    "returns": {
     "1d": 0.3125,
     "5d": 0.1562,
-    "1m": null,
+    "1m": 0.3125,
     "3m": null
    },
    "excess": {
     "1d": 0.3105,
     "5d": 0.1585,
-    "1m": null,
+    "1m": 0.3276,
     "3m": null
    }
   },
@@ -3925,13 +4040,13 @@
    "returns": {
     "1d": 0.0091,
     "5d": 0.0093,
-    "1m": null,
+    "1m": 0.0007,
     "3m": null
    },
    "excess": {
     "1d": 0.0071,
     "5d": 0.0116,
-    "1m": null,
+    "1m": 0.0158,
     "3m": null
    }
   },
@@ -3946,13 +4061,13 @@
    "returns": {
     "1d": 0.0882,
     "5d": 0.0735,
-    "1m": null,
+    "1m": -0.0147,
     "3m": null
    },
    "excess": {
     "1d": 0.0862,
     "5d": 0.0758,
-    "1m": null,
+    "1m": 0.0004,
     "3m": null
    }
   },
@@ -3967,13 +4082,13 @@
    "returns": {
     "1d": 0.0196,
     "5d": 0.0,
-    "1m": null,
+    "1m": -0.0392,
     "3m": null
    },
    "excess": {
     "1d": 0.0176,
     "5d": 0.0023,
-    "1m": null,
+    "1m": -0.0241,
     "3m": null
    }
   },
@@ -3988,13 +4103,13 @@
    "returns": {
     "1d": 0.0296,
     "5d": 0.0296,
-    "1m": null,
+    "1m": 0.1259,
     "3m": null
    },
    "excess": {
     "1d": 0.0276,
     "5d": 0.0319,
-    "1m": null,
+    "1m": 0.141,
     "3m": null
    }
   },
@@ -4009,13 +4124,13 @@
    "returns": {
     "1d": 0.0139,
     "5d": 0.0227,
-    "1m": null,
+    "1m": 0.0427,
     "3m": null
    },
    "excess": {
     "1d": 0.0119,
     "5d": 0.025,
-    "1m": null,
+    "1m": 0.0578,
     "3m": null
    }
   },
@@ -4030,13 +4145,13 @@
    "returns": {
     "1d": 0.0721,
     "5d": 0.1827,
-    "1m": null,
+    "1m": 0.2548,
     "3m": null
    },
    "excess": {
     "1d": 0.0701,
     "5d": 0.185,
-    "1m": null,
+    "1m": 0.2699,
     "3m": null
    }
   },
@@ -4051,13 +4166,13 @@
    "returns": {
     "1d": -0.0409,
     "5d": -0.0579,
-    "1m": null,
+    "1m": -0.046,
     "3m": null
    },
    "excess": {
     "1d": -0.0429,
     "5d": -0.0556,
-    "1m": null,
+    "1m": -0.0309,
     "3m": null
    }
   },
@@ -4072,13 +4187,13 @@
    "returns": {
     "1d": -0.0339,
     "5d": -0.0322,
-    "1m": null,
+    "1m": -0.0847,
     "3m": null
    },
    "excess": {
     "1d": -0.0359,
     "5d": -0.0299,
-    "1m": null,
+    "1m": -0.0696,
     "3m": null
    }
   },
@@ -12551,25 +12666,25 @@
  "summary": {
   "STRONGLY_AHEAD": {
    "1d": {
-    "n": 148,
-    "avg_return": 0.034,
-    "avg_excess": 0.0342,
-    "median_excess": 0.0253,
-    "hit_rate": 0.75
+    "n": 151,
+    "avg_return": 0.0364,
+    "avg_excess": 0.0368,
+    "median_excess": 0.026,
+    "hit_rate": 0.748
    },
    "5d": {
-    "n": 141,
-    "avg_return": 0.0316,
-    "avg_excess": 0.0323,
-    "median_excess": 0.0336,
-    "hit_rate": 0.645
+    "n": 144,
+    "avg_return": 0.0296,
+    "avg_excess": 0.0308,
+    "median_excess": 0.033,
+    "hit_rate": 0.639
    },
    "1m": {
-    "n": 103,
-    "avg_return": 0.0187,
-    "avg_excess": 0.0199,
-    "median_excess": 0.0177,
-    "hit_rate": 0.524
+    "n": 106,
+    "avg_return": 0.0154,
+    "avg_excess": 0.017,
+    "median_excess": 0.0161,
+    "hit_rate": 0.528
    },
    "3m": {
     "n": 0
@@ -12577,25 +12692,25 @@
   },
   "AHEAD": {
    "1d": {
-    "n": 273,
-    "avg_return": 0.0078,
-    "avg_excess": 0.008,
-    "median_excess": 0.0043,
-    "hit_rate": 0.568
+    "n": 274,
+    "avg_return": 0.0077,
+    "avg_excess": 0.0081,
+    "median_excess": 0.0044,
+    "hit_rate": 0.569
    },
    "5d": {
-    "n": 248,
-    "avg_return": 0.0045,
-    "avg_excess": 0.0059,
-    "median_excess": 0.0069,
-    "hit_rate": 0.54
+    "n": 259,
+    "avg_return": 0.0021,
+    "avg_excess": 0.0046,
+    "median_excess": 0.0046,
+    "hit_rate": 0.529
    },
    "1m": {
-    "n": 185,
-    "avg_return": -0.0094,
-    "avg_excess": -0.0111,
+    "n": 194,
+    "avg_return": -0.0065,
+    "avg_excess": -0.0074,
     "median_excess": -0.006,
-    "hit_rate": 0.454
+    "hit_rate": 0.459
    },
    "3m": {
     "n": 0
@@ -12610,11 +12725,11 @@
     "hit_rate": 0.312
    },
    "5d": {
-    "n": 59,
-    "avg_return": -0.0865,
-    "avg_excess": -0.0853,
-    "median_excess": -0.0316,
-    "hit_rate": 0.356
+    "n": 60,
+    "avg_return": -0.0861,
+    "avg_excess": -0.0846,
+    "median_excess": -0.0321,
+    "hit_rate": 0.35
    },
    "1m": {
     "n": 43,
@@ -12629,18 +12744,18 @@
   },
   "BELOW": {
    "1d": {
-    "n": 88,
-    "avg_return": -0.128,
-    "avg_excess": -0.1279,
-    "median_excess": -0.0784,
-    "hit_rate": 0.182
+    "n": 90,
+    "avg_return": -0.1274,
+    "avg_excess": -0.1271,
+    "median_excess": -0.0791,
+    "hit_rate": 0.178
    },
    "5d": {
-    "n": 83,
-    "avg_return": -0.1413,
-    "avg_excess": -0.1393,
-    "median_excess": -0.0823,
-    "hit_rate": 0.241
+    "n": 86,
+    "avg_return": -0.1433,
+    "avg_excess": -0.1407,
+    "median_excess": -0.0882,
+    "hit_rate": 0.233
    },
    "1m": {
     "n": 59,
@@ -12687,7 +12802,6 @@
   "FNEWS",
   "HEY1",
   "HLPD",
-  "JAR",
   "MCJ",
   "PBX",
   "SHPP",
