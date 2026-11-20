@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19T23:51:09+00:00",
+ "generated": "2026-11-20T23:21:50+00:00",
  "benchmark": "^FTAS",
  "horizons": [
   "1d",
@@ -8,6 +8,80 @@
   "3m"
  ],
  "events": [
+  {
+   "id": "9886785",
+   "date": "2026-11-20",
+   "ticker": "RKW",
+   "company": "Rockwood Strategic",
+   "classification": "STRONGLY_AHEAD",
+   "key_quote": "comfortably beating two comparator indices",
+   "url": "https://www.investegate.co.uk/announcement/rns/rockwood-strategic--rkw/results-analysis-from-kepler-trust-intelligence/9886785",
+   "returns": {
+    "1d": -0.0263,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.0147,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
+   "id": "9886559",
+   "date": "2026-11-20",
+   "ticker": "HKLD",
+   "company": "Hongkong Land Holding Ltd. (Sing.Reg)",
+   "classification": "AHEAD",
+   "key_quote": "Underlying profit in the third quarter was 38% higher than in the same period in 2025, mainly reflecting higher contributions from Hong Kong Central and the Chinese mainland, together with lower net financing charges.",
+   "url": "https://www.investegate.co.uk/announcement/rns/hongkong-land-holding-ltd-sing-reg---hkld/quarterly-trading-update-/9886559",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9886483",
+   "date": "2026-11-20",
+   "ticker": "SMJ",
+   "company": "Smart (J) & Co.",
+   "classification": "BELOW",
+   "key_quote": "The underlying loss before tax for the year was £184,000, compared with last year's figure of a profit of £866,000...Trading margins continue to be affected by the increases in the cost of construction materials and delays to construction programmes...The prospects of further external contract work are slim.",
+   "url": "https://www.investegate.co.uk/announcement/rns/smart-j-co---smj/preliminary-results/9886483",
+   "returns": {
+    "1d": -0.0435,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.0319,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
+  {
+   "id": "9885338",
+   "date": "2026-11-20",
+   "ticker": "MTC",
+   "company": "Mothercare",
+   "classification": "BELOW",
+   "key_quote": "the scheduled closure of the substantial majority of our leading Middle Eastern franchise partners' franchised stores in the territory in 2027 has seriously undermined our core objectives",
+   "url": "https://www.investegate.co.uk/announcement/rns/mothercare--mtc/interim-results/9885338",
+   "returns": {
+    "1d": 0.0,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": 0.0116,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
+  },
   {
    "id": "9884174",
    "date": "2026-11-19",
@@ -659,13 +733,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/red-rock-resources--rrr/update/9877922",
    "returns": {
     "1d": -0.0833,
-    "5d": null,
+    "5d": 0.0,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.0812,
-    "5d": null,
+    "5d": 0.0504,
     "1m": null,
     "3m": null
    }
@@ -680,13 +754,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/zambeef-products--zam/full-year-trading-update/9876987",
    "returns": {
     "1d": 0.0,
-    "5d": null,
+    "5d": 0.0,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": 0.0022,
-    "5d": null,
+    "5d": 0.0504,
     "1m": null,
     "3m": null
    }
@@ -701,13 +775,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/applied-nutrition-plc--apn/preliminary-results-/9875770",
    "returns": {
     "1d": -0.0333,
-    "5d": null,
+    "5d": -0.0729,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.0311,
-    "5d": null,
+    "5d": -0.0225,
     "1m": null,
     "3m": null
    }
@@ -722,13 +796,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/sirius-real-estate-ltd---sre/interim-results-for-six-months-ended-30-sept-2026/9875750",
    "returns": {
     "1d": -0.022,
-    "5d": null,
+    "5d": -0.0589,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.0198,
-    "5d": null,
+    "5d": -0.0085,
     "1m": null,
     "3m": null
    }
@@ -743,13 +817,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/kelso-group-holdings--klso/trading-update/9875739",
    "returns": {
     "1d": -0.0122,
-    "5d": null,
+    "5d": -0.0366,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.01,
-    "5d": null,
+    "5d": 0.0138,
     "1m": null,
     "3m": null
    }
@@ -764,13 +838,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/solid-state--soli/trading-update-notice-of-results-presentations/9875718",
    "returns": {
     "1d": 0.0,
-    "5d": null,
+    "5d": 0.0055,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": 0.0022,
-    "5d": null,
+    "5d": 0.0559,
     "1m": null,
     "3m": null
    }
@@ -785,13 +859,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/legal-general-group--lgen/q3-trading-update-2026/9875713",
    "returns": {
     "1d": -0.0296,
-    "5d": null,
+    "5d": -0.0728,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.0274,
-    "5d": null,
+    "5d": -0.0224,
     "1m": null,
     "3m": null
    }
@@ -806,13 +880,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/me-group-international--megp/year-end-trading-update/9875707",
    "returns": {
     "1d": 0.0372,
-    "5d": null,
+    "5d": -0.0411,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": 0.0393,
-    "5d": null,
+    "5d": 0.0093,
     "1m": null,
     "3m": null
    }
@@ -848,13 +922,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/hongkong-land-holding-ltd-sing-reg---hkld/capital-recycling-update-share-buyback-expansion/9874559",
    "returns": {
     "1d": 0.0,
-    "5d": null,
+    "5d": 0.0,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.0027,
-    "5d": null,
+    "5d": 0.0367,
     "1m": null,
     "3m": null
    }
@@ -3883,13 +3957,13 @@
    "returns": {
     "1d": -0.3895,
     "5d": -0.3158,
-    "1m": null,
+    "1m": -0.4737,
     "3m": null
    },
    "excess": {
     "1d": -0.3867,
     "5d": -0.3176,
-    "1m": null,
+    "1m": -0.4397,
     "3m": null
    }
   },
@@ -3904,13 +3978,13 @@
    "returns": {
     "1d": 0.016,
     "5d": 0.05,
-    "1m": null,
+    "1m": 0.04,
     "3m": null
    },
    "excess": {
     "1d": 0.0188,
     "5d": 0.0482,
-    "1m": null,
+    "1m": 0.074,
     "3m": null
    }
   },
@@ -3967,13 +4041,13 @@
    "returns": {
     "1d": 0.0,
     "5d": 0.0,
-    "1m": null,
+    "1m": 0.0,
     "3m": null
    },
    "excess": {
     "1d": 0.0034,
     "5d": 0.004,
-    "1m": null,
+    "1m": 0.026,
     "3m": null
    }
   },
@@ -12992,25 +13066,25 @@
  "summary": {
   "STRONGLY_AHEAD": {
    "1d": {
-    "n": 153,
-    "avg_return": 0.0359,
-    "avg_excess": 0.0364,
-    "median_excess": 0.0247,
-    "hit_rate": 0.745
+    "n": 154,
+    "avg_return": 0.0355,
+    "avg_excess": 0.0361,
+    "median_excess": 0.0246,
+    "hit_rate": 0.74
    },
    "5d": {
-    "n": 145,
-    "avg_return": 0.029,
-    "avg_excess": 0.0305,
-    "median_excess": 0.0324,
-    "hit_rate": 0.634
+    "n": 146,
+    "avg_return": 0.0284,
+    "avg_excess": 0.0302,
+    "median_excess": 0.0299,
+    "hit_rate": 0.63
    },
    "1m": {
-    "n": 109,
-    "avg_return": 0.0142,
-    "avg_excess": 0.0165,
-    "median_excess": 0.0151,
-    "hit_rate": 0.523
+    "n": 110,
+    "avg_return": 0.0144,
+    "avg_excess": 0.017,
+    "median_excess": 0.0161,
+    "hit_rate": 0.527
    },
    "3m": {
     "n": 0
@@ -13025,11 +13099,11 @@
     "hit_rate": 0.571
    },
    "5d": {
-    "n": 262,
-    "avg_return": 0.0049,
-    "avg_excess": 0.0078,
-    "median_excess": 0.0049,
-    "hit_rate": 0.531
+    "n": 268,
+    "avg_return": 0.0041,
+    "avg_excess": 0.008,
+    "median_excess": 0.0057,
+    "hit_rate": 0.534
    },
    "1m": {
     "n": 203,
@@ -13051,11 +13125,11 @@
     "hit_rate": 0.312
    },
    "5d": {
-    "n": 60,
-    "avg_return": -0.0861,
-    "avg_excess": -0.0846,
-    "median_excess": -0.0321,
-    "hit_rate": 0.35
+    "n": 62,
+    "avg_return": -0.084,
+    "avg_excess": -0.0809,
+    "median_excess": -0.0307,
+    "hit_rate": 0.371
    },
    "1m": {
     "n": 43,
@@ -13070,11 +13144,11 @@
   },
   "BELOW": {
    "1d": {
-    "n": 95,
-    "avg_return": -0.1291,
-    "avg_excess": -0.1284,
-    "median_excess": -0.0789,
-    "hit_rate": 0.168
+    "n": 97,
+    "avg_return": -0.1269,
+    "avg_excess": -0.1259,
+    "median_excess": -0.0778,
+    "hit_rate": 0.175
    },
    "5d": {
     "n": 87,
@@ -13084,11 +13158,11 @@
     "hit_rate": 0.23
    },
    "1m": {
-    "n": 62,
-    "avg_return": -0.184,
-    "avg_excess": -0.1858,
+    "n": 64,
+    "avg_return": -0.1857,
+    "avg_excess": -0.1864,
     "median_excess": -0.1426,
-    "hit_rate": 0.242
+    "hit_rate": 0.25
    },
    "3m": {
     "n": 0
@@ -13128,6 +13202,7 @@
   "ALH",
   "FNEWS",
   "HEY1",
+  "HKLD",
   "HLPD",
   "MCJ",
   "PBX",
