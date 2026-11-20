@@ -477,6 +477,51 @@
    "metrics_ahead": [],
    "guidance_change": "none_stated",
    "watchlist": false
+  },
+  {
+   "id": "9887246",
+   "time": "20 Nov 2026 03:58 PM",
+   "company": "HarbourVest Global Private Equity Limited A Shs",
+   "ticker": "HVPE",
+   "headline": "Results of Tender Offer elections",
+   "url": "https://www.investegate.co.uk/announcement/rns/harbourvest-global-private-equity-limited-a-shs--hvpe/results-of-tender-offer-elections-/9887246",
+   "classification": "NO_GUIDANCE",
+   "confidence": "high",
+   "key_quote": "As at close of business on 19 November 2026, being the record date for the Tender Offer, valid elections had been received in respect of 46,145,672 Eligible Shares, being approximately 67% of the Company's issued share capital (excluding Shares held in treasury). Accordingly, the Tender Offer has been oversubscribed.",
+   "summary": "This announcement reports the results of a tender offer election for HarbourVest Global Private Equity Limited. The tender offer was oversubscribed with approximately 67% of issued share capital tendered against an authorized amount of $400 million. This is a corporate action update with no financial results, operational performance metrics, or comparison to expectations provided. No guidance is stated or referenced.",
+   "metrics_ahead": [],
+   "guidance_change": "none_stated",
+   "watchlist": false
+  },
+  {
+   "id": "9887260",
+   "time": "20 Nov 2026 04:13 PM",
+   "company": "CT Global Managed Portfolio Trust Grwth Shs",
+   "ticker": "CMPG",
+   "headline": "Portfolio Update",
+   "url": "https://www.investegate.co.uk/announcement/rns/ct-global-managed-portfolio-trust-grwth-shs--cmpg/portfolio-update/9887260",
+   "classification": "NO_GUIDANCE",
+   "confidence": "high",
+   "key_quote": "Portfolio Update - All data as at 31 October 2026",
+   "summary": "This is a routine portfolio update disclosure showing the composition of holdings and net gearing as at 31 October 2026. No performance metrics, comparisons to expectations, or guidance statements are provided. The announcement is purely informational regarding asset allocation and does not contain any assessment versus market or board expectations.",
+   "metrics_ahead": [],
+   "guidance_change": "none_stated",
+   "watchlist": false
+  },
+  {
+   "id": "9887261",
+   "time": "20 Nov 2026 04:13 PM",
+   "company": "CT Global Managed Portfolio Trust Inc Shs",
+   "ticker": "CMPI",
+   "headline": "Portfolio Update",
+   "url": "https://www.investegate.co.uk/announcement/rns/ct-global-managed-portfolio-trust-inc-shs--cmpi/portfolio-update/9887261",
+   "classification": "NO_GUIDANCE",
+   "confidence": "high",
+   "key_quote": "Portfolio Update - All data as at 31 October 2026",
+   "summary": "This is a routine portfolio update for CT Global Managed Portfolio Trust PLC showing holdings composition and net gearing as of 31 October 2026. The announcement contains no performance metrics, earnings data, or any comparison to expectations, guidance, or forecasts. It is purely informational disclosure of portfolio holdings.",
+   "metrics_ahead": [],
+   "guidance_change": "none_stated",
+   "watchlist": false
   }
  ],
  "dealings": [
@@ -787,6 +832,20 @@
    "shares": 214200,
    "price_per_share_gbp": 0.0345,
    "total_value_gbp": 7389.9
+  },
+  {
+   "id": "9887255",
+   "time": "20 Nov 2026 04:03 PM",
+   "company": "Diploma",
+   "ticker": "DPLM",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/diploma--dplm/director-pdmr-shareholding/9887255",
+   "director_name": "Wilson Ng",
+   "role": "Chief Financial Officer",
+   "direction": "buy",
+   "shares": 449,
+   "price_per_share_gbp": 66.320442,
+   "total_value_gbp": 29777.88
   }
  ]
 }
