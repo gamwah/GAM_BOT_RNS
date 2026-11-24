@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T23:21:50+00:00",
+ "generated": "2026-11-24T03:28:30+00:00",
  "benchmark": "^FTAS",
  "horizons": [
   "1d",
@@ -8,6 +8,116 @@
   "3m"
  ],
  "events": [
+  {
+   "id": "9889636",
+   "date": "2026-11-23",
+   "ticker": "EDIN",
+   "company": "Edinburgh Inv Trust",
+   "classification": "AHEAD",
+   "key_quote": "NAV and share price total returns of 8.0% and 9.7%, respectively, both ahead of the FTSE All-Share Index's 7.2% return",
+   "url": "https://www.investegate.co.uk/announcement/rns/edinburgh-inv-trust--edin/results-analysis-from-kepler-trust-intelligence/9889636",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9889399",
+   "date": "2026-11-23",
+   "ticker": "ALTN",
+   "company": "AltynGold",
+   "classification": "MIXED",
+   "key_quote": "Revenue for the first nine months of 2026 reached US$167.3 million, up 44% year-on-year...the Company expects record revenue for 2026...Reflecting the impact of lower-than-expected grades during the year, the Company has revised its full-year 2026 gold production guidance to 50,000-52,000oz, compared with the previously announced range of 52,000-55,000oz.",
+   "url": "https://www.investegate.co.uk/announcement/bzw/altyngold--altn/3rd-quarter-results/9889399",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9889380",
+   "date": "2026-11-23",
+   "ticker": "ANII",
+   "company": "Aberdeen New India Investment Trust",
+   "classification": "AHEAD",
+   "key_quote": "The Company's Adjusted NAV per share total return since the beginning of the Assessment Period to 31 October 2026 was 18.0%, compared with a total return of 13.7% from the Benchmark (all in sterling terms). The Company's NAV total return was therefore ahead of the Benchmark by 4.3% at that date.",
+   "url": "https://www.investegate.co.uk/announcement/rns/aberdeen-new-india-investment-trust--anii/conditional-tender-offer-performance-update/9889380",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9887742",
+   "date": "2026-11-23",
+   "ticker": "37QB",
+   "company": "JSC HALYK BANK",
+   "classification": "BELOW",
+   "key_quote": "Profit for the period attributable to shareholders of the Bank 727,456 KZT mln for 9M 2026 vs 809,933 KZT mln for 9M 2025, a decline of 10.2% year-on-year",
+   "url": "https://www.investegate.co.uk/announcement/rns/jsc-halyk-bank--37qb/9m-and-3q-financial-results/9887742",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9887528",
+   "date": "2026-11-23",
+   "ticker": "CER",
+   "company": "Cerillion",
+   "classification": "BELOW",
+   "key_quote": "While we did not perform as well as expected against some key financial metrics, the successful securing of our largest ever contract win was a major milestone for the business.",
+   "url": "https://www.investegate.co.uk/announcement/rns/cerillion--cer/final-results/9887528",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9887506",
+   "date": "2026-11-23",
+   "ticker": "SVNS",
+   "company": "Solvonis Therapeutics PLC",
+   "classification": "AHEAD",
+   "key_quote": "NIDA has completed its in vitro evaluation of SVN-015, delivering encouraging safety and pharmacology results and progressing the compound towards preclinical in vivo testing.",
+   "url": "https://www.investegate.co.uk/announcement/rns/solvonis-therapeutics-plc--svns/research-update/9887506",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9887502",
+   "date": "2026-11-23",
+   "ticker": "DRX",
+   "company": "Drax Group",
+   "classification": "STRONGLY_AHEAD",
+   "key_quote": "Drax now expects full year expectations for 2026 to be significantly above current analyst consensus for 2026",
+   "url": "https://www.investegate.co.uk/announcement/rns/drax-group--drx/trading-update-and-cmd-with-earnings-upgrades/9887502",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9887492",
+   "date": "2026-11-23",
+   "ticker": "CRST",
+   "company": "Crest Nicholson Holdings",
+   "classification": "MIXED",
+   "key_quote": "Year-end net debt was approximately £64m, well within the Group's currently available facilities of £240m and better than the Group's previous guidance range of £70m to £90m.",
+   "url": "https://www.investegate.co.uk/announcement/rns/crest-nicholson-holdings--crst/trading-and-balance-sheet-update-/9887492",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9887490",
+   "date": "2026-11-23",
+   "ticker": "COIL",
+   "company": "Coiled Therapeutics plc",
+   "classification": "AHEAD",
+   "key_quote": "These data sets from our optimised lipid formulation are very encouraging. We believe we have addressed the absorption limits of the original tablet: at 120mg twice daily, exposure now rises in line with dose with higher levels of active free drug, which we believe is what matters most for AO-252's biological activity.",
+   "url": "https://www.investegate.co.uk/announcement/rns/coiled-therapeutics-plc--coil/clinical-trial-update-/9887490",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9887403",
+   "date": "2026-11-23",
+   "ticker": "CPI",
+   "company": "Capita",
+   "classification": "BELOW",
+   "key_quote": "Full year 2027 is expected to be impacted by additional costs in relation to the Civil Service Pension Scheme contract, and short-term contract headwinds (including as a result of the Group's updated view of no extensions on major contract exits), with adjusted operating profit expected to be £85m - £95m lower than previously expected",
+   "url": "https://www.investegate.co.uk/announcement/mfn/capita--cpi/notice-of-board-changes-update-on-trading-f-/9887403",
+   "returns": null,
+   "excess": null
+  },
   {
    "id": "9886785",
    "date": "2026-11-20",
@@ -37,8 +147,18 @@
    "classification": "AHEAD",
    "key_quote": "Underlying profit in the third quarter was 38% higher than in the same period in 2025, mainly reflecting higher contributions from Hong Kong Central and the Chinese mainland, together with lower net financing charges.",
    "url": "https://www.investegate.co.uk/announcement/rns/hongkong-land-holding-ltd-sing-reg---hkld/quarterly-trading-update-/9886559",
-   "returns": null,
-   "excess": null
+   "returns": {
+    "1d": 0.0,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": 0.0116,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
   },
   {
    "id": "9886483",
@@ -3915,13 +4035,13 @@
    "returns": {
     "1d": 0.0,
     "5d": 0.0,
-    "1m": null,
+    "1m": 0.0,
     "3m": null
    },
    "excess": {
     "1d": 0.0028,
     "5d": -0.0018,
-    "1m": null,
+    "1m": 0.034,
     "3m": null
    }
   },
@@ -3936,13 +4056,13 @@
    "returns": {
     "1d": 0.0,
     "5d": 0.0,
-    "1m": null,
+    "1m": 0.0,
     "3m": null
    },
    "excess": {
     "1d": 0.0028,
     "5d": -0.0018,
-    "1m": null,
+    "1m": 0.034,
     "3m": null
    }
   },
@@ -3999,13 +4119,13 @@
    "returns": {
     "1d": -0.0816,
     "5d": 0.0,
-    "1m": null,
+    "1m": 0.0204,
     "3m": null
    },
    "excess": {
     "1d": -0.0789,
     "5d": -0.0018,
-    "1m": null,
+    "1m": 0.0544,
     "3m": null
    }
   },
@@ -13092,11 +13212,11 @@
   },
   "AHEAD": {
    "1d": {
-    "n": 282,
-    "avg_return": 0.0067,
+    "n": 283,
+    "avg_return": 0.0066,
     "avg_excess": 0.0072,
     "median_excess": 0.0046,
-    "hit_rate": 0.571
+    "hit_rate": 0.572
    },
    "5d": {
     "n": 268,
@@ -13106,11 +13226,11 @@
     "hit_rate": 0.534
    },
    "1m": {
-    "n": 203,
-    "avg_return": -0.0062,
-    "avg_excess": -0.0059,
-    "median_excess": -0.0057,
-    "hit_rate": 0.473
+    "n": 205,
+    "avg_return": -0.0061,
+    "avg_excess": -0.0055,
+    "median_excess": -0.0048,
+    "hit_rate": 0.478
    },
    "3m": {
     "n": 0
@@ -13158,11 +13278,11 @@
     "hit_rate": 0.23
    },
    "1m": {
-    "n": 64,
-    "avg_return": -0.1857,
-    "avg_excess": -0.1864,
-    "median_excess": -0.1426,
-    "hit_rate": 0.25
+    "n": 65,
+    "avg_return": -0.1825,
+    "avg_excess": -0.1827,
+    "median_excess": -0.138,
+    "hit_rate": 0.262
    },
    "3m": {
     "n": 0
@@ -13187,6 +13307,7 @@
   "0QIX",
   "0QVJ",
   "35CS",
+  "37QB",
   "42RJ",
   "45GD",
   "46QW",
@@ -13200,14 +13321,22 @@
   "ADS",
   "AIRA",
   "ALH",
+  "ALTN",
+  "ANII",
+  "CER",
+  "COIL",
+  "CPI",
+  "CRST",
+  "DRX",
+  "EDIN",
   "FNEWS",
   "HEY1",
-  "HKLD",
   "HLPD",
   "MCJ",
   "PBX",
   "SHPP",
   "SNOX",
+  "SVNS",
   "TTA",
   "UNTU",
   "ZCC"
