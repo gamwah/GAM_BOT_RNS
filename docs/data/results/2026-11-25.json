@@ -672,6 +672,36 @@
    "metrics_ahead": [],
    "guidance_change": "none_stated",
    "watchlist": false
+  },
+  {
+   "id": "9894342",
+   "time": "25 Nov 2026 05:52 PM",
+   "company": "Metlen Energy & Metals PLC",
+   "ticker": "MTLN",
+   "headline": "METKA - Outcome of IPO and Commencement of Trading",
+   "url": "https://www.investegate.co.uk/announcement/rns/metlen-energy-metals-plc--mtln/metka-outcome-of-ipo-and-commencement-of-trading/9894342",
+   "classification": "NO_GUIDANCE",
+   "confidence": "high",
+   "key_quote": "The Combined Offering was successfully completed with all 30,000,000 Offer Shares subscribed and paid for and/or sold at the offering price of €10.00 per Offer Share, generating total gross proceeds of €300 million.",
+   "summary": "This is an IPO announcement reporting the successful completion of METKA's initial public offering on Euronext Athens. All 30 million offer shares were subscribed at €10.00 per share, generating €300 million in gross proceeds. The announcement contains no performance metrics, financial results, or comparisons to expectations. It is a corporate action announcement only.",
+   "metrics_ahead": [],
+   "guidance_change": "none_stated",
+   "watchlist": false
+  },
+  {
+   "id": "9894344",
+   "time": "25 Nov 2026 05:55 PM",
+   "company": "Elecosoft Public Limited Company",
+   "ticker": "ELCO",
+   "headline": "Eleco plc Update on Letter of Intent",
+   "url": "https://www.investegate.co.uk/announcement/rns/elecosoft-public-limited-company--elco/eleco-plc-update-on-letter-of-intent/9894344",
+   "classification": "NO_GUIDANCE",
+   "confidence": "high",
+   "key_quote": "Update on Letter of Intent",
+   "summary": "This announcement is an update on a takeover process relating to a recommended cash acquisition by Avocet Bidco Limited (funded by Accel-KKR). It provides procedural updates on share dealings and a letter of intent from Charles Stanley regarding voting rights. No operational performance metrics, financial results, or guidance are discussed. This is a corporate action announcement with no comparison to market expectations or financial performance.",
+   "metrics_ahead": [],
+   "guidance_change": "none_stated",
+   "watchlist": false
   }
  ],
  "dealings": [
@@ -1020,6 +1050,20 @@
    "url": "https://www.investegate.co.uk/announcement/rns/greggs--grg/director-pdmr-shareholding/9894326",
    "director_name": "Roisin Currie",
    "role": "Chief Executive",
+   "direction": "other",
+   "shares": 94,
+   "price_per_share_gbp": 21.06,
+   "total_value_gbp": 1979.64
+  },
+  {
+   "id": "9894335",
+   "time": "25 Nov 2026 05:34 PM",
+   "company": "Greggs",
+   "ticker": "GRG",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/greggs--grg/director-pdmr-shareholding/9894335",
+   "director_name": "Richard Hutton",
+   "role": "Finance Director / PDMR",
    "direction": "other",
    "shares": 94,
    "price_per_share_gbp": 21.06,
