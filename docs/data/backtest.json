@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T03:28:30+00:00",
+ "generated": "2026-11-25T01:37:09+00:00",
  "benchmark": "^FTAS",
  "horizons": [
   "1d",
@@ -9,6 +9,215 @@
  ],
  "events": [
   {
+   "id": "9891716",
+   "date": "2026-11-24",
+   "ticker": "71HO",
+   "company": "PENARIAN HOUSING FINANCE PLC",
+   "classification": "AHEAD",
+   "key_quote": "The half year management accounts show a really strong performance with income forecast to be £1.5million favourable by year end...Carefully managing costs in the inflationary economic environment combined with the improvement in income is leading to a forecast operating margin slightly above the target of 20%.",
+   "url": "https://www.investegate.co.uk/announcement/rns/penarian-housing-finance-plc--71ho/winter-financial-update-2026/9891716",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9890093",
+   "date": "2026-11-24",
+   "ticker": "B90",
+   "company": "B90 Holdings NPV",
+   "classification": "BELOW",
+   "key_quote": "while the Board currently expects the Group to be EBITDA profitable for the full year, it is at a level significantly below previous expectations",
+   "url": "https://www.investegate.co.uk/announcement/rns/b90-holdings-npv--b90/trading-statement/9890093",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9889963",
+   "date": "2026-11-24",
+   "ticker": "MARS",
+   "company": "Marston's",
+   "classification": "STRONGLY_AHEAD",
+   "key_quote": "STRONG PROFIT DELIVERY, AHEAD OF MARKET EXPECTATIONS, WITH ACCELERATED FORMAT ROLLOUT SET TO DRIVE FUTURE GROWTH",
+   "url": "https://www.investegate.co.uk/announcement/rns/marston-s--mars/preliminary-results-/9889963",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9889930",
+   "date": "2026-11-24",
+   "ticker": "GROW",
+   "company": "Molten Ventures",
+   "classification": "STRONGLY_AHEAD",
+   "key_quote": "Realisations are already ahead of our through-the-cycle target, and the further Revolut sale since the period end, at carrying value, underlines the robustness of our valuations.",
+   "url": "https://www.investegate.co.uk/announcement/rns/molten-ventures--grow/interim-results/9889930",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9889922",
+   "date": "2026-11-24",
+   "ticker": "SBTX",
+   "company": "SkinBioTherapeutics",
+   "classification": "MIXED",
+   "key_quote": "Q1 27 trading is ahead of management expectations, with an improvement in EBITDA (loss) driven by ongoing margin improvement initiatives and tighter cost management under the new leadership team.",
+   "url": "https://www.investegate.co.uk/announcement/rns/skinbiotherapeutics--sbtx/final-results-and-notice-of-agm/9889922",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9889920",
+   "date": "2026-11-24",
+   "ticker": "PCIP",
+   "company": "PCI-PAL",
+   "classification": "AHEAD",
+   "key_quote": "New business sales are ahead of management's expectations for the year to date, with both the Group's major regions, North America and EMEA, performing well.",
+   "url": "https://www.investegate.co.uk/announcement/rns/pci-pal--pcip/final-results-analyst-briefing-investor-pres/9889920",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9889912",
+   "date": "2026-11-24",
+   "ticker": "IGR",
+   "company": "IG Design Group",
+   "classification": "AHEAD",
+   "key_quote": "The Board remains confident of delivering FY2027 results in line with market expectations. FY2027 revenue growth guidance raised to 2–5% (previously 0–5%), reflecting the confidence around outlook.",
+   "url": "https://www.investegate.co.uk/announcement/rns/ig-design-group--igr/interim-results/9889912",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9889910",
+   "date": "2026-11-24",
+   "ticker": "ATG",
+   "company": "Auction Technology Group",
+   "classification": "AHEAD",
+   "key_quote": "adjusted EBITDA margin of 34.7% being slightly higher than market expectations",
+   "url": "https://www.investegate.co.uk/announcement/rns/auction-technology-group--atg/full-year-results-/9889910",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9889909",
+   "date": "2026-11-24",
+   "ticker": "CPG",
+   "company": "Compass Group",
+   "classification": "AHEAD",
+   "key_quote": "Compass delivered another excellent performance in 2026, exceeding $50bn in revenue and ending the year with strong momentum.",
+   "url": "https://www.investegate.co.uk/announcement/rns/compass-group--cpg/full-year-results-announcement-/9889909",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9889899",
+   "date": "2026-11-24",
+   "ticker": "HUD",
+   "company": "Huddled Group",
+   "classification": "AHEAD",
+   "key_quote": "Sales continue to exceed the Board's expectations, yet it is clear the Group is merely scratching the surface of this opportunity.",
+   "url": "https://www.investegate.co.uk/announcement/rns/huddled-group--hud/trading-update-fundraise-capital-access-window/9889899",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9889885",
+   "date": "2026-11-24",
+   "ticker": "MDH",
+   "company": "Mendell Helium plc",
+   "classification": "AHEAD",
+   "key_quote": "The Brobee salt water disposal well continues to perform ahead of expectations and has ample capacity for future production wells, providing potential for meaningful capex savings.",
+   "url": "https://www.investegate.co.uk/announcement/rns/mendell-helium-plc--mdh/operations-update/9889885",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9889884",
+   "date": "2026-11-24",
+   "ticker": "TEP",
+   "company": "Telecom Plus",
+   "classification": "AHEAD",
+   "key_quote": "Multiservice organic customer numbers increased at an annualised rate of c.11.5%...above our 10%+ full year target and c.3x the growth achieved in FY26.",
+   "url": "https://www.investegate.co.uk/announcement/rns/telecom-plus--tep/half-year-results-for-6-months-ended-30-sep-2026/9889884",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9889873",
+   "date": "2026-11-24",
+   "ticker": "BBY",
+   "company": "Balfour Beatty",
+   "classification": "STRONGLY_AHEAD",
+   "key_quote": "Following a further period of strong operational performance, Balfour Beatty is increasing 2026 guidance for the Group's continuing operations.",
+   "url": "https://www.investegate.co.uk/announcement/rns/balfour-beatty--bby/balfour-beatty-2026-trading-update/9889873",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9889872",
+   "date": "2026-11-24",
+   "ticker": "POLR",
+   "company": "Polar Capital Holdings",
+   "classification": "STRONGLY_AHEAD",
+   "key_quote": "Polar Capital delivered a strong first half, with AuM increasing 43% to £43.7bn, net inflows of £3.6bn, and core operating profit more than doubling to £65.7m",
+   "url": "https://www.investegate.co.uk/announcement/rns/polar-capital-holdings--polr/unaudited-interim-results/9889872",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9889851",
+   "date": "2026-11-24",
+   "ticker": "SFR",
+   "company": "Severfield",
+   "classification": "STRONGLY_AHEAD",
+   "key_quote": "FY27 underlying profit before tax expectations increased towards the upper end of £12m to £15m range",
+   "url": "https://www.investegate.co.uk/announcement/rns/severfield--sfr/interim-results/9889851",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9889850",
+   "date": "2026-11-24",
+   "ticker": "SHC",
+   "company": "Shaftesbury Capital",
+   "classification": "AHEAD",
+   "key_quote": "delivering strong performance...5 per cent ahead of June 2026 ERV and 20 per cent ahead of previous passing rents...well-positioned for the important Christmas period and beyond",
+   "url": "https://www.investegate.co.uk/announcement/rns/shaftesbury-capital--shc/trading-update/9889850",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9889836",
+   "date": "2026-11-24",
+   "ticker": "COA",
+   "company": "Coats Group",
+   "classification": "MIXED",
+   "key_quote": "EBIT margins at or above 20%, below current market expectations",
+   "url": "https://www.investegate.co.uk/announcement/rns/coats-group--coa/trading-statement/9889836",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9889835",
+   "date": "2026-11-24",
+   "ticker": "KGF",
+   "company": "Kingfisher",
+   "classification": "STRONGLY_AHEAD",
+   "key_quote": "We delivered a solid quarter, with continued market share gains and strong momentum across our strategic growth drivers of trade, e-commerce and marketplace. This gives us the confidence to upgrade our guidance.",
+   "url": "https://www.investegate.co.uk/announcement/rns/kingfisher--kgf/q3-trading-update/9889835",
+   "returns": null,
+   "excess": null
+  },
+  {
+   "id": "9889788",
+   "date": "2026-11-24",
+   "ticker": "0QIX",
+   "company": "Bw Lpg Ltd",
+   "classification": "STRONGLY_AHEAD",
+   "key_quote": "Q3 2026 profit attributable to equity holders of the Company was US$311 million, representing an earnings per share of US$2.05, contributed by a strong shipping performance and a solid result from Product Services.",
+   "url": "https://www.investegate.co.uk/announcement/mfn/bw-lpg-ltd--0qix/bw-lpg-limited-financial-results-for-q3-202-/9889788",
+   "returns": null,
+   "excess": null
+  },
+  {
    "id": "9889636",
    "date": "2026-11-23",
    "ticker": "EDIN",
@@ -16,8 +225,18 @@
    "classification": "AHEAD",
    "key_quote": "NAV and share price total returns of 8.0% and 9.7%, respectively, both ahead of the FTSE All-Share Index's 7.2% return",
    "url": "https://www.investegate.co.uk/announcement/rns/edinburgh-inv-trust--edin/results-analysis-from-kepler-trust-intelligence/9889636",
-   "returns": null,
-   "excess": null
+   "returns": {
+    "1d": 0.0119,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.0014,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
   },
   {
    "id": "9889399",
@@ -27,8 +246,18 @@
    "classification": "MIXED",
    "key_quote": "Revenue for the first nine months of 2026 reached US$167.3 million, up 44% year-on-year...the Company expects record revenue for 2026...Reflecting the impact of lower-than-expected grades during the year, the Company has revised its full-year 2026 gold production guidance to 50,000-52,000oz, compared with the previously announced range of 52,000-55,000oz.",
    "url": "https://www.investegate.co.uk/announcement/bzw/altyngold--altn/3rd-quarter-results/9889399",
-   "returns": null,
-   "excess": null
+   "returns": {
+    "1d": 0.0399,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": 0.0265,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
   },
   {
    "id": "9889380",
@@ -38,8 +267,18 @@
    "classification": "AHEAD",
    "key_quote": "The Company's Adjusted NAV per share total return since the beginning of the Assessment Period to 31 October 2026 was 18.0%, compared with a total return of 13.7% from the Benchmark (all in sterling terms). The Company's NAV total return was therefore ahead of the Benchmark by 4.3% at that date.",
    "url": "https://www.investegate.co.uk/announcement/rns/aberdeen-new-india-investment-trust--anii/conditional-tender-offer-performance-update/9889380",
-   "returns": null,
-   "excess": null
+   "returns": {
+    "1d": -0.01,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.0234,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
   },
   {
    "id": "9887742",
@@ -49,8 +288,18 @@
    "classification": "BELOW",
    "key_quote": "Profit for the period attributable to shareholders of the Bank 727,456 KZT mln for 9M 2026 vs 809,933 KZT mln for 9M 2025, a decline of 10.2% year-on-year",
    "url": "https://www.investegate.co.uk/announcement/rns/jsc-halyk-bank--37qb/9m-and-3q-financial-results/9887742",
-   "returns": null,
-   "excess": null
+   "returns": {
+    "1d": 0.0,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.0133,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
   },
   {
    "id": "9887528",
@@ -60,8 +309,18 @@
    "classification": "BELOW",
    "key_quote": "While we did not perform as well as expected against some key financial metrics, the successful securing of our largest ever contract win was a major milestone for the business.",
    "url": "https://www.investegate.co.uk/announcement/rns/cerillion--cer/final-results/9887528",
-   "returns": null,
-   "excess": null
+   "returns": {
+    "1d": -0.007,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.0204,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
   },
   {
    "id": "9887506",
@@ -71,8 +330,18 @@
    "classification": "AHEAD",
    "key_quote": "NIDA has completed its in vitro evaluation of SVN-015, delivering encouraging safety and pharmacology results and progressing the compound towards preclinical in vivo testing.",
    "url": "https://www.investegate.co.uk/announcement/rns/solvonis-therapeutics-plc--svns/research-update/9887506",
-   "returns": null,
-   "excess": null
+   "returns": {
+    "1d": 0.0588,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": 0.0455,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
   },
   {
    "id": "9887502",
@@ -82,8 +351,18 @@
    "classification": "STRONGLY_AHEAD",
    "key_quote": "Drax now expects full year expectations for 2026 to be significantly above current analyst consensus for 2026",
    "url": "https://www.investegate.co.uk/announcement/rns/drax-group--drx/trading-update-and-cmd-with-earnings-upgrades/9887502",
-   "returns": null,
-   "excess": null
+   "returns": {
+    "1d": 0.0517,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": 0.0384,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
   },
   {
    "id": "9887492",
@@ -93,8 +372,18 @@
    "classification": "MIXED",
    "key_quote": "Year-end net debt was approximately £64m, well within the Group's currently available facilities of £240m and better than the Group's previous guidance range of £70m to £90m.",
    "url": "https://www.investegate.co.uk/announcement/rns/crest-nicholson-holdings--crst/trading-and-balance-sheet-update-/9887492",
-   "returns": null,
-   "excess": null
+   "returns": {
+    "1d": -0.296,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.3093,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
   },
   {
    "id": "9887490",
@@ -104,8 +393,18 @@
    "classification": "AHEAD",
    "key_quote": "These data sets from our optimised lipid formulation are very encouraging. We believe we have addressed the absorption limits of the original tablet: at 120mg twice daily, exposure now rises in line with dose with higher levels of active free drug, which we believe is what matters most for AO-252's biological activity.",
    "url": "https://www.investegate.co.uk/announcement/rns/coiled-therapeutics-plc--coil/clinical-trial-update-/9887490",
-   "returns": null,
-   "excess": null
+   "returns": {
+    "1d": 0.0,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.0133,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
   },
   {
    "id": "9887403",
@@ -115,8 +414,18 @@
    "classification": "BELOW",
    "key_quote": "Full year 2027 is expected to be impacted by additional costs in relation to the Civil Service Pension Scheme contract, and short-term contract headwinds (including as a result of the Group's updated view of no extensions on major contract exits), with adjusted operating profit expected to be £85m - £95m lower than previously expected",
    "url": "https://www.investegate.co.uk/announcement/mfn/capita--cpi/notice-of-board-changes-update-on-trading-f-/9887403",
-   "returns": null,
-   "excess": null
+   "returns": {
+    "1d": -0.7439,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   },
+   "excess": {
+    "1d": -0.7572,
+    "5d": null,
+    "1m": null,
+    "3m": null
+   }
   },
   {
    "id": "9886785",
@@ -643,13 +952,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/jardine-matheson-holdings-ltd-singapore-reg---jar/interim-management-statement-/9879486",
    "returns": {
     "1d": 0.0,
-    "5d": null,
+    "5d": 0.0,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": 0.017,
-    "5d": null,
+    "5d": 0.0357,
     "1m": null,
     "3m": null
    }
@@ -664,13 +973,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/ondine-biomedical-inc-npv-cdi---obi/ottawa-heart-uohi-study-results-published-in-jhi/9879077",
    "returns": {
     "1d": -0.0169,
-    "5d": null,
+    "5d": -0.0678,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": 0.0001,
-    "5d": null,
+    "5d": -0.0321,
     "1m": null,
     "3m": null
    }
@@ -685,13 +994,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/gear4music-holdings---g4m/interim-results/9878216",
    "returns": {
     "1d": -0.3333,
-    "5d": null,
+    "5d": -0.3333,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.3163,
-    "5d": null,
+    "5d": -0.2977,
     "1m": null,
     "3m": null
    }
@@ -706,13 +1015,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/diploma--dplm/diploma-plc-full-year-results-2026-/9878205",
    "returns": {
     "1d": -0.0244,
-    "5d": null,
+    "5d": -0.051,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.0074,
-    "5d": null,
+    "5d": -0.0153,
     "1m": null,
     "3m": null
    }
@@ -727,13 +1036,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/flowtech-fluidpower--flo/trading-update/9878200",
    "returns": {
     "1d": -0.1754,
-    "5d": null,
+    "5d": -0.2982,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.1584,
-    "5d": null,
+    "5d": -0.2626,
     "1m": null,
     "3m": null
    }
@@ -748,13 +1057,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/origin-enterprises-cdi---ogn/q1-trading-update-/9878193",
    "returns": {
     "1d": 0.0441,
-    "5d": null,
+    "5d": 0.0735,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": 0.0611,
-    "5d": null,
+    "5d": 0.1092,
     "1m": null,
     "3m": null
    }
@@ -769,13 +1078,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/imperial-brands--imb/final-results/9878188",
    "returns": {
     "1d": -0.0198,
-    "5d": null,
+    "5d": -0.0578,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": -0.0028,
-    "5d": null,
+    "5d": -0.0221,
     "1m": null,
     "3m": null
    }
@@ -790,13 +1099,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/cml-microsystems--cml/half-year-results/9878185",
    "returns": {
     "1d": 0.0667,
-    "5d": null,
+    "5d": 0.15,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": 0.0837,
-    "5d": null,
+    "5d": 0.1857,
     "1m": null,
     "3m": null
    }
@@ -811,13 +1120,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/iqe--iqe/iqe-plc-trading-update/9878181",
    "returns": {
     "1d": 0.0,
-    "5d": null,
+    "5d": -0.0653,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": 0.017,
-    "5d": null,
+    "5d": -0.0297,
     "1m": null,
     "3m": null
    }
@@ -832,13 +1141,13 @@
    "url": "https://www.investegate.co.uk/announcement/rns/somero-enterprises-inc-di---som/trading-update/9878171",
    "returns": {
     "1d": -0.0034,
-    "5d": null,
+    "5d": 0.0223,
     "1m": null,
     "3m": null
    },
    "excess": {
     "1d": 0.0136,
-    "5d": null,
+    "5d": 0.058,
     "1m": null,
     "3m": null
    }
@@ -3741,13 +4050,13 @@
    "returns": {
     "1d": -0.1,
     "5d": -0.0673,
-    "1m": null,
+    "1m": -0.1194,
     "3m": null
    },
    "excess": {
     "1d": -0.0944,
     "5d": -0.0681,
-    "1m": null,
+    "1m": -0.0937,
     "3m": null
    }
   },
@@ -3888,13 +4197,13 @@
    "returns": {
     "1d": 0.0486,
     "5d": -0.0052,
-    "1m": null,
+    "1m": -0.0509,
     "3m": null
    },
    "excess": {
     "1d": 0.0411,
     "5d": -0.0094,
-    "1m": null,
+    "1m": -0.0325,
     "3m": null
    }
   },
@@ -3909,13 +4218,13 @@
    "returns": {
     "1d": 0.1307,
     "5d": 0.0758,
-    "1m": null,
+    "1m": 0.0209,
     "3m": null
    },
    "excess": {
     "1d": 0.1232,
     "5d": 0.0717,
-    "1m": null,
+    "1m": 0.0393,
     "3m": null
    }
   },
@@ -3930,13 +4239,13 @@
    "returns": {
     "1d": 0.0207,
     "5d": -0.0085,
-    "1m": null,
+    "1m": -0.0237,
     "3m": null
    },
    "excess": {
     "1d": 0.0131,
     "5d": -0.0127,
-    "1m": null,
+    "1m": -0.0053,
     "3m": null
    }
   },
@@ -3951,13 +4260,13 @@
    "returns": {
     "1d": -0.2941,
     "5d": -0.2941,
-    "1m": null,
+    "1m": -0.2941,
     "3m": null
    },
    "excess": {
     "1d": -0.3017,
     "5d": -0.2983,
-    "1m": null,
+    "1m": -0.2757,
     "3m": null
    }
   },
@@ -3972,13 +4281,13 @@
    "returns": {
     "1d": 0.0035,
     "5d": 0.0175,
-    "1m": null,
+    "1m": 0.014,
     "3m": null
    },
    "excess": {
     "1d": -0.004,
     "5d": 0.0133,
-    "1m": null,
+    "1m": 0.0324,
     "3m": null
    }
   },
@@ -3993,13 +4302,13 @@
    "returns": {
     "1d": 0.0072,
     "5d": -0.0181,
-    "1m": null,
+    "1m": 0.0072,
     "3m": null
    },
    "excess": {
     "1d": -0.0003,
     "5d": -0.0222,
-    "1m": null,
+    "1m": 0.0256,
     "3m": null
    }
   },
@@ -4014,13 +4323,13 @@
    "returns": {
     "1d": 0.0118,
     "5d": 0.0295,
-    "1m": null,
+    "1m": 0.1652,
     "3m": null
    },
    "excess": {
     "1d": 0.0043,
     "5d": 0.0253,
-    "1m": null,
+    "1m": 0.1836,
     "3m": null
    }
   },
@@ -12994,13 +13303,13 @@
     "1d": 0.0,
     "5d": -0.7736,
     "1m": -0.817,
-    "3m": null
+    "3m": -0.8811
    },
    "excess": {
     "1d": 0.0005,
     "5d": -0.7607,
     "1m": -0.7971,
-    "3m": null
+    "3m": -0.8445
    }
   },
   {
@@ -13015,13 +13324,13 @@
     "1d": 0.0,
     "5d": 0.0,
     "1m": 0.0,
-    "3m": null
+    "3m": 0.0
    },
    "excess": {
     "1d": 0.0005,
     "5d": 0.0093,
     "1m": 0.0198,
-    "3m": null
+    "3m": 0.0366
    }
   },
   {
@@ -13047,13 +13356,13 @@
     "1d": 0.0536,
     "5d": 0.0344,
     "1m": -0.1071,
-    "3m": null
+    "3m": -0.356
    },
    "excess": {
     "1d": 0.054,
     "5d": 0.0472,
     "1m": -0.0872,
-    "3m": null
+    "3m": -0.3194
    }
   },
   {
@@ -13068,13 +13377,13 @@
     "1d": 0.0492,
     "5d": -0.0164,
     "1m": 0.0984,
-    "3m": null
+    "3m": -0.2459
    },
    "excess": {
     "1d": 0.0496,
     "5d": -0.0035,
     "1m": 0.1182,
-    "3m": null
+    "3m": -0.2093
    }
   },
   {
@@ -13089,13 +13398,13 @@
     "1d": 0.0562,
     "5d": 0.1187,
     "1m": -0.05,
-    "3m": null
+    "3m": -0.1687
    },
    "excess": {
     "1d": 0.0567,
     "5d": 0.1316,
     "1m": -0.0302,
-    "3m": null
+    "3m": -0.1321
    }
   },
   {
@@ -13110,13 +13419,13 @@
     "1d": 0.08,
     "5d": 0.2,
     "1m": 0.28,
-    "3m": null
+    "3m": 0.36
    },
    "excess": {
     "1d": 0.0805,
     "5d": 0.2129,
     "1m": 0.2998,
-    "3m": null
+    "3m": 0.3966
    }
   },
   {
@@ -13131,13 +13440,13 @@
     "1d": -0.0156,
     "5d": -0.0482,
     "1m": -0.1586,
-    "3m": null
+    "3m": -0.0809
    },
    "excess": {
     "1d": -0.0151,
     "5d": -0.0353,
     "1m": -0.1388,
-    "3m": null
+    "3m": -0.0442
    }
   },
   {
@@ -13152,13 +13461,13 @@
     "1d": 0.0847,
     "5d": 0.0442,
     "1m": -0.0532,
-    "3m": null
+    "3m": -0.3171
    },
    "excess": {
     "1d": 0.0852,
     "5d": 0.057,
     "1m": -0.0334,
-    "3m": null
+    "3m": -0.2805
    }
   },
   {
@@ -13173,119 +13482,135 @@
     "1d": -0.0025,
     "5d": 0.0051,
     "1m": -0.0127,
-    "3m": null
+    "3m": -0.0506
    },
    "excess": {
     "1d": -0.0021,
     "5d": 0.018,
     "1m": 0.0071,
-    "3m": null
+    "3m": -0.014
    }
   }
  ],
  "summary": {
   "STRONGLY_AHEAD": {
    "1d": {
-    "n": 154,
-    "avg_return": 0.0355,
+    "n": 155,
+    "avg_return": 0.0356,
     "avg_excess": 0.0361,
-    "median_excess": 0.0246,
-    "hit_rate": 0.74
+    "median_excess": 0.0247,
+    "hit_rate": 0.742
    },
    "5d": {
-    "n": 146,
-    "avg_return": 0.0284,
-    "avg_excess": 0.0302,
-    "median_excess": 0.0299,
-    "hit_rate": 0.63
+    "n": 148,
+    "avg_return": 0.0272,
+    "avg_excess": 0.0295,
+    "median_excess": 0.0267,
+    "hit_rate": 0.622
    },
    "1m": {
-    "n": 110,
-    "avg_return": 0.0144,
-    "avg_excess": 0.017,
-    "median_excess": 0.0161,
-    "hit_rate": 0.527
+    "n": 113,
+    "avg_return": 0.0136,
+    "avg_excess": 0.0166,
+    "median_excess": 0.0151,
+    "hit_rate": 0.522
    },
    "3m": {
-    "n": 0
+    "n": 4,
+    "avg_return": -0.0517,
+    "avg_excess": -0.0151,
+    "median_excess": -0.0882,
+    "hit_rate": 0.25
    }
   },
   "AHEAD": {
    "1d": {
-    "n": 283,
-    "avg_return": 0.0066,
+    "n": 287,
+    "avg_return": 0.0068,
     "avg_excess": 0.0072,
-    "median_excess": 0.0046,
-    "hit_rate": 0.572
+    "median_excess": 0.0045,
+    "hit_rate": 0.568
    },
    "5d": {
-    "n": 268,
-    "avg_return": 0.0041,
-    "avg_excess": 0.008,
-    "median_excess": 0.0057,
-    "hit_rate": 0.534
+    "n": 274,
+    "avg_return": 0.0045,
+    "avg_excess": 0.0091,
+    "median_excess": 0.0069,
+    "hit_rate": 0.536
    },
    "1m": {
-    "n": 205,
-    "avg_return": -0.0061,
-    "avg_excess": -0.0055,
-    "median_excess": -0.0048,
-    "hit_rate": 0.478
+    "n": 206,
+    "avg_return": -0.0053,
+    "avg_excess": -0.0046,
+    "median_excess": -0.0047,
+    "hit_rate": 0.481
    },
    "3m": {
-    "n": 0
+    "n": 2,
+    "avg_return": -0.1482,
+    "avg_excess": -0.1117,
+    "median_excess": -0.1117,
+    "hit_rate": 0.0
    }
   },
   "MIXED": {
    "1d": {
-    "n": 64,
-    "avg_return": -0.0561,
-    "avg_excess": -0.0558,
+    "n": 66,
+    "avg_return": -0.0583,
+    "avg_excess": -0.0584,
     "median_excess": -0.0285,
-    "hit_rate": 0.312
+    "hit_rate": 0.318
    },
    "5d": {
-    "n": 62,
-    "avg_return": -0.084,
-    "avg_excess": -0.0809,
-    "median_excess": -0.0307,
-    "hit_rate": 0.371
+    "n": 63,
+    "avg_return": -0.0874,
+    "avg_excess": -0.0838,
+    "median_excess": -0.0316,
+    "hit_rate": 0.365
    },
    "1m": {
-    "n": 43,
-    "avg_return": -0.0782,
-    "avg_excess": -0.0793,
+    "n": 45,
+    "avg_return": -0.0771,
+    "avg_excess": -0.0772,
     "median_excess": -0.0631,
-    "hit_rate": 0.256
+    "hit_rate": 0.267
    },
    "3m": {
-    "n": 0
+    "n": 2,
+    "avg_return": -0.6185,
+    "avg_excess": -0.5819,
+    "median_excess": -0.5819,
+    "hit_rate": 0.0
    }
   },
   "BELOW": {
    "1d": {
-    "n": 97,
-    "avg_return": -0.1269,
-    "avg_excess": -0.1259,
-    "median_excess": -0.0778,
-    "hit_rate": 0.175
+    "n": 100,
+    "avg_return": -0.1306,
+    "avg_excess": -0.1301,
+    "median_excess": -0.0757,
+    "hit_rate": 0.17
    },
    "5d": {
-    "n": 87,
-    "avg_return": -0.1459,
-    "avg_excess": -0.1429,
-    "median_excess": -0.0884,
-    "hit_rate": 0.23
+    "n": 88,
+    "avg_return": -0.148,
+    "avg_excess": -0.1446,
+    "median_excess": -0.0889,
+    "hit_rate": 0.227
    },
    "1m": {
-    "n": 65,
-    "avg_return": -0.1825,
-    "avg_excess": -0.1827,
+    "n": 67,
+    "avg_return": -0.1814,
+    "avg_excess": -0.181,
     "median_excess": -0.138,
-    "hit_rate": 0.262
+    "hit_rate": 0.269
    },
    "3m": {
-    "n": 0
+    "n": 1,
+    "avg_return": 0.0,
+    "avg_excess": 0.0366,
+    "median_excess": 0.0366,
+    "hit_rate": 1.0
    }
   }
  },
@@ -13307,13 +13632,13 @@
   "0QIX",
   "0QVJ",
   "35CS",
-  "37QB",
   "42RJ",
   "45GD",
   "46QW",
   "51GC",
   "51NI",
   "56QK",
+  "71HO",
   "79IU",
   "85FA",
   "93LF",
@@ -13321,22 +13646,30 @@
   "ADS",
   "AIRA",
   "ALH",
-  "ALTN",
-  "ANII",
-  "CER",
-  "COIL",
-  "CPI",
-  "CRST",
-  "DRX",
-  "EDIN",
+  "ATG",
+  "B90",
+  "BBY",
+  "COA",
+  "CPG",
   "FNEWS",
+  "GROW",
   "HEY1",
   "HLPD",
+  "HUD",
+  "IGR",
+  "KGF",
+  "MARS",
   "MCJ",
+  "MDH",
   "PBX",
+  "PCIP",
+  "POLR",
+  "SBTX",
+  "SFR",
+  "SHC",
   "SHPP",
   "SNOX",
-  "SVNS",
+  "TEP",
   "TTA",
   "UNTU",
   "ZCC"
