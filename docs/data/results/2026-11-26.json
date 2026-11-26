@@ -653,6 +653,21 @@
    "metrics_ahead": [],
    "guidance_change": "none_stated",
    "watchlist": false
+  },
+  {
+   "id": "9896479",
+   "time": "26 Nov 2026 05:18 PM",
+   "company": "Imperial Brands",
+   "ticker": "IMB",
+   "headline": "Statement re Possible Offer",
+   "url": "https://www.investegate.co.uk/announcement/rns/imperial-brands--imb/statement-re-possible-offer/9896479",
+   "classification": "NO_GUIDANCE",
+   "confidence": "high",
+   "key_quote": "Imperial Brands has strong confidence in its strategy and trading, as set out most recently in the full year results published on 17 November 2026.",
+   "summary": "This is a regulatory announcement regarding a possible offer from Altria Group. The Board notes strong confidence in strategy and trading based on recent full year results (17 November 2026), but this announcement itself contains no performance metrics, earnings data, or guidance comparisons. It is purely a takeover-related statement with no substantive disclosure of results versus expectations.",
+   "metrics_ahead": [],
+   "guidance_change": "none_stated",
+   "watchlist": false
   }
  ],
  "dealings": [
@@ -907,6 +922,34 @@
    "shares": 75000,
    "price_per_share_gbp": 0.6867,
    "total_value_gbp": 51502.5
+  },
+  {
+   "id": "9896483",
+   "time": "26 Nov 2026 05:26 PM",
+   "company": "Polar Capital Holdings",
+   "ticker": "POLR",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/polar-capital-holdings--polr/director-pdmr-shareholding/9896483",
+   "director_name": "David Melvin",
+   "role": "Non-executive Director",
+   "direction": "buy",
+   "shares": 15000,
+   "price_per_share_gbp": 6.902976,
+   "total_value_gbp": 103544.64
+  },
+  {
+   "id": "9896488",
+   "time": "26 Nov 2026 05:30 PM",
+   "company": "Tesco",
+   "ticker": "TSCO",
+   "headline": "Director/PDMR Shareholding",
+   "url": "https://www.investegate.co.uk/announcement/rns/tesco--tsco/director-pdmr-shareholding/9896488",
+   "director_name": "Imran Nawaz",
+   "role": "Chief Financial Officer",
+   "direction": "other",
+   "shares": 14561,
+   "price_per_share_gbp": 5.6638356,
+   "total_value_gbp": 82471.11
   }
  ]
 }
